@@ -1,0 +1,12 @@
+Script started on 2026-05-12 14:20:42+01:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="83" LINES="40"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/scripts[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/scripts[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/scripts[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/scripts[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/scripts[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/scripts[00m$ ./day01.sh
+[?2004l===== DEVOPS DAY 01 START =====
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/scripts
+6.6.87.2-microsoft-standard-WSL2
+valerie
+git version 2.43.0
+===== DAY 01 COMPLETE =====
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/scripts[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/scripts[00m$ exit
+[?2004lexit
+
+Script done on 2026-05-12 14:21:27+01:00 [COMMAND_EXIT_CODE="0"]
