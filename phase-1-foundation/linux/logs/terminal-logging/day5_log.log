@@ -1,0 +1,123 @@
+Script started on 2026-05-18 01:33:34+01:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ cd devops-[K[K[K[K[K[K[K[K[K[K#create process-folder [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ mkdir process-lab [K[K[K[K[K && cd pr ocess
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #write a scrip t that simulates a long unning service
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ nano my-servic e.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;25H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2            my-service.sh                     [1;59H(B[m[29d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[30d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;31r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J[?2004h[?1h=[?1h=(B[0;7m  GNU nano 7.2                                            my-service.sh                                                     [1;123H(B[m[30d(B[0;7m^G(B[m Help[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[31d(B[0;7m^X(B[m Exit[31;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[?25l[?12l[?25h[2d[?25l[?12l[?25h[31;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;30r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 7.2                                            my[30;1H^G(B[m Help[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[H[?2004h[?1h=[?1h=[30d[J[1;27H(B[0;7mmy-service.sh[59G  [1;59H(B[m[29d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[30d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?25l[?12l[?25h[2d[?25l[?12l[?25h[?25l[1;41H(B[0;7m*[59G(B[m[?12l[?25h[2de[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h "[?25l[?12l[?25hS[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hv[?25l[?12l[?25hi[?25l[?12l[?25hc[?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h s[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25ht[?25l[28d[?12l[?25h[2;20He[?25l[?12l[?25hd[?25l[?12l[?25h.[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h P[?25l[?12l[?25hI[?25l[?12l[?25hD[?25l[?12l[?25h[32m:[39m(B[m[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$$[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h d[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h e[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[6G(B[0;1m[33m"Service started. PID:$$ do echo "[39m(B[m[?25l[?12l[?25h[32m[[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[33m"[39m(B[m [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;31H[39m(B[m[?25l[?12l[?25h  [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;32H[39m(B[m[?25l[?12l[?25hw [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;33H[39m(B[m[?25l[?12l[?25hh [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;34H[39m(B[m[?25l[?12l[?25hi [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;35H[39m(B[m[?25l[?12l[?25hl [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;36H[39m(B[m[?25l[?12l[?25h[32mwhile[39m(B[m [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;37H[39m(B[m[?25l[?12l[?25h  [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;38H[39m(B[m[?25l[?12l[?25ht [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;39H[39m(B[m[?25l[?12l[?25hr [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;40H[39m(B[m[?25l[?12l[?25hu [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;41H[39m(B[m[?25l[?12l[?25he [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;42H[39m(B[m[?25l[?12l[?25h  [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[[2;43H[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h [?25l[?12l[?25h"[?25l[?12l[?25h[C[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h[32m([39m(B[m[?25l[?12l[?25hd[?25l[?12l[?25ha[?25l[?12l[?25h(B[0;7m<(B[0m[32m$([39m(B[mdat[K[?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h '[?25l[?12l[?25h+[?25l[?12l[?25h%[?25l[?12l[?25hH[?25l[?12l[?25h[32m:[39m(B[m[?25l[?12l[?25h%[?25l[?12l[?25hM[?25l[?12l[?25h[32m:[39m(B[m[?25l[?12l[?25h%[?25l[?12l[?25hS[?25l[?12l[?25h[2;9H(B[0;1m[33m'+%H:%M:%S'[39m(B[m[?25l[?12l[?25h[32m)[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Service started. PID:$$"[39m(B[m [32mwhile[39m(B[m true  [32mdo[39m(B[m (B[0;1m[34mecho[39m(B[m "[32m[$([39m(B[mdate(B[0;7m>[2;58H(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25hd[?25l[?12l[?25ha[?25l[?12l[?25h(B[0;7m<(B[0m[32m$([39m(B[mdate (B[0;1m[33m'+%H:%M:%S'(B[0m[32m)[39m(B[m[K[7G[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[?12l[?25h[32m}[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h[32m][39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h S[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hv[?25l[?12l[?25hi[?25l[?12l[?25hc[?25l[?12l[?25hr[?25l[?12l[?25h [?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h i[?25l[?12l[?25hs[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h r[?25l[?12l[?25hu[?25l[?12l[?25hn[?25l[?12l[?25hn[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h[C(B[0;1m[33m$(date [2;20H)] Service is running...."[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h s[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25he[?25l[?12l[?25hp[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 3[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h d[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25hdon[?25l[?12l[?25h[C [32mdone[39m(B[m[K[?25l[29;13H   (B[0;7mM-D(B[m DOS Format (B[0;7mM-A(B[m Append     (B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel      (B[0;7mM-M(B[m Mac Format (B[0;7mM-P(B[m Prepend    (B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: my-service.sh                           [28;34H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[28;23H[1K (B[0;7m[ Writing... ](B[m[K[1;41H(B[0;7m [59G(B[m[28;23H(B[0;7m[ Wrote 1 line ](B[m[29;13H(B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut      (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[2;7H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ./ser[K[K[Kmy-service.s h
+[?2004lbash: ./my-service.sh: Permission denied
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ chmod 77[K55 my-s ervice.sh
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ./s[Kmy-service.s h
+[?2004lService started. PID:20394 while true do echo [01:44:23] Service is running.... sleep 3 done
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #run a backgro und service
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ .s[K/my-service.s h &
+[?2004l[1] 20398
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ Service started. PID:20398 while true do echo [01:46:46] Service is running.... sleep 3 done
+hh[K[K[K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #confirm the b acground process is  still running
+[?2004l[1]+  Done                    ./my-service.sh
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ps aux | ge[Krep  my-service
+[?2004lvalerie    20404  0.0  0.0   4092  1920 pts/11   S+   01:48   0:00 grep --color=auto [01;31m[Kmy-service[m[K
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #debug while t he process is not running
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #the process i s not running because in witing the script each kyword was n ot written on a separate line rathh[Ker it was written i[Kon a str aight line
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #remove the [K[K[K[K[K[K[K[K[K[K[K[K#Resolve
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #remove the ex isting fle [K[K[Kile and recreae[K[Kate the file
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ rm my-service. sh
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ nano my-servic e.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;25H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2            my-service.sh                     [1;59H(B[m[29d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[30d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[28d[K[1;41H(B[0;7m*[59G(B[m[2d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Service started. PID: $$"[3d(B[0m[32mwhile[39m(B[m true[4d[32mdo[5d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"[$(date '+%H:%M:%S')] Service is running..."[6d[39m(B[msleep 3[7d[32mdone[39m(B[m[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[29;13H   (B[0;7mM-D(B[m DOS Format (B[0;7mM-A(B[m Append     (B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel      (B[0;7mM-M(B[m Mac Format (B[0;7mM-P(B[m Prepend    (B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: my-service.sh                           [28;34H(B[m[?12l[?25h[?25l[28;23H[1K (B[0;7m[ Writing... ](B[m[K[1;41H(B[0;7m [59G(B[m[28;22H(B[0;7m[ Wrote 6 lines ](B[m[29;13H(B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut      (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[4;3H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ cat [K[K[K[K#[Krem[K[K[K#remove the fl e[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci le, a ms[Kistake occured
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ rm my-serv9[Kice. sh
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ nano my-servic e.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;25H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2            my-service.sh                     [1;59H(B[m[29d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[30d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[28d[K[1;41H(B[0;7m*[59G(B[m[2d[36m#!/bin/bash[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Service started. PID: $$"[4d(B[0m[32mwhile[39m(B[m true[5d[32mdo[6d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"[$(date '+%H:%M:%S')] Service is running..."[7d[39m(B[msleep 3[8d[32mdone[39m(B[m[?12l[?25h[?25l[29;13H   (B[0;7mM-D(B[m DOS Format (B[0;7mM-A(B[m Append     (B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel      (B[0;7mM-M(B[m Mac Format (B[0;7mM-P(B[m Prepend    (B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: my-service.sh                           [28;34H(B[m[?12l[?25h[?25l[28;23H[1K (B[0;7m[ Writing... ](B[m[K[1;41H(B[0;7m [59G(B[m[28;22H(B[0;7m[ Wrote 7 lines ](B[m[29;13H(B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut      (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[8;5H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #verify conten t of script
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ cat my-service .sh
+[?2004l#!/bin/bash
+echo "Service started. PID: $$"
+while true
+do
+echo "[$(date '+%H:%M:%S')] Service is running..."
+sleep 3
+done
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #give it execu tion to run
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ls -l
+[?2004ltotal 4
+-rw-r--r-- 1 valerie valerie 122 May 18 01:57 my-service.sh
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ chmod 755 my-s rvice.sh
+[?2004lchmod: cannot access 'my-srvice.sh': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ls
+[?2004lmy-service.sh
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ chmod my-service.sh5my-service.sh[1Pmy-service.sh7my-service.sh5my-service.sh5my-service.sh my-service.sh
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ls -l
+[?2004ltotal 4
+-rwxr-xr-x 1 valerie valerie 122 May 18 01:57 [0m[01;32mmy-service.sh[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7mps aux | grep my-service[27mps aux | grep my-service
+[?2004lvalerie    20422  0.0  0.0   4092  1920 pts/11   S+   02:00   0:00 grep --color=auto [01;31m[Kmy-service[m[K
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ./s[Kmyservice[K[K[K[K[K[K[K-service.sh
+[?2004lService started. PID: 20425
+[02:01:21] Service is running...
+[02:01:24] Service is running...
+[02:01:27] Service is running...
+[02:01:30] Service is running...
+[02:01:33] Service is running...
+^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7m ./my-service.sh[27m ./my-service.sh &[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K# the previous was a foreground process
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7m ./my-service.sh[27m ./my-service.sh &
+[?2004l[1] 20437
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ Service started. PID: 20437
+[02:02:38] Service is running...
+[02:02:41] Service is running...
+[02:02:44] Service is running...
+[02:02:47] Service is running...
+[02:02:50] Service is running...
+[02:02:53] Service is running...
+^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:02:56] Service is running...
+[02:02:59] Service is running...
+[02:03:02] Service is running...
+^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:03:05] Service is running...
+[02:03:08] Service is running...
+[02:03:11] Service is running...
+[02:03:14] Service is running...
+[02:03:18] Service is running...
+[02:03:21] Service is running...
+[02:03:24] Service is running...
+[02:03:27] Service is running...
+[02:03:30] Service is running...
+[02:03:33] Service is running...
+[02:03:36] Service is running...
+[02:03:39] Service is running...
+[02:03:42] Service is running...
+[02:03:45] Service is running...
+[02:03:48] Service is running...
+[02:03:51] Service is running...
+[02:03:54] Service is running...
+[02:03:57] Service is running...
+[02:04:00] Service is running...
+[02:04:03] Service is running...
+[02:04:06] Service is running...
+[02:04:09] Service is running...
+[02:04:12] Service is running...
+[02:04:15] Service is running...
+[02:04:18] Service is running...
+
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:04:21] Service is running...
+^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:04:24] Service is running...
+q[02:04:27] Service is running...
+
+[?2004lCommand 'q' not found, but can be installed with:
+sudo snap install q                       # version 1.6.3-1, or
+sudo apt  install python3-q-text-as-data  # version 3.1.6-3
+See 'snap info q' for additional versions.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:04:30] Service is running...
+[02:04:33] Service is running...
+[02:04:36] Service is running...
+^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:04:39] Service is running...
+^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:04:42] Service is running...
+^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:04:45] Service is running...
+[02:04:48] Service is running...
+[?2004l
+exit
+
+Script done on 2026-05-18 02:04:50+01:00 [COMMAND_EXIT_CODE="130"]

@@ -1,0 +1,1056 @@
+Script started on 2026-05-18 02:14:30+01:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ #exe[K[K[Krun/excute the file and send all output o another file, to[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kto another file, to prevent i from displayn[King  on screen
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ [7m./my-service.sh >> service.log 2>&1 &[27m./my-service.sh >> service.log 2>&1 &
+[?2004l[1] 21323
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ # verify the file iss running from PID
+[?2004l[1]+  Exit 127                ./my-service.sh >> service.log 2>&1
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ [7m ps aux | grep my-service[27m ps aux | grep my-service
+[?2004lvalerie    20437  0.2  0.0   4752  3328 ?        S    02:01   0:02 /bin/bash ./[01;31m[Kmy-service[m[K.sh
+valerie    20743  0.2  0.0   4752  3328 ?        S    02:09   0:01 /bin/bash ./[01;31m[Kmy-service[m[K.sh
+valerie    21402  0.0  0.0   4092  1920 pts/13   S+   02:16   0:00 grep --color=auto [01;31m[Kmy-service[m[K
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ [7mtail -f service.log[27mtail -f service.log
+[?2004lbash: ./my-service.sh: No such file or directory
+
+
+
+
+
+
+
+
+^[[A^[[A        pkill -f my-service.shpkill -f my-service.sh                      
+
+
+
+^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ [7mpkill -f my-service.sh[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpkill -f my-service.sh [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kh
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ [7mps aux | grep my-servi[27m[7mc[27m[7me[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ ps aux | grep my-servic[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K# confim[Krm all running  processes of sme name is gone
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ cd process
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7m./my-service.s[27m[7mh[27m[7m >> service.log 2>&1 &[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ./my-service.sh >> service.log 2>&1 &
+[?2004l[1] 21661
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7mps aux | grep [27m[7mm[27m[7my-service[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ps aux | grep my-service
+[?2004lvalerie    21661  0.0  0.0   4752  3200 pts/13   S    02:21   0:00 /bin/bash ./[01;31m[Kmy-service[m[K.sh
+valerie    21671  0.0  0.0   4092  1920 pts/13   S+   02:21   0:00 grep --color=auto [01;31m[Kmy-service[m[K
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7mtail -f servic[27m[7me[27m[7m.log[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ tail -f service.log
+[?2004lService started. PID: 21661
+[02:21:07] Service is running...
+[02:21:10] Service is running...
+[02:21:13] Service is running...
+[02:21:16] Service is running...
+[02:21:19] Service is running...
+[02:21:22] Service is running...
+[02:21:25] Service is running...
+[02:21:28] Service is running...
+[02:21:31] Service is running...
+[02:21:34] Service is running...
+[02:21:35] Service is running...
+[02:21:38] Service is running...
+[02:21:41] Service is running...
+[02:21:44] Service is running...
+[02:21:47] Service is running...
+[02:21:50] Service is running...
+[02:21:53] Service is running...
+^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ format to writ e incidne[K[Kent file
+[?2004lCommand 'format' not found, did you mean:
+  command 'mformat' from deb mtools (4.0.43-1)
+  command 'hformat' from deb hfsutils (3.2.6-15build2)
+Try: sudo apt install <deb name>
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ^[[200~nano ~/devops-learning-journey/phase-1-foundation/linux/incidents/week01-linux.md~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[7mnano ~/devops-[27m[7ml[27m[7mearning-journey/phase-1-foundation/linux/incidents/week01-l[27m[7mi[27m[7mnux.md[27m[A[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ nano ~/devops-learning-journey/phase-1-foundation/linux/incidents/week01-linux.md[A[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ format to write incident file[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ nano ~/devops-learning-journey/phase-1-foundation/linux/incidents/week01-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-1-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd1-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca1-linux.mdy1-linux.md[C51-linux.md[C[C-1-linux.md[C[C[C[1P1-linux.md[C[C[1P1-linux.md[C[C[1P-linux.md[C5-linux.md[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0-day5[1P-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ck0-day5-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-day5[1P-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1-day5-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28d(B[0;1m[37m[41mDirectory '/home/valerie/devops-learning-journey/phase-1-fou[29;1H[39;49m(B[m[H(B[0;7m...-1-foundation/linux/incidents/week1-day5-linux.md        [1;60H(B[m[29d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[30d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[28d[K[1;54H(B[0;7m*[60G(B[m[2d(B[0;1m[33m### Root cause[3d[39m(B[m& detaches process from terminal CONTROL but not from[4dterminal OUTPUT. Output still prints to screen unless[5dyou explicitly redirect it with >> logfile 2>&1.[7d(B[0;1m[33m### What I learned[8d[35m- [39m(B[m& runs in background but output still hits terminal[9d(B[0;1m[35m- [39m(B[m>> service.log 2>&1 redirects output silently to file[10d(B[0;1m[35m- [39m(B[mCtrl+C cannot kill a background process[11d(B[0;1m[35m- [39m(B[mtail -f lets you watch log without flooding terminal[12d(B[0;1m[35m- [39m(B[mAlways redirect output when running background services[14d(B[0;1m[33m---[15d[39m(B[m[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Htail -f service.log[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H./my-service.sh >> service.log 2>&1 &[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HThen restarted with output redirected:[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Hpkill -f my-service.sh[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HOpened new terminal window and ran:[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[35m[02:03:05][39m(B[m Service is running...[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H^C[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[35m[02:03:02][39m(B[m Service is running...[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H^C[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m[02:02:56][39m(B[m Service is running...[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HCtrl+C multiple times did not stop it.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HService output flooded terminal every 3 seconds.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Htype other commands at the same time.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HRunning service in background with & while trying to[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Category:**[39m(B[m Process[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m## INCIDENT-005[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mMultiple instances waste resources and cause confusion[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mps aux | grep name detects orphan processes[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mBackground processes survive Ctrl+C[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mpkill -f name kills ALL matching processes at once[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mAlways kill old instance before starting a new one[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hby Ctrl+C or by starting a new instance.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Hrunning silently. Background processes are not stopped[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hprevious one, a new process started. Old ones kept[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HEach time I ran ./my-service.sh & without killing the[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hps aux | grep my-service     # one clean instance[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H./my-service.sh >> service.log 2>&1 &[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hcd ~/devops-lab/process[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Hps aux | grep my-service     # confirmed all dead[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hpkill -f my-service.sh[30G# killed all at once[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hvalerie 20743 0.2 0.0 /bin/bash ./my-service.sh[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Hvalerie 20437 0.2 0.0 /bin/bash ./my-service.sh[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HPIDs 20437 and 20743 from earlier forgotten sessions.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Hps aux showed TWO instances of my-service.sh running.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hwas running after restarting it.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HRunning ps aux | grep my-service to verify the service[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[32m**Category:**[39m(B[m Process[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m## INCIDENT-004[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mThe prompt shows your current folder after the colon[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[m./filename only works if you are IN that folder[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mAlways pwd before running a script[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mExit 127 = file or command not found[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HExit 127 = command or file not found.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hwithout noticing. Script was not in current directory.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HNavigated away from process/ folder during debugging[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HThen ran the command again and it worked.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HRan: cd ~/devops-lab/process[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H~/devops-lab/process where the script lives.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HRan pwd — discovered I was in ~/devops-lab not[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m[1][39m(B[m+  Exit 127    ./my-service.sh >> service.log 2>&1[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HGot Exit 127 immediately. Service started and died.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HRestarting the service with output redirected to service.log[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Category:**[39m(B[m Navigation[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m## INCIDENT-003[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mScript printing its own code = syntax not interpreted[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mAlways cat the script after writing to verify structure[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [1][39m(B[m+ Done on a forever service = exited immediately[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mBash while loop needs each keyword on its own line[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hreads it as plain text not as a loop.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Hrequires each keyword on its own line. On one line bash[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hwhile/do/done were saved on one line in nano. Bash[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HRan cat my-service.sh to verify before executing.[?25l[?12l[?25h7[2;27r8M[1;30r[2;3Hdone[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[36m    sleep 3[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[36m    echo "[$(date '+%H:%M:%S')] Service is running..."[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;3Hdo[?25l[?12l[?25h7[2;28r8M[1;30r[2;3Hwhile true[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HRewrote in nano with each keyword on its own line:[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HDeleted broken script: rm my-service.sh[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Hwhile true do echo Service is running.... sleep 3 done[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m[1][39m(B[m+ Done    ./my-service.sh[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Himmediately showing (B[0;1m[35m[1][39m(B[m+ Done instead of looping.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HScript printed the while loop as plain text and exited[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hevery 3 seconds indefinitely.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HWriting a while loop in my-service.sh to print a message[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Category:**[39m(B[m Syntax[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m## INCIDENT-002[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mMost common DevOps error on real servers[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mDefault permission for new files is 644, no execute[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mAlways ls -l before executing to check permissions[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[35m- [39m(B[mEvery .sh script needs chmod +x before it can run[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hgranted before running a file as a program.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hdefault. No execute bit. Linux requires x to be explicitly[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HFiles created with nano or touch get 644 permission by[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HThen ran ./my-service.sh again successfully.[?25l[?12l[?25h7[2;28r8M[1;30r[2;1HRan chmod +x my-service.sh to add execute permission.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1Hbash: ./my-service.sh: Permission denied[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HGot Permission denied when trying to execute the script.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1Has a background service.[?25l[?12l[?25h7[2;27r8M[1;30r[2;1HCreating my-service.sh using nano and trying to run it[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[32m**Category:**[39m(B[m Permission[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m## INCIDENT-001[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Date range:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Topic:**[39m(B[m Linux Terminal, Filesystem, Permissions, Process(B[0;7m>[2;1H(B[m[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[32m**Week:**[39m(B[m 01 (Day 01–07)[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Engineer:**[39m(B[m Valerie[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H(B[0;1m[32m**Phase:**[39m(B[m 1 — Foundation[?25l[?12l[?25h7[2;27r8M[1;30r[2;1H[?25l[?12l[?25h7[2;28r8M[1;30r[2;1H(B[0;1m[33m# Incident Log — Week 01: Linux Core System[39m(B[m[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h[25d[?25l[?12l[?25h[26d[?25l[?12l[?25h[27d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRan chmod +x my-service.sh to add execute permission.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HThen ran ./my-service.sh again successfully.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HFiles created with nano or touch get 644 permission by[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hdefault. No execute bit. Linux requires x to be explicitly[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hgranted before running a file as a program.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mEvery .sh script needs chmod +x before it can run[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mAlways ls -l before executing to check permissions[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mDefault permission for new files is 644, no execute[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mMost common DevOps error on real servers[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m## INCIDENT-002[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Category:**[39m(B[m Syntax[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HWriting a while loop in my-service.sh to print a message[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hevery 3 seconds indefinitely.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HScript printed the while loop as plain text and exited[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Himmediately showing (B[0;1m[35m[1][39m(B[m+ Done instead of looping.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m[1][39m(B[m+ Done    ./my-service.sh[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hwhile true do echo Service is running.... sleep 3 done[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HDeleted broken script: rm my-service.sh[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRewrote in nano with each keyword on its own line:[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;3Hwhile true[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;3Hdo[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[36m    echo "[$(date '+%H:%M:%S')] Service is running..."[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[36m    sleep 3[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;3Hdone[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRan cat my-service.sh to verify before executing.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hwhile/do/done were saved on one line in nano. Bash[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hrequires each keyword on its own line. On one line bash[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hreads it as plain text not as a loop.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mBash while loop needs each keyword on its own line[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [1][39m(B[m+ Done on a forever service = exited immediately[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mAlways cat the script after writing to verify structure[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mScript printing its own code = syntax not interpreted[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m## INCIDENT-003[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Category:**[39m(B[m Navigation[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRestarting the service with output redirected to service.log[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HGot Exit 127 immediately. Service started and died.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m[1][39m(B[m+  Exit 127    ./my-service.sh >> service.log 2>&1[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRan pwd — discovered I was in ~/devops-lab not[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H~/devops-lab/process where the script lives.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRan: cd ~/devops-lab/process[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HThen ran the command again and it worked.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HNavigated away from process/ folder during debugging[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hwithout noticing. Script was not in current directory.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HExit 127 = command or file not found.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mExit 127 = file or command not found[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mAlways pwd before running a script[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[m./filename only works if you are IN that folder[?25l[?12l[?25h7[2;28r8[28d[2S[1;30r[26;1H(B[0;1m[35m- [39m(B[mThe prompt shows your current folder after the colon[27d[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m## INCIDENT-004[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Category:**[39m(B[m Process[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRunning ps aux | grep my-service to verify the service[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hwas running after restarting it.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hps aux showed TWO instances of my-service.sh running.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HPIDs 20437 and 20743 from earlier forgotten sessions.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hvalerie 20437 0.2 0.0 /bin/bash ./my-service.sh[?25l[?12l[?25h7[2;28r8[28d[2S[1;30r[26;1Hvalerie 20743 0.2 0.0 /bin/bash ./my-service.sh[27d[?25l[?12l[?25h7[2;28r8[28d[2S[1;30r[26;1H(B[0;1m[33m### What I did to fix it[27d[39m(B[mpkill -f my-service.sh[30G# killed all at once[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hps aux | grep my-service     # confirmed all dead[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hcd ~/devops-lab/process[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H./my-service.sh >> service.log 2>&1 &[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hps aux | grep my-service     # one clean instance[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HEach time I ran ./my-service.sh & without killing the[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hprevious one, a new process started. Old ones kept[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hrunning silently. Background processes are not stopped[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hby Ctrl+C or by starting a new instance.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mAlways kill old instance before starting a new one[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mpkill -f name kills ALL matching processes at once[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mBackground processes survive Ctrl+C[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mps aux | grep name detects orphan processes[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mMultiple instances waste resources and cause confusion[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m## INCIDENT-005[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Date:**[39m(B[m 2025-05-18[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Day:**[39m(B[m 05[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Severity:**[39m(B[m Low[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[32m**Category:**[39m(B[m Process[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I was doing[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HRunning service in background with & while trying to[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Htype other commands at the same time.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What went wrong[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HService output flooded terminal every 3 seconds.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HCtrl+C multiple times did not stop it.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Error message[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m[02:02:56][39m(B[m Service is running...[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H^C[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m[02:03:02][39m(B[m Service is running...[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H^C[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m[02:03:05][39m(B[m Service is running...[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I did to fix it[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HOpened new terminal window and ran:[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hpkill -f my-service.sh[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1HThen restarted with output redirected:[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H./my-service.sh >> service.log 2>&1 &[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Htail -f service.log[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### Root cause[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H& detaches process from terminal CONTROL but not from[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hterminal OUTPUT. Output still prints to screen unless[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1Hyou explicitly redirect it with >> logfile 2>&1.[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m### What I learned[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[m& runs in background but output still hits terminal[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[m>> service.log 2>&1 redirects output silently to file[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mCtrl+C cannot kill a background process[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mtail -f lets you watch log without flooding terminal[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[35m- [39m(B[mAlways redirect output when running background services[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;28r8[28d
+[1;30r[27;1H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[29;13H   (B[0;7mM-D(B[m DOS Format (B[0;7mM-A(B[m Append     (B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel      (B[0;7mM-M(B[m Mac Format (B[0;7mM-P(B[m Prepend    (B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write:<k1-day5-linux.md                        [28;37H(B[m[?12l[?25h[?25l(B[0;1m[37m[41mError writing /home/valerie/devops-learning-journey/phase-1-[29;1H[39;49m(B[m[29;13H(B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut      (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[27d[?25l[28d(B[0;7mSave modified buffer?                                       [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;16H(B[0;7mM-D(B[m DOS Format (B[0;7mM-A(B[m Append     (B[0;7mM-B(B[m Backup File[30;1H(B[0;7m^C(B[m Cancel[16G(B[0;7mM-M(B[m Mac Format (B[0;7mM-P(B[m Prepend    (B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write:<k1-day5-linux.md(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[37m[41mError writing /home/valerie/devops-learning-journey/phase-1-[29;1H[39;49m(B[m[29;13H(B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut      (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[27d[?25l[28d(B[0;7mSave modified buffer?                                       [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No           (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;16H(B[0;7mM-D(B[m DOS Format (B[0;7mM-A(B[m Append     (B[0;7mM-B(B[m Backup File[30;1H(B[0;7m^C(B[m Cancel[16G(B[0;7mM-M(B[m Mac Format (B[0;7mM-P(B[m Prepend    (B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write:<k1-day5-linux.md(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;31r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J[?2004h[?1h=[?1h=(B[0;7m  GNU nano 7.2    /home/valerie/devops-learning-journey/phase-1-foundation/linux/incidents/week1-day5-linux.md *            [1;123H(B[m[2d(B[0;1m[35m[02:03:02][39m(B[m Service is running...[3d^C[4d(B[0;1m[35m[02:03:05][39m(B[m Service is running...[6d(B[0;1m[33m### What I did to fix it[7d[39m(B[mOpened new terminal window and ran:[8dpkill -f my-service.sh[10dThen restarted with output redirected:[11d./my-service.sh >> service.log 2>&1 &[12dtail -f service.log[14d(B[0;1m[33m### Root cause[15d[39m(B[m& detaches process from terminal CONTROL but not from[16dterminal OUTPUT. Output still prints to screen unless[17dyou explicitly redirect it with >> logfile 2>&1.[19d(B[0;1m[33m### What I learned[20d[35m- [39m(B[m& runs in background but output still hits terminal[21d(B[0;1m[35m- [39m(B[m>> service.log 2>&1 redirects output silently to file[22d(B[0;1m[35m- [39m(B[mCtrl+C cannot kill a background process[23d(B[0;1m[35m- [39m(B[mtail -f lets you watch log without flooding terminal[24d(B[0;1m[35m- [39m(B[mAlways redirect output when running background services[26d(B[0;1m[33m---[30d[39m(B[0;7m^G(B[m Help[30;32H(B[0;7mM-D(B[m DOS Format[30;63H(B[0;7mM-A(B[m Append[30;94H(B[0;7mM-B(B[m Backup File[31d(B[0;7m^C(B[m Cancel[31;32H(B[0;7mM-M(B[m Mac Format[31;63H(B[0;7mM-P(B[m Prepend[31;94H(B[0;7m^T(B[m Browse[?25l[29d(B[0;7mFile Name to Write: /home/valerie/devops-learning-journey/phase-1-foundation/linux/incidents/week1-day5-linux.md            [29;113H(B[m[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[37m[41mError writing /home/valerie/devops-learning-journey/phase-1-foundation/linux/incidents/week1-day5-linux.md: No such file or[K[30d[39;49m(B[m[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo       (B[0;7mM-A(B[m Set Mark[31;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy[?12l[?25h[27d[?25l[?12l[?25hu[?25l[?12l[?25hm[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25hu[?25l[?12l[?25hm[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[29;51H[1K (B[0;1m[37m[41m[ Cutbuffer is empty ][39;49m(B[m[K[?12l[?25h[27d[?25l[28d[?12l[?25h[?25l[29d(B[0;7mSave modified buffer?                                                                                                       [30;1H Y(B[m Yes[K[31d(B[0;7m N(B[m No  [31;16H (B[0;7m^C(B[m Cancel[K[29;23H[?12l[?25h[?25l[J[31d[?12l[?25h[31;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7m nano ~/devops-learning-journey/phase-1-foundation/linux/incidents/week1-da[27m
+[7my5-linux.md[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$  nano ~/devops-learning-journey/phase-1-foundation/linux/incidents/week1-da
+y5-linux.md[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pjourney/phase-1-foundation/linux/incidents/week1-da[1Pjourney/phase-1-foundation/linux/incidents/week1-da[C[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Purney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-da[1Pourney/phase-1-foundation/linux/incidents/week1-daDourney/phase-1-foundation/linux/incidents/week1-daeourney/phase-1-foundation/linux/incidents/week1-davourney/phase-1-foundation/linux/incidents/week1-daOourney/phase-1-foundation/linux/incidents/week1-dapourney/phase-1-foundation/linux/incidents/week1-dasourney/phase-1-foundation/linux/incidents/week1-daJourney/phase-1-foundation/linux/incidents/week1-da[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h[?1049h[22;0;0t[1;31r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[29;57H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2               /home/valerie/DevOpsJourney/phase-1-foundation/linux/incidents/week1-da                        [1;123H(B[m[30d(B[0;7m^G(B[m Help[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[31d(B[0;7m^X(B[m Exit[31;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[?12l[?25h[?25l[29d[K[1;102H(B[0;7m*[123G(B[m[2d- Orphan processes and how to clean them[3d- Output redirection: >> file 2>&1[5d**Still need more practice:**[6d- [ ] pwd before every script execution[7d- [ ] kill before starting new instance[8d- [ ] Always redirect output on background services[10d**Biggest lesson of the week:**[11dLinux trusts you completely. No warnings, no undo.[12dCheck before every action.[13dpwd before scripts. ls -l before chmod.[14dps aux before kill. cat before execute.[15dCheck first. Act second. Verify after.[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[12;27H[?25l[?12l[?25h[11;39H[?25l[?12l[?25h[10;32H[?25l[?12l[?25h[A[?25l[?12l[?25h[8;39H[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[5;30H[?25l[?12l[?25h[A[?25l[?12l[?25h[3;35H[?25l[?12l[?25h[An th[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- Exit 127 = file not found[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- Background vs foreground processes[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- Permissions: chmod +x scripts, 644 config, 600 secrets[2;39H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H**Concepts now fully understood:**[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- & — did not redirect output to file[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- & — did not kill old instances first[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- cd — ran script from wrong directory[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- nano — saved while loop on one line[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- chmod — forgot before executing script[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H**Commands that caused problems:**[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H**Total incidents this week:** 5[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[36m## WEEK SUMMARY[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H---[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l- Always redirect output when running background services[?12l[?25h[?25l[?12l[?25h[3;4H[?25l[?12l[?25h[4d[?25l[?12l[?25h[5;16H[?25l[?12l[?25h[6d[?25l[6;29r[29;1H
+[1;31r[28;1HLinux trusts you completely. No warnings, no undo.[5;16H[?12l[?25h[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8;16H[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15;16H[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P*[?25l[?12l[?25h[1P[?25l[14;29r[29;1H
+[1;31r[28;1HCheck before every action.[14d[?12l[?25h[?25l[14;29r[29;1H
+[1;31r[13;38Hfully understood:**[28dpwd before scripts. ls -l before chmod.[13;38H[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[13;29r[29;1H
+[1;31r[12;39Hfully understood:**[28dps aux before kill. cat before execute.[12;39H[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1Pl[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[12;29r[29;1H
+[1;31r[11;39Hfully understood:**[28dCheck first. Act second. Verify after.[11;39H[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[2P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[11;29r[29;1H
+[1;31r[10;38Hfully understood:**[10;38H[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1Po[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[10;29r[29;1H
+[1;31r[9;41Hfully understood:**[9;41H[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[9;29r[29;1H
+[1;31r[8;35Hfully understood:**[8;35H[?12l[?25h[?25l[?12l[?25h[1P*[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1Pm[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P*[?25l[?12l[?25h[1P[?25l[7;29r[29;1H
+[1;31r[7;1H[?12l[?25h[?25l[7;29r[29;1H
+[1;31r[6;33Hfully understood:**[6;33H[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P*[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1Pe[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P*[?25l[?12l[?25h[1P[?25l[6;29r[29;1H
+[1;31r[5;16H[36mfully understood:**[5;16H[39m(B[m[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[C[?25l[?12l[?25h[1P[?25l[?12l[?25h[1P[?25l[?12l[?25h[6d[?25l[?12l[?25hBions: chmod +x scripts, 644 config, 600 secrets[6;11H[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12;11H[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17;11H[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[22;11H[?25l[?12l[?25ht[?25l[?12l[?25h.[?25l[?12l[?25h [?25l[?12l[?25hA[?25l[?12l[?25hc[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h.[?25l[?12l[?25h [?25l[?12l[?25hV[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hi[?25l[?12l[?25hf[?25l[?12l[?25hy[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hf[?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h.[?25l[?12l[?25h[23d[?25l[?12l[?25h[22;39H[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[21;40H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[20;40H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[19;27H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[18;51H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[17;32H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[15;52H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[14;40H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[13;40H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[12;30H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[10;35H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[9;41H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[8;28H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[7;37H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[6;58H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h[K[?25l[5;29H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[A---[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- tail -f lets you watch log without flooding terminal- t[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- Ctrl+C cannot kill a background process- C[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- >> service.log 2>&1 redirects output silently to file- >[?25l[?12l[?25h7[2;29r8[4T[1;31r[2;1Hyou explicitly redirect it with >> logfile 2>&1.[4d[36m### What I learned[5d[39m(B[m- & runs in background but output still hits terminal[2;4H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1Hterminal OUTPUT. Output still prints to screen unlesster[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H& detaches process from terminal CONTROL but not from& d[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[36m### Root cause###[39m(B[m[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1Htail -f service.logtai[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H./my-service.sh >> service.log 2>&1 &./m[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HThen restarted with output redirected:The[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1Hpkill -f my-service.shpki[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HOpened new terminal window and ran:Ope[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[36m### What I did to fix it###[39m(B[m[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[02:03:05] Service is running...[02[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H^C[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[02:03:02] Service is running...[02[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H^C[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[02:02:56] Service is running...[02[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[36m### Error message###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HCtrl+C multiple times did not stop it.Ctr[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HService output flooded terminal every 3 seconds.Ser[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[36m### What went wrong###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Htype other commands at the same time.typ[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HRunning service in background with & while trying toRun[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[36m### What I was doing###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H**Category:** Process**C[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H**Severity:** Low**S[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H**Day:** 05**D[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H**Date:** 2025-05-18**D[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[36m## INCIDENT-005## [39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H---[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H- Multiple instances waste resources and cause confusion- M[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H- ps aux | grep name detects orphan processes- p[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H- Background processes survive Ctrl+C- B[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H- pkill -f name kills ALL matching processes at once- p[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H- Always kill old instance before starting a new one- A[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[36m### What I learned###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hby Ctrl+C or by starting a new instance.by [?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hrunning silently. Background processes are not stoppedrun[?25l[?12l[?25h7[2;29r8M[1;31r[2;1Hprevious one, a new process started. Old ones keptpre[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HEach time I ran ./my-service.sh & without killing theEac[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[36m### Root cause###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1Hps aux | grep my-service     # one clean instanceps [?25l[?12l[?25h7[2;28r8M[1;31r[2;1H./my-service.sh >> service.log 2>&1 &./m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hcd ~/devops-lab/processcd [?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hps aux | grep my-service     # confirmed all deadps [?25l[?12l[?25h7[2;29r8M[1;31r[2;1Hpkill -f my-service.sh[30G# killed all at oncepki[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[36m### What I did to fix it###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hvalerie 20743 0.2 0.0 /bin/bash ./my-service.shval[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hvalerie 20437 0.2 0.0 /bin/bash ./my-service.shval[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[36m### Error message###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HPIDs 20437 and 20743 from earlier forgotten sessions.PID[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hps aux showed TWO instances of my-service.sh running.ps [?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[36m### What went wrong###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hwas running after restarting it.was[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HRunning ps aux | grep my-service to verify the serviceRun[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[36m### What I was doing###[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H**Category:** Process**C[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H**Severity:** Low**S[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H**Day:** 05**D[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H**Date:** 2025-05-18**D[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[30;16H[16X[30;32H(B[0;7mM-D(B[m DOS Format      [30;61H  (B[0;7mM-A(B[m Append[21X[30;94H(B[0;7mM-B(B[m Backup File[K[31;2H(B[0;7mC(B[m Cancel[16G[16X[31;32H(B[0;7mM-M(B[m Mac Format        [61G  (B[0;7mM-P(B[m Prepend[20X[31;94H(B[0;7m^T(B[m Browse[K[29d(B[0;7mFile Name to Write: /home/valerie/DevOpsJourney/phase-1-foundation/linux/incidents/week1-da                                 [29;92H(B[m[?12l[?25h[?25l[29;55H[1K (B[0;7m[ Writing... ](B[m[K[1;102H(B[0;7m [123G(B[m[29;53H(B[0;7m[ Wrote 204 lines ](B[m[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo       (B[0;7mM-A(B[m Set Mark[31;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy[?12l[?25h[2d[?25l[29d[J[31d[?12l[?25h[31;1H[?1049l[23;0;0t[?1l>[?2004ly5-linux.md: command not found
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ CAT[K[K[Kcat [7m ~/DevOpsJourney/phase-1-foundation/linux/incidents/week1-da[27m
+[7my5-linux.md[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [C[C[C[C ~/DevOpsJourney/phase-1-foundation/linux/incidents/week1-da
+y5-linux.md
+[?2004l# Incident Log — Week 01: Linux Core System
+
+**Phase:** 1 — Foundation
+**Engineer:** Valerie
+**Week:** 01 (Day 01–07)
+**Topic:** Linux Terminal, Filesystem, Permissions, Processes
+**Date range:** 2025-05-18
+
+---
+
+## INCIDENT-001
+
+**Date:** 2025-05-18
+**Day:** 05
+**Severity:** Low
+**Category:** Permission
+
+### What I was doing
+Creating my-service.sh using nano and trying to run it
+as a background service.
+
+### What went wrong
+Got Permission denied when trying to execute the script.
+
+### Error message
+bash: ./my-service.sh: Permission denied
+
+### What I did to fix it
+Ran chmod +x my-service.sh to add execute permission.
+Then ran ./my-service.sh again successfully.
+
+### Root cause
+Files created with nano or touch get 644 permission by
+default. No execute bit. Linux requires x to be explicitly
+granted before running a file as a program.
+
+### What I learned
+- Every .sh script needs chmod +x before it can run
+- Always ls -l before executing to check permissions
+- Default permission for new files is 644, no execute
+- Most common DevOps error on real servers
+
+---
+
+## INCIDENT-002
+
+**Date:** 2025-05-18
+**Day:** 05
+**Severity:** Low
+**Category:** Syntax
+
+### What I was doing
+Writing a while loop in my-service.sh to print a message
+every 3 seconds indefinitely.
+
+### What went wrong
+Script printed the while loop as plain text and exited
+immediately showing [1]+ Done instead of looping.
+
+### Error message
+[1]+ Done    ./my-service.sh
+while true do echo Service is running.... sleep 3 done
+
+### What I did to fix it
+Deleted broken script: rm my-service.sh
+Rewrote in nano with each keyword on its own line:
+  while true
+  do
+    echo "[$(date '+%H:%M:%S')] Service is running..."
+    sleep 3
+  done
+Ran cat my-service.sh to verify before executing.
+
+### Root cause
+while/do/done were saved on one line in nano. Bash
+requires each keyword on its own line. On one line bash
+reads it as plain text not as a loop.
+
+### What I learned
+- Bash while loop needs each keyword on its own line
+- [1]+ Done on a forever service = exited immediately
+- Always cat the script after writing to verify structure
+- Script printing its own code = syntax not interpreted
+
+---
+
+## INCIDENT-003
+
+**Date:** 2025-05-18
+**Day:** 05
+**Severity:** Low
+**Category:** Navigation
+
+### What I was doing
+Restarting the service with output redirected to service.log
+
+### What went wrong
+Got Exit 127 immediately. Service started and died.
+
+### Error message
+[1]+  Exit 127    ./my-service.sh >> service.log 2>&1
+
+### What I did to fix it
+Ran pwd — discovered I was in ~/devops-lab not
+~/devops-lab/process where the script lives.
+Ran: cd ~/devops-lab/process
+Then ran the command again and it worked.
+
+### Root cause
+Navigated away from process/ folder during debugging
+without noticing. Script was not in current directory.
+Exit 127 = command or file not found.
+
+### What I learned
+- Exit 127 = file or command not found
+- Always pwd before running a script
+- ./filename only works if you are IN that folder
+- The prompt shows your current folder after the colon
+
+---
+
+## INCIDENT-004
+
+**Date:** 2025-05-18
+**Day:** 05
+**Severity:** Low
+**Category:** Process
+
+### What I was doing
+Running ps aux | grep my-service to verify the service
+was running after restarting it.
+
+### What went wrong
+ps aux showed TWO instances of my-service.sh running.
+PIDs 20437 and 20743 from earlier forgotten sessions.
+
+### Error message
+valerie 20437 0.2 0.0 /bin/bash ./my-service.sh
+valerie 20743 0.2 0.0 /bin/bash ./my-service.sh
+
+### What I did to fix it
+pkill -f my-service.sh       # killed all at once
+ps aux | grep my-service     # confirmed all dead
+cd ~/devops-lab/process
+./my-service.sh >> service.log 2>&1 &
+ps aux | grep my-service     # one clean instance
+
+### Root cause
+Each time I ran ./my-service.sh & without killing the
+previous one, a new process started. Old ones kept
+running silently. Background processes are not stopped
+by Ctrl+C or by starting a new instance.
+
+### What I learned
+- Always kill old instance before starting a new one
+- pkill -f name kills ALL matching processes at once
+- Background processes survive Ctrl+C
+- ps aux | grep name detects orphan processes
+- Multiple instances waste resources and cause confusion
+
+---
+
+## INCIDENT-005
+
+**Date:** 2025-05-18
+**Day:** 05
+**Severity:** Low
+**Category:** Process
+
+### What I was doing
+Running service in background with & while trying to
+type other commands at the same time.
+
+### What went wrong
+Service output flooded terminal every 3 seconds.
+Ctrl+C multiple times did not stop it.
+
+### Error message
+[02:02:56] Service is running...
+^C
+[02:03:02] Service is running...
+^C
+[02:03:05] Service is running...
+
+### What I did to fix it
+Opened new terminal window and ran:
+pkill -f my-service.sh
+
+Then restarted with output redirected:
+./my-service.sh >> service.log 2>&1 &
+tail -f service.log
+
+### Root cause
+& detaches process from terminal CONTROL but not from
+terminal OUTPUT. Output still prints to screen unless
+you explicitly redirect it with >> logfile 2>&1.
+
+### What I learned
+- & runs in background but output still hits terminal
+- >> service.log 2>&1 redirects output silently to file
+- Ctrl+C cannot kill a background process
+- tail -f lets you watch log without flooding terminal
+- Always redirect output when running background services
+---
+y5-linux.md: command not found
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ # o[Kmultiple way to[K[K[Ks to kill a proces [Ks
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ # foreground kill
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ fg[K[K.sh[K[K[K./my-service.log
+[?2004lbash: ./my-service.log: No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ./myservice [K.sh
+[?2004lbash: ./myservice.sh: No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ./my-service.sh
+[?2004lService started. PID: 22687
+[02:44:26] Service is running...
+[02:44:29] Service is running...
+[02:44:32] Service is running...
+^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #foreground kill is executed using ctrl + c
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #bacj[Kkground kill
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ .[K[7m./my-service.sh[27m./my-service.sh
+[?2004lService started. PID: 22727
+[02:45:13] Service is running...
+[02:45:16] Service is running...
+[02:45:19] Service is running...
+[02:45:22] Service is running...
+[02:45:25] Service is running...
+[02:45:28] Service is running...
+[02:45:31] Service is running...
+[02:45:34] Service is running...
+[02:45:37] Service is running...
+[02:45:40] Service is running...
+[02:45:43] Service is running...
+[02:45:46] Service is running...
+[02:45:49] Service is running...
+[02:45:52] Service is running...
+[02:45:55] Service is running...
+[02:45:58] Service is running...
+[02:46:01] Service is running...
+[02:46:04] Service is running...
+[02:46:07] Service is running...
+[02:46:10] Service is running...
+./my-service.sh >> service.log 2>&1 &[02:46:13] Service is running...
+[02:46:16] Service is running...
+[02:46:19] Service is running...
+[02:46:22] Service is running...
+^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7m./my-service.sh >> service.log 2>&1 &[27m./my-service.sh >> service.log 2>&1 &
+[?2004l[2] 22824
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ #bac[K[K[K[Kkill 22824
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ # background kill is executed using Kill [K[K[K[K[Kl[Kkill PID
+[?2004l[2]+  Terminated              ./my-service.sh >> service.log 2>&1
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ k[K# force kill when a progress ignores kill and is still running
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ./my-service.sh &
+[?2004l[2] 22925
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ Service started. PID: 22925
+[02:48:30] Service is running...
+^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:48:33] Service is running...
+[02:48:37] Service is running...
+
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7mkill -9 2119[27mkill -9 2119
+[?2004lbash: kill: (2119) - No such process
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [02:48:40] Service is running...
+[02:48:43] Service is running...
+
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7mkill -9 2119[27m[1Pkill -9 211[K[K[02:48:46] Service is running...
+[K[02:48:49] Service is running...
+[02:48:52] Service is running...
+[02:48:55] Service is running...
+[02:48:58] Service is running...
+[02:49:01] Service is running...
+[02:49:04] Service is running...
+[02:49:07] Service is running...
+[02:49:10] Service is running...
+[02:49:13] Service is running...
+[02:49:16] Service is running...
+[02:49:19] Service is running...
+
+[?2004lkill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ [7mkill -9 22925[27m[02:49:22] Service is running...
+kill -9 22925
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ # Debug
+[?2004l[2]+  Killed                  ./my-service.sh
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ px [K[Ks aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3  22208 12916 ?        Ss   May16   1:24 /sbin/init
+root           2  0.0  0.0   3120  2176 ?        Sl   May16   0:06 /init
+root           6  0.0  0.0   3136  1876 ?        Sl   May16   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pi
+root          61  0.6  0.4  83352 19388 ?        S<s  May16  11:34 /usr/lib/systemd/systemd-journald
+root         114  0.0  0.1  25276  6272 ?        Ss   May16   0:25 /usr/lib/systemd/systemd-udevd
+systemd+     139  0.0  0.3  21460 12416 ?        Ss   May16   0:06 /usr/lib/systemd/systemd-resolved
+systemd+     148  0.0  0.1  91028  7680 ?        Ssl  May16   0:18 /usr/lib/systemd/systemd-timesyncd
+root         174  0.0  0.0   4236  2432 ?        Ss   May16   0:01 /usr/sbin/cron -f -P
+message+     175  0.0  0.1   9700  4736 ?        Ss   May16   0:42 @dbus-daemon --system --address=systemd: --nofork --nopid
+root         186  0.0  0.2  18156  8192 ?        Ss   May16   0:16 /usr/lib/systemd/systemd-logind
+root         189  0.0  0.3 1904456 14696 ?       Ssl  May16   0:27 /usr/libexec/wsl-pro-service -vv
+syslog       192  0.0  0.1 222508  5632 ?        Ssl  May16   0:09 /usr/sbin/rsyslogd -n -iNONE
+root         196  0.0  0.0   3160  1920 hvc0     Ss+  May16   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,3
+root         200  0.0  0.0   3116  1792 tty1     Ss+  May16   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         219  0.0  0.5 107020 22400 ?        Ssl  May16   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattende
+root         321  0.0  0.1   6696  4224 pts/1    Ss   May16   0:00 /bin/login -f
+valerie      371  0.0  0.2  20108 11008 ?        Ss   May16   0:08 /usr/lib/systemd/systemd --user
+valerie      372  0.0  0.0  21152  3516 ?        S    May16   0:00 (sd-pam)
+valerie      400  0.0  0.1   6056  4864 pts/1    S+   May16   0:00 -bash
+root         535  0.0  0.1   6668  4096 pts/3    Ss   May16   0:00 /bin/login -f
+root         583  0.0  0.2  20320 11136 ?        Ss   May16   0:09 /usr/lib/systemd/systemd --user
+root         584  0.0  0.0  21160  3380 ?        S    May16   0:00 (sd-pam)
+root         605  0.0  0.1   6072  4992 pts/3    S+   May16   0:00 -bash
+polkitd     3742  0.0  0.1 308164  7808 ?        Ssl  May17   0:05 /usr/lib/polkit-1/polkitd --no-debug
+root        3834  0.0  0.0   3128   900 ?        Ss   May17   0:00 /init
+root        3835  0.0  0.0   3144  1160 ?        S    May17   0:01 /init
+valerie     3838  0.0  0.1   6072  5120 pts/4    Ss+  May17   0:02 -bash
+root        6868  0.0  0.0   3128   900 ?        Ss   May17   0:00 /init
+root        6869  0.0  0.0   3144  1160 ?        S    May17   0:00 /init
+valerie     6875  0.0  0.1   6072  5248 pts/0    Ss+  May17   0:00 -bash
+root       12344  0.0  0.0   3128   900 ?        Ss   May17   0:00 /init
+root       12346  0.0  0.0   3144  1160 ?        S    May17   0:01 /init
+valerie    12349  0.0  0.1   6072  5248 pts/2    Ss+  May17   0:01 -bash
+root       12949  0.0  0.0   3128   900 ?        Ss   May17   0:00 /init
+root       12951  0.0  0.0   3144  1288 ?        S    May17   0:00 /init
+valerie    12955  0.0  0.1   6072  5248 pts/5    Ss+  May17   0:00 -bash
+root       15466  0.0  0.0   3128   900 ?        Ss   May17   0:00 /init
+root       15467  0.0  0.0   3144  1160 ?        S    May17   0:02 /init
+valerie    15471  0.0  0.1   6072  4992 pts/8    Ss   May17   0:00 -bash
+valerie    15622  0.0  0.0   3144  2048 pts/8    S+   May17   0:02 script /home/valerie/devops-lab/logs/terminal_log/day4_te
+valerie    15623  0.0  0.1   6076  5120 pts/9    Ss   May17   0:00 bash -i
+root       17436  0.0  0.1   7232  4644 pts/9    S    May17   0:00 su -- devopsuser
+devopsu+   17449  0.0  0.2  20444 11136 ?        Ss   May17   0:00 /usr/lib/systemd/systemd --user
+devopsu+   17450  0.0  0.0  21156  3516 ?        S    May17   0:00 (sd-pam)
+devopsu+   17470  0.0  0.1   6076  4864 pts/9    S    May17   0:00 bash
+root       17566  0.0  0.1  14152  6784 pts/9    S+   May17   0:01 sudo su -- devopsuser
+root       17567  0.0  0.0  14152  2480 pts/6    Ss   May17   0:00 sudo su -- devopsuser
+root       17568  0.0  0.1   6800  4224 pts/6    S    May17   0:00 su -- devopsuser
+devopsu+   17569  0.0  0.1   6072  5120 pts/6    S    May17   0:00 bash
+root       17966  0.0  0.1  14316  7120 pts/6    S+   May17   0:01 sudo su - valerie
+root       17979  0.0  0.0  14316  2536 pts/7    Ss   May17   0:00 sudo su - valerie
+root       17980  0.0  0.1   6952  4352 pts/7    S    May17   0:00 su - valerie
+valerie    17981  0.0  0.1   6072  5248 pts/7    S+   May17   0:00 -bash
+root       20306  0.0  0.0   3128  1028 ?        Ss   01:23   0:00 /init
+root       20307  0.0  0.0   3144  1160 ?        S    01:23   0:02 /init
+valerie    20310  0.0  0.1   6072  5248 pts/10   Ss   01:23   0:00 -bash
+valerie    21190  0.0  0.0   3144  2048 pts/10   S+   02:12   0:01 script /home/valerie/devops-lab/logs/terminal_log/day5_lo
+valerie    21191  0.0  0.1   6336  5376 pts/13   Ss   02:12   0:00 bash -i
+valerie    21661  0.1  0.0   4752  3200 pts/13   S    02:20   0:03 /bin/bash ./my-service.sh
+valerie    23073  0.0  0.0   3124  1664 pts/13   S    02:51   0:00 sleep 3
+valerie    23074  200  0.1   8280  4096 pts/13   R+   02:51   0:00 ps aux
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ ps grep[K[K[K[Kaux | grep my-sevi[K[Krvice
+[?2004lvalerie    21661  0.2  0.0   4752  3200 pts/13   S    02:19   0:06 /bin/bash ./[01;31m[Kmy-service[m[K.sh
+valerie    23656  100  0.0   4092  1920 pts/13   S+   03:05   0:00 grep --color=auto [01;31m[Kmy-service[m[K
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/process[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/process[00m$ top
+[?2004l[?1h=[?25l[H[2J(B[mtop - 03:06:04 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  61 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  60 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  8.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 91.4 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3307.7 (B[m[39;49mfree,(B[m[39;49m[1m    514.5 (B[m[39;49mused,(B[m[39;49m[1m    177.4 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3342.8 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                              (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.28 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    605 root      20   0    6072   4992   3456 S   0.0   0.1   0:00.07 bash                                                 (B[m[39;49m[K
+(B[m   3742 polkitd   20   0  308164   7808   7040 S   0.0   0.2   0:05.36 polkitd                                              (B[m[39;49m[K[H(B[mtop - 03:06:07 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.2 (B[m[39;49mus,(B[m[39;49m[1m  0.2 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.6 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3307.7 (B[m[39;49mfree,(B[m[39;49m[1m    514.4 (B[m[39;49mused,(B[m[39;49m[1m    177.4 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.7   0.1   0:00.06 top                                                  (B[m[39;49m[K
+(B[m  20307 root      20   0    3144   1160   1024 S   0.3   0.0   0:02.38 Relay(20310)                                         (B[m[39;49m[K
+(B[m  21661 valerie   20   0    4752   3200   2944 S   0.3   0.1   0:06.33 my-service.sh                                        (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.28 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K[H(B[mtop - 03:06:10 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.5 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.1 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3307.2 (B[m[39;49mfree,(B[m[39;49m[1m    514.9 (B[m[39;49mused,(B[m[39;49m[1m    177.4 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3342.3 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.7   0.1   0:00.08 top                                                  (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.28 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    605 root      20   0    6072   4992   3456 S   0.0   0.1   0:00.07 bash                                                 (B[m[39;49m[K[H(B[mtop - 03:06:13 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3306.0 (B[m[39;49mfree,(B[m[39;49m[1m    516.1 (B[m[39;49mused,(B[m[39;49m[1m    177.4 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3341.1 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.3   0.1   0:00.09 top                                                  (B[m[39;49m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 03:06:16 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.2 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.6 (B[m[39;49mid,(B[m[39;49m[1m  0.1 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.1 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3305.8 (B[m[39;49mfree,(B[m[39;49m[1m    516.3 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3340.9 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.7   0.1   0:00.11 top                                                  (B[m[39;49m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 03:06:19 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.2 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.6 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.1 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m  21661 valerie   20   0    4752   3200   2944 S   0.3   0.1   0:06.34 my-service.sh                                        (B[m[39;49m[K
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.3   0.1   0:00.12 top                                                  (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.28 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K[H(B[mtop - 03:06:22 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.2 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.6 (B[m[39;49mid,(B[m[39;49m[1m  0.1 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3305.3 (B[m[39;49mfree,(B[m[39;49m[1m    516.8 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3340.4 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.28 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    605 root      20   0    6072   4992   3456 S   0.0   0.1   0:00.07 bash                                                 (B[m[39;49m[K
+(B[m   3742 polkitd   20   0  308164   7808   7040 S   0.0   0.2   0:05.36 polkitd                                              (B[m[39;49m[K[H(B[mtop - 03:06:25 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.6 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.7   0.1   0:00.14 top                                                  (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.28 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    605 root      20   0    6072   4992   3456 S   0.0   0.1   0:00.07 bash                                                 (B[m[39;49m[K[H(B[mtop - 03:06:28 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.1 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3304.8 (B[m[39;49mfree,(B[m[39;49m[1m    517.3 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3339.9 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m  21190 valerie   20   0    3144   2048   1920 S   0.7   0.1   0:02.02 script                                               (B[m[39;49m[K
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.7   0.1   0:00.16 top                                                  (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.3   0.3   1:24.29 systemd                                              (B[m[39;49m[K
+(B[m  21661 valerie   20   0    4752   3200   2944 S   0.3   0.1   0:06.35 my-service.sh                                        (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K[H(B[mtop - 03:06:31 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.2 (B[m[39;49mus,(B[m[39;49m[1m  0.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.2 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.1 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+
+
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.7   0.1   0:00.18 top                                                  (B[m[39;49m[K
+(B[m  20307 root      20   0    3144   1160   1024 S   0.3   0.0   0:02.39 Relay(20310)                                         (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.29 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K[H(B[mtop - 03:06:34 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.2 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.1 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3304.6 (B[m[39;49mfree,(B[m[39;49m[1m    517.5 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3339.7 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m  21661 valerie   20   0    4752   3200   2944 S   0.3   0.1   0:06.36 my-service.sh                                        (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.29 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    605 root      20   0    6072   4992   3456 S   0.0   0.1   0:00.07 bash                                                 (B[m[39;49m[K[H(B[mtop - 03:06:37 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.5 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.4 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3304.3 (B[m[39;49mfree,(B[m[39;49m[1m    517.8 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3339.5 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.7   0.1   0:00.20 top                                                  (B[m[39;49m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[H(B[mtop - 03:06:37 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  61 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  60 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  1.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3304.3 (B[m[39;49mfree,(B[m[39;49m[1m    517.8 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3339.5 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                              (B[m[39;49m[K
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   3.8   0.1   0:00.21 top                                                  (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.29 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    605 root      20   0    6072   4992   3456 S   0.0   0.1   0:00.07 bash                                                 (B[m[39;49m[K[H(B[mtop - 03:06:40 up 1 day,  5:58,  3 users,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.6 (B[m[39;49mid,(B[m[39;49m[1m  0.1 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3304.1 (B[m[39;49mfree,(B[m[39;49m[1m    518.0 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3339.2 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m  21661 valerie   20   0    4752   3200   2944 S   0.3   0.1   0:06.37 my-service.sh                                        (B[m[39;49m[K
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.3   0.1   0:00.22 top                                                  (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.29 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    583 root      20   0   20320  11136   9088 S   0.0   0.3   0:09.76 systemd                                              (B[m[39;49m[K
+(B[m    584 root      20   0   21160   3380   1664 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K[H(B[mtop - 03:06:43 up 1 day,  5:58,  3 users,  load average: 0.08, 0.02, 0.01(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.1 (B[m[39;49mus,(B[m[39;49m[1m  0.5 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.4 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m (B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3857.2 (B[m[39;49mtotal,(B[m[39;49m[1m   3303.8 (B[m[39;49mfree,(B[m[39;49m[1m    518.2 (B[m[39;49mused,(B[m[39;49m[1m    177.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m (B[m[39;49m(B[m    (B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   3339.0 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m[1m  23681 valerie   20   0    9272   5376   3328 R   0.3   0.1   0:00.23 top                                                  (B[m[39;49m[K
+(B[m      1 root      20   0   22208  12916   9332 S   0.0   0.3   1:24.29 systemd                                              (B[m[39;49m[K
+(B[m      2 root      20   0    3120   2176   2048 S   0.0   0.1   0:06.84 init-systemd(Ub                                      (B[m[39;49m[K
+(B[m      6 root      20   0    3136   1876   1792 S   0.0   0.0   0:00.00 init                                                 (B[m[39;49m[K
+(B[m     61 root      19  -1   83352  19388  18236 S   0.0   0.5  11:34.98 systemd-journal                                      (B[m[39;49m[K
+(B[m    114 root      20   0   25276   6272   4864 S   0.0   0.2   0:25.21 systemd-udevd                                        (B[m[39;49m[K
+(B[m    139 systemd+  20   0   21460  12416  10368 S   0.0   0.3   0:06.20 systemd-resolve                                      (B[m[39;49m[K
+(B[m    148 systemd+  20   0   91028   7680   6784 S   0.0   0.2   0:18.26 systemd-timesyn                                      (B[m[39;49m[K
+(B[m    174 root      20   0    4236   2432   2304 S   0.0   0.1   0:01.34 cron                                                 (B[m[39;49m[K
+(B[m    175 message+  20   0    9700   4736   4224 S   0.0   0.1   0:42.88 dbus-daemon                                          (B[m[39;49m[K
+(B[m    186 root      20   0   18156   8192   7296 S   0.0   0.2   0:16.96 systemd-logind                                       (B[m[39;49m[K
+(B[m    189 root      20   0 1904456  14696  11264 S   0.0   0.4   0:27.66 wsl-pro-service                                      (B[m[39;49m[K
+(B[m    192 syslog    20   0  222508   5632   4352 S   0.0   0.1   0:09.39 rsyslogd                                             (B[m[39;49m[K
+(B[m    196 root      20   0    3160   1920   1792 S   0.0   0.0   0:00.06 agetty                                               (B[m[39;49m[K
+(B[m    200 root      20   0    3116   1792   1664 S   0.0   0.0   0:00.02 agetty                                               (B[m[39;49m[K
+(B[m    219 root      20   0  107020  22400  13184 S   0.0   0.6   0:00.45 unattended-upgr                                      (B[m[39;49m[K
+(B[m    321 root      20   0    6696   4224   3712 S   0.0   0.1   0:00.02 login                                                (B[m[39;49m[K
+(B[m    371 valerie   20   0   20108  11008   9088 S   0.0   0.3   0:08.12 systemd                                              (B[m[39;49m[K
+(B[m    372 valerie   20   0   21152   3516   1792 S   0.0   0.1   0:00.00 (sd-pam)                                             (B[m[39;49m[K
+(B[m    400 valerie   20   0    6056   4864   3456 S   0.0   0.1   0:00.16 bash                                                 (B[m[39;49m[K
+(B[m    535 root      20   0    6668   4096   3456 S   0.0   0.1   0:00.00 login                                                (B[m[39;49m[K
+(B[m    5

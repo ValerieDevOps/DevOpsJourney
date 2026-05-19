@@ -1,0 +1,522 @@
+Script started on 2026-05-19 16:25:18+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # install nginx
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$  sudo apt install nginx -y
+[?2004l[sudo] password for valerie: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 95 not upgraded.
+Need to get 566 kB of archives.
+After this operation, 1598 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m                                     Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx-common all 1.24.0-2ubuntu7.8
+[33m                                     0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m                                     Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx amd64 1.24.0-2ubuntu7.8
+[33m                                     0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m                                     0% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx-common all 1.24.0-2ubuntu7.8 [43.9 kB]
+[33m6% [1 nginx-common 39.0 kB/43.9 kB 89%][0m[33m                                       16% [Working][0m             Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx amd64 1.24.0-2ubuntu7.8 [522 kB]
+[33m19% [2 nginx 18.4 kB/522 kB 4%][0m[33m75% [2 nginx 419 kB/522 kB 80%][0m[33m                               100% [Working][0m              Fetched 566 kB in 52s (10.8 kB/s)
+Preconfiguring packages ...
+
+7[0;30r8[1ASelecting previously unselected package nginx-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40740 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7.8_all.deb ...
+7[31;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[31;0f[42m[30mProgress: [ 11%][49m[39m [###########...........................................................................................] 8Unpacking nginx-common (1.24.0-2ubuntu7.8) ...
+7[31;0f[42m[30mProgress: [ 22%][49m[39m [######################................................................................................] 8Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7.8_amd64.deb ...
+7[31;0f[42m[30mProgress: [ 33%][49m[39m [#################################.....................................................................] 8Unpacking nginx (1.24.0-2ubuntu7.8) ...
+7[31;0f[42m[30mProgress: [ 44%][49m[39m [#############################################.........................................................] 8Setting up nginx-common (1.24.0-2ubuntu7.8) ...
+7[31;0f[42m[30mProgress: [ 56%][49m[39m [########################################################..............................................] 8Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr/lib/systemd/system/nginx.service.
+7[31;0f[42m[30mProgress: [ 67%][49m[39m [###################################################################...................................] 8Setting up nginx (1.24.0-2ubuntu7.8) ...
+7[31;0f[42m[30mProgress: [ 78%][49m[39m [###############################################################################.......................] 8 * Upgrading binary nginx       [124G [118G[ OK ]
+7[31;0f[42m[30mProgress: [ 89%][49m[39m [##########################################################################################............] 8Processing triggers for man-db (2.12.0-4build2) ...
+
+7[0;31r8[1A[J[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt install python3 -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+python3 is already the newest version (3.12.3-0ubuntu2.1).
+python3 set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 95 not upgraded.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # check nginx is active and running
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ systemctl status nginx
+[?2004l[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (]8;;file://DESKTOP-MNEU0P5/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Tue 2026-05-19 16:27:08 WAT; 1min 32s ago[m
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;[m
+    Process: 643 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 645 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 675 (nginx)[m
+      Tasks: 5 (limit: 4616)[m
+     Memory: 3.7M (peak: 8.6M)[m
+        CPU: 107ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─[0;38;5;245m675 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             ├─[0;38;5;245m677 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m678 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m679 "nginx: worker process"[0m[m
+             └─[0;38;5;245m680 "nginx: worker process"[0m[m
+[m
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv[m[7m>[27m
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve[m[7m>[27m
+[7mlines 1-19/19 (END)[27m[K[K[K[7mlines 1-19/19 (END)[27m[K[K[K[7mlines 1-19/19 (END)[27m[K[K...skipping...
+[m
+                   [1mSUMMARY[0m [1mOF[0m [1mLESS[0m [1mCOMMANDS[0m[m
+[m
+      Commands marked with * may be preceded by a number, [4mN[24m.[m
+      Notes in parentheses indicate the behavior if [4mN[24m is given.[m
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.[m
+[m
+  h  H                 Display this help.[m
+  q  :q  Q  :Q  ZZ     Exit.[m
+ ---------------------------------------------------------------------------[m
+[m
+                           [1mMOVING[0m[m
+[m
+  e  ^E  j  ^N  CR  *  Forward  one line   (or [4mN[24m lines).[m
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or [4mN[24m lines).[m
+  f  ^F  ^V  SPACE  *  Forward  one window (or [4mN[24m lines).[m
+  b  ^B  ESC-v      *  Backward one window (or [4mN[24m lines).[m
+  z                 *  Forward  one window (and set window to [4mN[24m).[m
+  w                 *  Backward one window (and set window to [4mN[24m).[m
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.[m
+  d  ^D             *  Forward  one half-window (and set half-window to [4mN[24m).[m
+  u  ^U             *  Backward one half-window (and set half-window to [4mN[24m).[m
+  ESC-)  RightArrow *  Right one half screen width (or [4mN[24m positions).[m
+  ESC-(  LeftArrow  *  Left  one half screen width (or [4mN[24m positions).[m
+  ESC-}  ^RightArrow   Right to last column displayed.[m
+  ESC-{  ^LeftArrow    Left  to first column.[m
+  F                    Forward forever; like "tail -f".[m
+  ESC-F                Like F but stop when search pattern is found.[m
+  r  ^R  ^L            Repaint screen.[m
+  R                    Repaint screen, discarding buffered input.[m
+[7mHELP -- Press RETURN for more, or q when done[27m[K...skipping...
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (]8;;file://DESKTOP-MNEU0P5/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Tue 2026-05-19 16:27:08 WAT; 1min 32s ago[m
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;[m
+    Process: 643 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+    Process: 645 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 675 (nginx)[m
+      Tasks: 5 (limit: 4616)[m
+     Memory: 3.7M (peak: 8.6M)[m
+        CPU: 107ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─[0;38;5;245m675 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             ├─[0;38;5;245m677 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m678 "nginx: worker process"[0m[m
+             ├─[0;38;5;245m679 "nginx: worker process"[0m[m
+             └─[0;38;5;245m680 "nginx: worker process"[0m[m
+[m
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv[m[7m>[27m
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve[m[7m>[27m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-19/19 (END)[27m[K[K[?1l>
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ Break[K[K[K[K[K#Break
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # Remoe[Kve nginx
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt remove nginx
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following package was automatically installed and is no longer required:
+  nginx-common
+Use 'sudo apt autoremove' to remove it.
+The following packages will be REMOVED:
+  nginx
+0 upgraded, 0 newly installed, 1 to remove and 95 not upgraded.
+After this operation, 1353 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;30r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40790 files and directories currently installed.)
+Removing nginx (1.24.0-2ubuntu7.8) ...
+7[31;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[31;0f[42m[30mProgress: [ 33%][49m[39m [#################################.....................................................................] 87[31;0f[42m[30mProgress: [ 67%][49m[39m [###################################################################...................................] 8Processing triggers for man-db (2.12.0-4build2) ...
+
+7[0;31r8[1A[J[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # c[Kremove[King nginx may le[K[Ksill leave configuration files
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # check if configuraion file stills[K s[Kexists
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls et[K[K/etcc[K/nginx/
+[?2004l[0m[01;34mconf.d[0m        fastcgi_params  koi-win     [01;34mmodules-available[0m  nginx.conf    scgi_params      [01;34msites-enabled[0m  uwsgi_params
+fastcgi.conf  koi-utf         mime.types  [01;34mmodules-enabled[0m    proxy_params  [01;34msites-available[0m  [01;34msnippets[0m       win-utf
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # configa[Kuration file still exist
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # complete remove of nginx including configuration
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt purge nginx
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+Package 'nginx' is not installed, so not removed
+The following package was automatically installed and is no longer required:
+  nginx-common
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 95 not upgraded.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls [7m /etc/nginx/[27m /etc/nginx/
+[?2004l[0m[01;34mconf.d[0m        fastcgi_params  koi-win     [01;34mmodules-available[0m  nginx.conf    scgi_params      [01;34msites-enabled[0m  uwsgi_params
+fastcgi.conf  koi-utf         mime.types  [01;34mmodules-enabled[0m    proxy_params  [01;34msites-available[0m  [01;34msnippets[0m       win-utf
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ su[K[K#install an invalid package
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt install nginxx
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package nginxx[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # debugg
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cat var/[K[K[K[K/var/log/apt/history.log
+[?2004l
+Start-Date: 2026-05-16  16:44:13
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: vim:amd64 (2:9.1.0016-1ubuntu7.12, 2:9.1.0016-1ubuntu7.13), xxd:amd64 (2:9.1.0016-1ubuntu7.12, 2:9.1.0016-1ubuntu7.13), vim-common:amd64 (2:9.1.0016-1ubuntu7.12, 2:9.1.0016-1ubuntu7.13), vim-tiny:amd64 (2:9.1.0016-1ubuntu7.12, 2:9.1.0016-1ubuntu7.13), vim-runtime:amd64 (2:9.1.0016-1ubuntu7.12, 2:9.1.0016-1ubuntu7.13)
+End-Date: 2026-05-16  16:44:17
+
+Start-Date: 2026-05-16  16:44:19
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.8, 8.5.0-2ubuntu10.9), libcurl4t64:amd64 (8.5.0-2ubuntu10.8, 8.5.0-2ubuntu10.9), curl:amd64 (8.5.0-2ubuntu10.8, 8.5.0-2ubuntu10.9)
+End-Date: 2026-05-16  16:44:21
+
+Start-Date: 2026-05-16  16:44:22
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: libavahi-common-data:amd64 (0.8-13ubuntu6.1, 0.8-13ubuntu6.2), libavahi-common3:amd64 (0.8-13ubuntu6.1, 0.8-13ubuntu6.2), libavahi-client3:amd64 (0.8-13ubuntu6.1, 0.8-13ubuntu6.2)
+End-Date: 2026-05-16  16:44:23
+
+Start-Date: 2026-05-16  16:44:24
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: openssh-client:amd64 (1:9.6p1-3ubuntu13.15, 1:9.6p1-3ubuntu13.16)
+End-Date: 2026-05-16  16:44:26
+
+Start-Date: 2026-05-16  16:44:27
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: libnghttp2-14:amd64 (1.59.0-1ubuntu0.1, 1.59.0-1ubuntu0.3)
+End-Date: 2026-05-16  16:44:27
+
+Start-Date: 2026-05-16  16:44:29
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: kmod:amd64 (31+20240202-2ubuntu7, 31+20240202-2ubuntu7.2), libkmod2:amd64 (31+20240202-2ubuntu7, 31+20240202-2ubuntu7.2)
+End-Date: 2026-05-16  16:44:31
+
+Start-Date: 2026-05-16  16:44:32
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: sed:amd64 (4.9-2build1, 4.9-2ubuntu0.24.04.1)
+End-Date: 2026-05-16  16:44:33
+
+Start-Date: 2026-05-16  16:44:34
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: libpng16-16t64:amd64 (1.6.43-5ubuntu0.5, 1.6.43-5ubuntu0.6)
+End-Date: 2026-05-16  16:44:35
+
+Start-Date: 2026-05-16  16:44:36
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: dpkg:amd64 (1.22.6ubuntu6.5, 1.22.6ubuntu6.6)
+End-Date: 2026-05-16  16:44:38
+
+Start-Date: 2026-05-19  16:27:04
+Commandline: apt install nginx -y
+Requested-By: valerie (1000)
+Install: nginx:amd64 (1.24.0-2ubuntu7.8), nginx-common:amd64 (1.24.0-2ubuntu7.8, automatic)
+End-Date: 2026-05-19  16:27:12
+
+Start-Date: 2026-05-19  16:36:46
+Commandline: apt remove nginx
+Requested-By: valerie (1000)
+Remove: nginx:amd64 (1.24.0-2ubuntu7.8)
+End-Date: 2026-05-19  16:36:47
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # the above shows installation and removal history
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ #chck [K[K[K[K[K inspct pac[K[K[Knginx package state
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ dpkg -1 | grep nginx
+[?2004ldpkg: error: unknown option -1
+
+Type dpkg --help for help about installing and deinstalling packages [*];
+Use 'apt' or 'aptitude' for user-friendly package management;
+Type dpkg -Dhelp for a list of dpkg debug flag values;
+Type dpkg --force-help for a list of forcing options;
+Type dpkg-deb --help for help about manipulating *.deb files;
+
+Options marked [*] produce a lot of output - pipe it through 'less' or 'more' !
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ dpkg -l | grep nginx
+[?2004lii  [01;31m[Knginx[m[K-common                  1.24.0-2ubuntu7.8                       all          small, powerful, scalable web/proxy server - common files
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # inspect service logs
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$  jorn[K[Kurnalctl -u nginx
+[?2004l[?1h=May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv[m[7m>[27m
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve[m[7m>[27m
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy serv[m[7m>[27m
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: nginx.service: Deactivated successfully.[m
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy serve[m[7m>[27m
+[7mlines 1-5/5 (END)[27m[K[K[K[7mlines 1-5/5 (END)[27m[K[K[K[7mlines 1-5/5 (END)[27m[K
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K[?1l>^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m journalctl -u nginx[27m
+[7mMay 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv>[27m 
+[7mMay 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve>[27m 
+[7mMay 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy serv>[27m 
+[7mMay 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: nginx.service: Deactivated successfully.[27m
+[7mMay 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy serve[27m[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C journalctl -u nginx
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv> 
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve> 
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy serv> 
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: nginx.service: Deactivated successfully.
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy serve[7m [27m[7mj[27m[7mournalctl -u nginx [27m
+[7mMay 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv>[27m 
+[7mMay 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve>[27m 
+[7mMay 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy serv>[27m 
+[7mMay 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: nginx.service: Deactivated successfully.[27m
+[7mMay 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy serve[27m[A[A[A[A[A[A[A[A[A journalctl -u nginx
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv> 
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve> 
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy serv> 
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: nginx.service: Deactivated successfully.
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy serve
+[?2004l[?1h=May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy serv[m[7m>[27m
+May 19 16:27:08 DESKTOP-MNEU0P5 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy serve[m[7m>[27m
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy serv[m[7m>[27m
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: nginx.service: Deactivated successfully.[m
+May 19 16:36:46 DESKTOP-MNEU0P5 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy serve[m[7m>[27m
+[7mlines 1-5/5 (END)[27m[K[K[7mlines 1-5/5 (END)[27m[K[K[7mlines 1-5/5 (END)[27m[K[K[?1l>
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+Command 'May' not found, did you mean:
+  command 'say' from deb gnustep-gui-runtime (0.30.0-3build3)
+Try: sudo apt install <deb name>
+Command 'May' not found, did you mean:
+  command 'say' from deb gnustep-gui-runtime (0.30.0-3build3)
+Try: sudo apt install <deb name>
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+Command 'May' not found, did you mean:
+  command 'say' from deb gnustep-gui-runtime (0.30.0-3build3)
+Try: sudo apt install <deb name>
+Command 'May' not found, did you mean:
+  command 'say' from deb gnustep-gui-runtime (0.30.0-3build3)
+Try: sudo apt install <deb name>
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo apt autoremove -y[27msudo apt autoremove -y
+[?2004l[sudo] password for valerie: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following packages will be REMOVED:
+  nginx-common
+0 upgraded, 0 newly installed, 1 to remove and 95 not upgraded.
+After this operation, 246 kB disk space will be freed.
+
+7[0;30r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40785 files and directories currently installed.)
+Removing nginx-common (1.24.0-2ubuntu7.8) ...
+7[31;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[31;0f[42m[30mProgress: [ 33%][49m[39m [#################################.....................................................................] 87[31;0f[42m[30mProgress: [ 67%][49m[39m [###################################################################...................................] 8
+7[0;31r8[1A[J[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls /etc/nginx/
+[?2004lfastcgi.conf    koi-utf  mime.types  proxy_params  [0m[01;34msites-available[0m  [01;34msnippets[0m      win-utf
+fastcgi_params  koi-win  nginx.conf  scgi_params   [01;34msites-enabled[0m    uwsgi_params
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mdpkg -l | grep nginx[27mdpkg -l | grep nginx
+[?2004lrc  [01;31m[Knginx[m[K-common                  1.24.0-2ubuntu7.8                       all          small, powerful, scalable web/proxy server - common files
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo apt purge nginx nginx-common nginx-core -y[27m
+[7msudo apt autoremove -y[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt purge nginx nginx-common nginx-core -y
+sudo apt autoremove -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+Package 'nginx' is not installed, so not removed
+Package 'nginx-core' is not installed, so not removed
+The following packages will be REMOVED:
+  nginx-common*
+0 upgraded, 0 newly installed, 1 to remove and 95 not upgraded.
+After this operation, 0 B of additional disk space will be used.
+
+7[0;30r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40765 files and directories currently installed.)
+Purging configuration files for nginx-common (1.24.0-2ubuntu7.8) ...
+7[31;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[31;0f[42m[30mProgress: [ 33%][49m[39m [#################################.....................................................................] 87[31;0f[42m[30mProgress: [ 67%][49m[39m [###################################################################...................................] 8
+7[0;31r8[1A[JReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 95 not upgraded.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mdpkg -l | grep nginx[27mdpkg -l | grep nginx
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mls /etc/nginx[27mls /etc/nginx
+[?2004lls: cannot access '/etc/nginx': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ #install ng[K[K[K[K[K[K[K[K[K[K[K# initate a broken in[Kn[K[K[K[K[K[K[K[K[Kpartial  installation
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt install sl -y
+[?2004l[sudo] password for valerie: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libncurses6
+The following NEW packages will be installed:
+  libncurses6 sl
+0 upgraded, 2 newly installed, 0 to remove and 95 not upgraded.
+Need to get 125 kB of archives.
+After this operation, 404 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m                                     Ign:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libncurses6 amd64 6.4+20240113-1ubuntu2
+[33m                                     0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m                                     Get:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 sl amd64 5.02-1 [12.7 kB]
+[33m                                     4% [2 sl 6129 B/12.7 kB 48%][0m[33m                            18% [Working][0m             Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libncurses6 amd64 6.4+20240113-1ubuntu2 [112 kB]
+[33m19% [1 libncurses6 655 B/112 kB 1%][0m[33m                                   100% [Working][0m              Fetched 125 kB in 33s (3790 B/s)
+
+7[0;30r8[1ASelecting previously unselected package libncurses6:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40740 files and directories currently installed.)
+Preparing to unpack .../libncurses6_6.4+20240113-1ubuntu2_amd64.deb ...
+7[31;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[31;0f[42m[30mProgress: [ 11%][49m[39m [###########...........................................................................................] 8Unpacking libncurses6:amd64 (6.4+20240113-1ubuntu2) ...
+7[31;0f[42m[30mProgress: [ 22%][49m[39m [######################................................................................................] 8Selecting previously unselected package sl.
+Preparing to unpack .../archives/sl_5.02-1_amd64.deb ...
+7[31;0f[42m[30mProgress: [ 33%][49m[39m [#################################.....................................................................] 8Unpacking sl (5.02-1) ...
+7[31;0f[42m[30mProgress: [ 44%][49m[39m [#############################################.........................................................] 8Setting up libncurses6:amd64 (6.4+20240113-1ubuntu2) ...
+7[31;0f[42m[30mProgress: [ 56%][49m[39m [########################################################..............................................] 87[31;0f[42m[30mProgress: [ 67%][49m[39m [###################################################################...................................] 8Setting up sl (5.02-1) ...
+7[31;0f[42m[30mProgress: [ 78%][49m[39m [###############################################################################.......................] 87[31;0f[42m[30mProgress: [ 89%][49m[39m [##########################################################################################............] 8Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+7[0;31r8[1A[J[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt -reinstall install sl -y[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kinstall --reinstall sl -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+0 upgraded, 0 newly installed, 1 reinstalled, 0 to remove and 95 not upgraded.
+Need to get 12.7 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+[33m0% [Working][0m^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ dpkg -[[Kl | grep sl
+[?2004lii  e2fsprogs-l10n                1.47.0-2.4~exp1ubuntu4.1                all          ext2/ext3/ext4 file system utilities - tran[01;31m[Ksl[m[Kations
+ii  iso-codes                     4.16.0-1                                all          ISO language, territory, currency, script codes and their tran[01;31m[Ksl[m[Kations
+ii  libnewt0.52:amd64             0.52.24-2ubuntu2                        amd64        Not Erik's Windowing Toolkit - text mode windowing with [01;31m[Ksl[m[Kang
+ii  libp[01;31m[Ksl[m[K5t64:amd64              0.21.2-1.1build1                        amd64        Library for Public Suffix List (shared libraries)
+ii  libsa[01;31m[Ksl[m[K2-2:amd64              2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - authentication abstraction library
+ii  libsa[01;31m[Ksl[m[K2-modules:amd64        2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules
+ii  libsa[01;31m[Ksl[m[K2-modules-db:amd64     2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules (DB)
+ii  lib[01;31m[Ksl[m[Kang2:amd64               2.3.3-3build2                           amd64        S-Lang programming library - runtime version
+ii  libs[01;31m[Ksl[m[K3t64:amd64              3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libzstd1:amd64                1.5.5+dfsg2-2build1.1                   amd64        fast los[01;31m[Ksl[m[Kess compression algorithm
+ii  opens[01;31m[Ksl[m[K                       3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - cryptographic utility
+ii  python3-opens[01;31m[Ksl[m[K               23.2.0-1ubuntu0.1                       all          Python 3 wrapper around the OpenSSL library
+ii  rsy[01;31m[Ksl[m[Kog                       8.2312.0-3ubuntu9                       amd64        reliable system and kernel logging daemon
+ii  [01;31m[Ksl[m[K                            5.02-1                                  amd64        Correct you if you type `[01;31m[Ksl[m[K' by mistake
+ii  ubuntu-pro-client-l10n        34~24.04                                amd64        Tran[01;31m[Ksl[m[Kations for Ubuntu Pro Client
+ii  ubuntu-w[01;31m[Ksl[m[K                    1.539.1                                 amd64        Ubuntu on Windows tools - Windows Subsystem for Linux integration
+ii  w[01;31m[Ksl[m[K-pro-service               0.1.4                                   amd64        Ubuntu Pro for WSL - WSL service
+ii  w[01;31m[Ksl[m[K-setup                     0.5.4~24.04                             amd64        WSL integration setup
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt autoremove sl
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following packages will be REMOVED:
+  libncurses6 sl
+0 upgraded, 0 newly installed, 2 to remove and 95 not upgraded.
+After this operation, 404 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;30r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40772 files and directories currently installed.)
+Removing sl (5.02-1) ...
+7[31;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[31;0f[42m[30mProgress: [ 20%][49m[39m [####################..................................................................................] 87[31;0f[42m[30mProgress: [ 40%][49m[39m [########################################..............................................................] 8Removing libncurses6:amd64 (6.4+20240113-1ubuntu2) ...
+7[31;0f[42m[30mProgress: [ 60%][49m[39m [#############################################################.........................................] 87[31;0f[42m[30mProgress: [ 80%][49m[39m [#################################################################################.....................] 8Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+7[0;31r8[1A[J[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # [7m# initate a partial  installation[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# initate a partial  installation
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ #interrupt installation
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt install -sl[K[K[Ksl -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ dpkg l[K-l | greo[Kp sl
+[?2004lii  e2fsprogs-l10n                1.47.0-2.4~exp1ubuntu4.1                all          ext2/ext3/ext4 file system utilities - tran[01;31m[Ksl[m[Kations
+ii  iso-codes                     4.16.0-1                                all          ISO language, territory, currency, script codes and their tran[01;31m[Ksl[m[Kations
+ii  libnewt0.52:amd64             0.52.24-2ubuntu2                        amd64        Not Erik's Windowing Toolkit - text mode windowing with [01;31m[Ksl[m[Kang
+ii  libp[01;31m[Ksl[m[K5t64:amd64              0.21.2-1.1build1                        amd64        Library for Public Suffix List (shared libraries)
+ii  libsa[01;31m[Ksl[m[K2-2:amd64              2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - authentication abstraction library
+ii  libsa[01;31m[Ksl[m[K2-modules:amd64        2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules
+ii  libsa[01;31m[Ksl[m[K2-modules-db:amd64     2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules (DB)
+ii  lib[01;31m[Ksl[m[Kang2:amd64               2.3.3-3build2                           amd64        S-Lang programming library - runtime version
+ii  libs[01;31m[Ksl[m[K3t64:amd64              3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libzstd1:amd64                1.5.5+dfsg2-2build1.1                   amd64        fast los[01;31m[Ksl[m[Kess compression algorithm
+ii  opens[01;31m[Ksl[m[K                       3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - cryptographic utility
+ii  python3-opens[01;31m[Ksl[m[K               23.2.0-1ubuntu0.1                       all          Python 3 wrapper around the OpenSSL library
+ii  rsy[01;31m[Ksl[m[Kog                       8.2312.0-3ubuntu9                       amd64        reliable system and kernel logging daemon
+ii  ubuntu-pro-client-l10n        34~24.04                                amd64        Tran[01;31m[Ksl[m[Kations for Ubuntu Pro Client
+ii  ubuntu-w[01;31m[Ksl[m[K                    1.539.1                                 amd64        Ubuntu on Windows tools - Windows Subsystem for Linux integration
+ii  w[01;31m[Ksl[m[K-pro-service               0.1.4                                   amd64        Ubuntu Pro for WSL - WSL service
+ii  w[01;31m[Ksl[m[K-setup                     0.5.4~24.04                             amd64        WSL integration setup
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo apt autoremove sl[27msudo apt autoremove sl
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+Package 'sl' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 95 not upgraded.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m sudo apt install sl -y[27m sudo apt install sl -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libncurses6
+The following NEW packages will be installed:
+  libncurses6 sl
+0 upgraded, 2 newly installed, 0 to remove and 95 not upgraded.
+Need to get 125 kB of archives.
+After this operation, 404 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Working][0m^C
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ c[Kdpkg -l | grep sl
+[?2004lii  e2fsprogs-l10n                1.47.0-2.4~exp1ubuntu4.1                all          ext2/ext3/ext4 file system utilities - tran[01;31m[Ksl[m[Kations
+ii  iso-codes                     4.16.0-1                                all          ISO language, territory, currency, script codes and their tran[01;31m[Ksl[m[Kations
+ii  libnewt0.52:amd64             0.52.24-2ubuntu2                        amd64        Not Erik's Windowing Toolkit - text mode windowing with [01;31m[Ksl[m[Kang
+ii  libp[01;31m[Ksl[m[K5t64:amd64              0.21.2-1.1build1                        amd64        Library for Public Suffix List (shared libraries)
+ii  libsa[01;31m[Ksl[m[K2-2:amd64              2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - authentication abstraction library
+ii  libsa[01;31m[Ksl[m[K2-modules:amd64        2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules
+ii  libsa[01;31m[Ksl[m[K2-modules-db:amd64     2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules (DB)
+ii  lib[01;31m[Ksl[m[Kang2:amd64               2.3.3-3build2                           amd64        S-Lang programming library - runtime version
+ii  libs[01;31m[Ksl[m[K3t64:amd64              3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libzstd1:amd64                1.5.5+dfsg2-2build1.1                   amd64        fast los[01;31m[Ksl[m[Kess compression algorithm
+ii  opens[01;31m[Ksl[m[K                       3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - cryptographic utility
+ii  python3-opens[01;31m[Ksl[m[K               23.2.0-1ubuntu0.1                       all          Python 3 wrapper around the OpenSSL library
+ii  rsy[01;31m[Ksl[m[Kog                       8.2312.0-3ubuntu9                       amd64        reliable system and kernel logging daemon
+ii  ubuntu-pro-client-l10n        34~24.04                                amd64        Tran[01;31m[Ksl[m[Kations for Ubuntu Pro Client
+ii  ubuntu-w[01;31m[Ksl[m[K                    1.539.1                                 amd64        Ubuntu on Windows tools - Windows Subsystem for Linux integration
+ii  w[01;31m[Ksl[m[K-pro-service               0.1.4                                   amd64        Ubuntu Pro for WSL - WSL service
+ii  w[01;31m[Ksl[m[K-setup                     0.5.4~24.04                             amd64        WSL integration setup
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt re[K[Kin[K[Kautoremove -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 95 not upgraded.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt  au[K[K[Kinstall sl -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libncurses6
+The following NEW packages will be installed:
+  libncurses6 sl
+0 upgraded, 2 newly installed, 0 to remove and 95 not upgraded.
+Need to get 125 kB of archives.
+After this operation, 404 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m                                     Ign:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libncurses6 amd64 6.4+20240113-1ubuntu2
+[33m                                     0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m                                     0% [Waiting for headers][0m                        Get:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 sl amd64 5.02-1 [12.7 kB]
+[33m3% [2 sl 4762 B/12.7 kB 37%][0m[33m                            18% [Working][0m             Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 libncurses6 amd64 6.4+20240113-1ubuntu2 [112 kB]
+[33m21% [1 libncurses6 4759 B/112 kB 4%][0m[33m                                    100% [Working][0m              Fetched 125 kB in 32s (3863 B/s)
+^C[1;31mE: [0mSub-process /usr/sbin/dpkg-preconfigure --apt || true received signal 2.[0m
+[1;31mE: [0mFailure running script /usr/sbin/dpkg-preconfigure --apt || true[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ dpkg -l grep[K[K[K[K| grep sl
+[?2004lii  e2fsprogs-l10n                1.47.0-2.4~exp1ubuntu4.1                all          ext2/ext3/ext4 file system utilities - tran[01;31m[Ksl[m[Kations
+ii  iso-codes                     4.16.0-1                                all          ISO language, territory, currency, script codes and their tran[01;31m[Ksl[m[Kations
+ii  libnewt0.52:amd64             0.52.24-2ubuntu2                        amd64        Not Erik's Windowing Toolkit - text mode windowing with [01;31m[Ksl[m[Kang
+ii  libp[01;31m[Ksl[m[K5t64:amd64              0.21.2-1.1build1                        amd64        Library for Public Suffix List (shared libraries)
+ii  libsa[01;31m[Ksl[m[K2-2:amd64              2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - authentication abstraction library
+ii  libsa[01;31m[Ksl[m[K2-modules:amd64        2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules
+ii  libsa[01;31m[Ksl[m[K2-modules-db:amd64     2.1.28+dfsg1-5ubuntu3.1                 amd64        Cyrus SASL - pluggable authentication modules (DB)
+ii  lib[01;31m[Ksl[m[Kang2:amd64               2.3.3-3build2                           amd64        S-Lang programming library - runtime version
+ii  libs[01;31m[Ksl[m[K3t64:amd64              3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - shared libraries
+ii  libzstd1:amd64                1.5.5+dfsg2-2build1.1                   amd64        fast los[01;31m[Ksl[m[Kess compression algorithm
+ii  opens[01;31m[Ksl[m[K                       3.0.13-0ubuntu3.9                       amd64        Secure Sockets Layer toolkit - cryptographic utility
+ii  python3-opens[01;31m[Ksl[m[K               23.2.0-1ubuntu0.1                       all          Python 3 wrapper around the OpenSSL library
+ii  rsy[01;31m[Ksl[m[Kog                       8.2312.0-3ubuntu9                       amd64        reliable system and kernel logging daemon
+ii  ubuntu-pro-client-l10n        34~24.04                                amd64        Tran[01;31m[Ksl[m[Kations for Ubuntu Pro Client
+ii  ubuntu-w[01;31m[Ksl[m[K                    1.539.1                                 amd64        Ubuntu on Windows tools - Windows Subsystem for Linux integration
+ii  w[01;31m[Ksl[m[K-pro-service               0.1.4                                   amd64        Ubuntu Pro for WSL - WSL service
+ii  w[01;31m[Ksl[m[K-setup                     0.5.4~24.04                             amd64        WSL integration setup
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt install[K[K[K[K[K[K[Kautoremove -y
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 95 not upgraded.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2026-05-19 18:53:55+01:00 [COMMAND_EXIT_CODE="0"]
