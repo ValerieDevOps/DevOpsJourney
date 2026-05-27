@@ -1,0 +1,458 @@
+Script started on 2026-05-27 03:07:29+01:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # test connectivity [K[C[1@ [1P[C[C connectivityD connectivityN connectivityS connectivity[C connectivityS connectivitye connectivityr connectivityv connectivitye connectivityr connectivity[C connectivity[C[C[C[C[C[C[C[C[C[C[C[C[C durect[K[K[K[K[Kirectly using the ip
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m script ~/DevOpsJourney/phase-1[27m[7m-[27m[7mfoundation/networking/logs/d8.log[27m[A script ~/DevOpsJourney/phase-1-[1Pfoundation/networking/logs/d8.lo[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kping -c curl[K[K[K[K4 cu[K[K8.8.8.8
+[?2004lPING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3061ms
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ text DNS and connectivity using  domin name[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct DNS and connectivity using d[1P[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[Cst DNS and connectivity using [1@d[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C#test DNS and connectivity using[1@ [A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C test DNS and connectivity usin[1@g[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping -c 3 google.com
+[?2004lPING google.com (1.2.3.4) 56(84) bytes of data.
+
+--- google.com ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2030ms
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # the above packet loss happene d becase i d[K[K[K[K[K[Kuse i use hosts write o[K[K[K[K[K[K[K[K[K[K[K[K[K[K /etc/hot[Kss[Kts [K file to write a manualentry tha t overriide[K[K[Kdes h[Kthe actual ip address, cause my file is the fr st ookup point
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # ask DNS WHT[K[K[Kwhat IP belongs to do main man[K[K[Kname
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ nslookup github.com
+[?2004lCommand 'nslookup' not found, but can be installed with:
+sudo apt install bind9-dnsutils
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo apt [7minstall bind9-dnsutils[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinstall bind9-dnsutils [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+[?2004l[sudo] password for valerie: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  bind9-host bind9-libs liblmdb0 libmaxminddb0 libuv1t64
+Suggested packages:
+  mmdb-bin
+The following NEW packages will be installed:
+  bind9-dnsutils bind9-host bind9-libs liblmdb0
+  libmaxminddb0 libuv1t64
+0 upgraded, 6 newly installed, 0 to remove and 97 not upgraded.
+Need to get 1464 kB/1634 kB of archives.
+After this operation, 4667 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working][0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Working]                               28.1 kB/s 52s[0m[33m18% [Connecting to archive.ubuntu.com]      28.1 kB/s 52s[0m[33m18% [Connecting to archive.ubuntu.com]      28.1 kB/s 52s[0m[33m18% [Connecting to archive.ubuntu.com]      28.1 kB/s 52s[0m[33m18% [Connecting to archive.ubuntu.com]      28.1 kB/s 52s[0m[33m                                                         18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com][0m[33m18% [Connecting to archive.ubuntu.com (104.20.28.246)][0m                                                      Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-libs amd64 1:9.18.39-0ubuntu0.24.04.5 [1258 kB]
+[33m                                                      19% [1 bind9-libs 8208 B/1258 kB 1%][0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%][0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%][0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m25% [1 bind9-libs 142 kB/1258 kB 11%]       22.2 kB/s 59s[0m[33m                                                         25% [1 bind9-libs 142 kB/1258 kB 11%][0m[33m26% [1 bind9-libs 159 kB/1258 kB 13%][0m[33m31% [1 bind9-libs 256 kB/1258 kB 20%][0m[33m38% [1 bind9-libs 411 kB/1258 kB 33%][0m[33m44% [1 bind9-libs 526 kB/1258 kB 42%][0m[33m55% [1 bind9-libs 758 kB/1258 kB 60%][0m[33m64% [1 bind9-libs 933 kB/1258 kB 74%][0m[33m75% [1 bind9-libs 1158 kB/1258 kB 92%][0m[33m                                      83% [Working][0m             Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-host amd64 1:9.18.39-0ubuntu0.24.04.5 [50.5 kB]
+[33m84% [2 bind9-host 7497 B/50.5 kB 15%][0m[33m                                     89% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-dnsutils amd64 1:9.18.39-0ubuntu0.24.04.5 [156 kB]
+[33m90% [3 bind9-dnsutils 13.8 kB/156 kB 9%][0m[33m                                        100% [Working][0m              Fetched 1464 kB in 29s (50.8 kB/s)
+
+7[0;29r8[1ASelecting previously unselected package libuv1t64:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40740 files and directories currently installed.)
+Preparing to unpack .../0-libuv1t64_1.48.0-1.1build1_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [....................................] 87[30;0f[42m[30mProgress: [  4%][49m[39m [#...................................] 8Unpacking libuv1t64:amd64 (1.48.0-1.1build1) ...
+7[30;0f[42m[30mProgress: [  8%][49m[39m [##..................................] 8Selecting previously unselected package liblmdb0:amd64.
+Preparing to unpack .../1-liblmdb0_0.9.31-1build1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 12%][49m[39m [####................................] 8Unpacking liblmdb0:amd64 (0.9.31-1build1) ...
+7[30;0f[42m[30mProgress: [ 16%][49m[39m [#####...............................] 8Selecting previously unselected package libmaxminddb0:amd64.
+Preparing to unpack .../2-libmaxminddb0_1.9.1-1build1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 20%][49m[39m [#######.............................] 8Unpacking libmaxminddb0:amd64 (1.9.1-1build1) ...
+7[30;0f[42m[30mProgress: [ 24%][49m[39m [########............................] 8Selecting previously unselected package bind9-libs:amd64.
+Preparing to unpack .../3-bind9-libs_1%3a9.18.39-0ubuntu0.24.04.5_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 28%][49m[39m [##########..........................] 8Unpacking bind9-libs:amd64 (1:9.18.39-0ubuntu0.24.04.5) ...
+7[30;0f[42m[30mProgress: [ 32%][49m[39m [###########.........................] 8Selecting previously unselected package bind9-host.
+Preparing to unpack .../4-bind9-host_1%3a9.18.39-0ubuntu0.24.04.5_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 36%][49m[39m [############........................] 8Unpacking bind9-host (1:9.18.39-0ubuntu0.24.04.5) ...
+7[30;0f[42m[30mProgress: [ 40%][49m[39m [##############......................] 8Selecting previously unselected package bind9-dnsutils.
+Preparing to unpack .../5-bind9-dnsutils_1%3a9.18.39-0ubuntu0.24.04.5_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 44%][49m[39m [###############.....................] 8Unpacking bind9-dnsutils (1:9.18.39-0ubuntu0.24.04.5) ...
+7[30;0f[42m[30mProgress: [ 48%][49m[39m [#################...................] 8Setting up liblmdb0:amd64 (0.9.31-1build1) ...
+7[30;0f[42m[30mProgress: [ 52%][49m[39m [##################..................] 87[30;0f[42m[30mProgress: [ 56%][49m[39m [####################................] 8Setting up libmaxminddb0:amd64 (1.9.1-1build1) ...
+7[30;0f[42m[30mProgress: [ 60%][49m[39m [#####################...............] 87[30;0f[42m[30mProgress: [ 64%][49m[39m [#######################.............] 8Setting up libuv1t64:amd64 (1.48.0-1.1build1) ...
+7[30;0f[42m[30mProgress: [ 68%][49m[39m [########################............] 87[30;0f[42m[30mProgress: [ 72%][49m[39m [#########################...........] 8Setting up bind9-libs:amd64 (1:9.18.39-0ubuntu0.24.04.5) ...
+7[30;0f[42m[30mProgress: [ 76%][49m[39m [###########################.........] 87[30;0f[42m[30mProgress: [ 80%][49m[39m [############################........] 8Setting up bind9-host (1:9.18.39-0ubuntu0.24.04.5) ...
+7[30;0f[42m[30mProgress: [ 84%][49m[39m [##############################......] 87[30;0f[42m[30mProgress: [ 88%][49m[39m [###############################.....] 8Setting up bind9-dnsutils (1:9.18.39-0ubuntu0.24.04.5) ...
+7[30;0f[42m[30mProgress: [ 92%][49m[39m [#################################...] 87[30;0f[42m[30mProgress: [ 96%][49m[39m [##################################..] 8Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+7[0;30r8[1A[J[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mnslookup github.com[27mnslookup github.com
+[?2004l;; Got recursion not available from 172.24.96.1
+Server:		172.24.96.1
+Address:	172.24.96.1#53
+
+Non-authoritative answer:
+Name:	github.com
+Address: 140.82.121.4
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # fete[Kch a real API API request  t[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mcurl https://api.github.com/use[27m[7mr[27m[7ms/octocat [27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ curl https://api.github.com/users/octocat 
+[?2004lcurl: (6) Could not resolve host: api.github.com
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m curl https://api.github.com/us[27m[7me[27m[7mrs/octocat[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$  curl https://api.github.com/users/octocat
+[?2004l{
+  "login": "octocat",
+  "id": 583231,
+  "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+  "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/octocat",
+  "html_url": "https://github.com/octocat",
+  "followers_url": "https://api.github.com/users/octocat/followers",
+  "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+  "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+  "organizations_url": "https://api.github.com/users/octocat/orgs",
+  "repos_url": "https://api.github.com/users/octocat/repos",
+  "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/octocat/received_events",
+  "type": "User",
+  "user_view_type": "public",
+  "site_admin": false,
+  "name": "The Octocat",
+  "company": "@github",
+  "blog": "https://github.blog",
+  "location": "San Francisco",
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 8,
+  "public_gists": 8,
+  "followers": 22764,
+  "following": 9,
+  "created_at": "2011-01-25T18:44:36Z",
+  "updated_at": "2026-05-22T11:38:32Z"
+}
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # fetch only HTTP headers - not  body[K[A[K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # fetch only HTTP headers - not body[K[A[K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # fetch only HTTP headers - not body, i [K[Kuseful whe u wish to confirm[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kl when you jus want to confr[Kirm  [Ka server is wor king
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mcurl -I https://api.github.com[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl -I https://api.github.com
+[?2004lHTTP/2 200 
+[1mdate[0m: Wed, 27 May 2026 02:28:30 GMT
+[1mcache-control[0m: public, max-age=60, s-maxage=60
+[1mvary[0m: Accept,Accept-Encoding, Accept, X-Requested-With
+[1mx-github-api-version-selected[0m: 2022-11-28
+[1maccess-control-expose-headers[0m: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset, Warning
+[1maccess-control-allow-origin[0m: *
+[1mstrict-transport-security[0m: max-age=31536000; includeSubdomains; preload
+[1mx-frame-options[0m: deny
+[1mx-content-type-options[0m: nosniff
+[1mx-xss-protection[0m: 0
+[1mreferrer-policy[0m: origin-when-cross-origin, strict-origin-when-cross-origin
+[1mcontent-security-policy[0m: default-src 'none'
+[1mserver[0m: github.com
+[1mcontent-type[0m: application/json; charset=utf-8
+[1mx-github-media-type[0m: github.v3; format=json
+[1metag[0m: W/"4f825cc84e1c733059d46e76e6df9db557ae5254f9625dfe8e1b09499c449438"
+[1maccept-ranges[0m: bytes
+[1mx-ratelimit-limit[0m: 60
+[1mx-ratelimit-remaining[0m: 58
+[1mx-ratelimit-used[0m: 2
+[1mx-ratelimit-resource[0m: core
+[1mx-ratelimit-reset[0m: 1779852372
+[1mcontent-length[0m: 2262
+[1mx-github-request-id[0m: 0AEB:11F9D4:8F83F4:8B216D:6A1656D6
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # BREAK
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ SU[K[Ksudo nano [K[K[K[K[K[K[K[K[K[K# remove fake DNS enty [K[Kry from /e tc/hosts file
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sud [Ko nano /etc/hosts
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;23H(B[0;7m[ Reading... ](B[m[28;21H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 7.2            /etc/hosts                      [1;57H(B[m[29d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[30d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[2d[36m# This file was automatically generated by WSL. To stop a[39m(B[0;7m>[3;1H(B[0m[36m# [network][4d# generateHosts = false[5d[39m(B[m127.0.0.1[38;5;208m       [39m(B[mlocalhost[6d127.0.1.1[38;5;208m       [39m(B[mDESKTOP-MNEU0P5.localdomain[38;5;208m     [39m(B[mDESKTOP-M(B[0;7m>[8;1H(B[0m[36m# The following lines are desirable for IPv6 capable hosts[9;1H[39m(B[m::1     ip6-localhost ip6-loopback[10dfe00::0 ip6-localnet[11dff00::0 ip6-mcastprefix[12dff02::1 ip6-allnodes[13dff02::2 ip6-allrouters[14d1.2.3.4 google.com[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h1[?25l[?12l[?25h.[?25l[?12l[?25h2[?25l[?12l[?25h.[?25l[?12l[?25h3[?25l[28d[K[?12l[?25h[14;7H[?25l[?12l[?25h4[?25l[?12l[?25h [?25l[?12l[?25hg[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25hg[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[1;38H(B[0;7m*[57G(B[m[?12l[?25h[14;17Hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[?12l[?25hm[K[?25l[13;23Hm[14d[K[13;23H[?12l[?25h[?25l[29;15H(B[0;7mM-D(B[m DOS Format(B[0;7mM-A(B[m Append    (B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel     (B[0;7mM-M(B[m Mac Format(B[0;7mM-P(B[m Prepend   (B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: /etc/hosts                            [28;31H(B[m[?12l[?25h[?25l[28;22H[1K (B[0;7m[ Writing... ](B[m[K[1;38H(B[0;7m [57G(B[m[28;21H(B[0;7m[ Wrote 12 lines ](B[m[29;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[K[30;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[K[?12l[?25h[13;23H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # verify it is removed
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cat /etc/hosts 
+[?2004l# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:
+# [network]
+# generateHosts = false
+127.0.0.1	localhost
+127.0.1.1	DESKTOP-MNEU0P5.localdomain	DESKTOP-MNEU0P5
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allroutersm
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # add a fake DNS entry for goog le com[7mThe /etc/hosts file is checked before DNS. Whatever [27m[7mi[27m[7ms written there, your machine believes — even if it is co[27m[7mm[27m[7mpletely wrong. This is one of the oldest and most powerfu[27m[7ml[27m[7m ways to override DNS locally.[27m[A[A[A[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS locally.[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful [1P[A[A[A[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful w[1P[A[A[A[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful wa[1P[A[A[A[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful way[1P[A[A[A[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways[1P[A[A[AThe /etc/hosts file is checked before DNS. Whatever is writ[Cen there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways [1P[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways t[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to [1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to o[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to ov[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to ove[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to over[C[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to overr[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to overri[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to overrid[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override [1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override D[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DN[1P[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS[1P locally.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS [1Plocally.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS l[1Pocally.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS lo[1Pcally.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS loc[1Pally.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS loca[1Plly.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS local[C[1Py.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS locall[1Py.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS locally[1P.[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS locally.[K[A[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the oldest and most powerful ways to override DNS locally. [K[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of th[1P
+[K[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the[1P[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the [1P[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the o[1P[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[CThe /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the ol[1P[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C The /etc/hosts file is checked before DNS. Whatever is written there, your machine believes — even if it is completely wrong. This is one of the o[1@l[A[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m# add a fake DNS entry for goog[27m[7ml[27m[7me com[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # add a fake DNS entry for google com
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ echo "1.2.2[K3.4" | sudo tee -a et c/[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[Ke -a e[K/e tc/hosts 1[K
+[?2004l1.2.3.4
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # test connectivty 
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # pinng -c 3 google.com[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kg -c googlw[Ke.com [1@3[C[1@ [1P[1P[C[1@ [1@3
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mping -c 3 google.com[27mping -c 3 google.com
+[?2004lping: google.com: Temporary failure in name resolution
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # Break an API endpoint witha[K a  wrong URL
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ CURL [K[K[K[K[Kcurl https://api.gihu[K[Kthub.com/inv alidendpoint
+[?2004lcurl: (6) Could not resolve host: api.github.com
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mcurl https://api.github.com/inv[27m[7ma[27m[7mlidendpoint[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ curl https://api.github.com/invalidendpoint
+[?2004l{
+  "message": "Not Found",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "404"
+}[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # ^[[200~HTTP 404 — the server was reached successfully but the path you requested does not exist.~[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mHTTP 404 — the server was rea[27m[7mc[27m[7mhed successfully but the path you requested does not exis[27m[7mt[27m[7m.[27m[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[CHTTP 404 — the server was reached successfully but the path you requested does not exist.
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping googlle.com
+[?2004lPING googlle.com (172.67.217.138) 56(84) bytes of data.
+64 bytes from 172.67.217.138: icmp_seq=1 ttl=47 time=245 ms
+64 bytes from 172.67.217.138: icmp_seq=3 ttl=47 time=349 ms
+64 bytes from 172.67.217.138: icmp_seq=4 ttl=47 time=159 ms
+64 bytes from 172.67.217.138: icmp_seq=5 ttl=47 time=169 ms
+64 bytes from 172.67.217.138: icmp_seq=6 ttl=47 time=213 ms
+64 bytes from 172.67.217.138: icmp_seq=7 ttl=47 time=234 ms
+64 bytes from 172.67.217.138: icmp_seq=8 ttl=47 time=260 ms
+64 bytes from 172.67.217.138: icmp_seq=9 ttl=47 time=280 ms
+64 bytes from 172.67.217.138: icmp_seq=10 ttl=47 time=206 ms
+^C
+--- googlle.com ping statistics ---
+10 packets transmitted, 9 received, 10% packet loss, time 18273ms
+rtt min/avg/max/mdev = 158.978/234.865/348.823/54.974 ms
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping googllle.com
+[?2004lPING googllle.com (66.45.246.141) 56(84) bytes of data.
+64 bytes from 66.45.246.141: icmp_seq=1 ttl=39 time=300 ms
+64 bytes from 66.45.246.141: icmp_seq=2 ttl=39 time=280 ms
+64 bytes from 66.45.246.141: icmp_seq=3 ttl=39 time=303 ms
+64 bytes from 66.45.246.141: icmp_seq=4 ttl=39 time=255 ms
+64 bytes from 66.45.246.141: icmp_seq=5 ttl=39 time=264 ms
+64 bytes from 66.45.246.141: icmp_seq=6 ttl=39 time=268 ms
+64 bytes from 66.45.246.141: icmp_seq=7 ttl=39 time=292 ms
+64 bytes from 66.45.246.141: icmp_seq=8 ttl=39 time=315 ms
+64 bytes from 66.45.246.141: icmp_seq=9 ttl=39 time=336 ms
+64 bytes from 66.45.246.141: icmp_seq=10 ttl=39 time=256 ms
+64 bytes from 66.45.246.141: icmp_seq=11 ttl=39 time=279 ms
+64 bytes from 66.45.246.141: icmp_seq=12 ttl=39 time=256 ms
+64 bytes from 66.45.246.141: icmp_seq=13 ttl=39 time=234 ms
+64 bytes from 66.45.246.141: icmp_seq=14 ttl=39 time=232 ms
+64 bytes from 66.45.246.141: icmp_seq=15 ttl=39 time=369 ms
+64 bytes from 66.45.246.141: icmp_seq=16 ttl=39 time=293 ms
+
+64 bytes from 66.45.246.141: icmp_seq=17 ttl=39 time=312 ms
+^C
+--- googllle.com ping statistics ---
+19 packets transmitted, 17 received, 10.5263% packet loss, time 20424ms
+rtt min/avg/max/mdev = 232.334/284.861/368.957/34.904 ms
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping google[Klle.com
+[?2004lping: googllle.com: Temporary failure in name resolution
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # Debugging 
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # tet[Kst the internet is working
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping 8.8.8.8
+[?2004lPING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+
+^[[A^[[A        ^[[A    ^C
+--- 8.8.8.8 ping statistics ---
+84 packets transmitted, 0 received, 100% packet loss, time 84994ms
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mping 8.8.8.8[27mping 8.8.8.8
+[?2004lPING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=109 time=67.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=109 time=65.5 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=109 time=151 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=109 time=61.5 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=109 time=98.8 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=109 time=57.8 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=109 time=76.3 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=109 time=68.2 ms
+64 bytes from 8.8.8.8: icmp_seq=11 ttl=109 time=482 ms
+64 bytes from 8.8.8.8: icmp_seq=12 ttl=109 time=50.6 ms
+64 bytes from 8.8.8.8: icmp_seq=13 ttl=109 time=70.0 ms
+^C
+--- 8.8.8.8 ping statistics ---
+13 packets transmitted, 11 received, 15.3846% packet loss, time 12038ms
+rtt min/avg/max/mdev = 50.590/113.618/482.447/119.583 ms
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping -c 2 googlle.com
+[?2004lPING googlle.com (172.67.217.138) 56(84) bytes of data.
+64 bytes from 172.67.217.138: icmp_seq=1 ttl=47 time=148 ms
+64 bytes from 172.67.217.138: icmp_seq=2 ttl=47 time=167 ms
+
+--- googlle.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1180ms
+rtt min/avg/max/mdev = 148.181/157.390/166.599/9.209 ms
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ nslooki[Kup [7mgooglle.com[27mgooglle.com
+[?2004l;; Got recursion not available from 172.24.96.1
+Server:		172.24.96.1
+Address:	172.24.96.1#53
+
+Non-authoritative answer:
+Name:	googlle.com
+Address: 172.67.217.138
+Name:	googlle.com
+Address: 104.21.83.75
+;; Got recursion not available from 172.24.96.1
+Name:	googlle.com
+Address: 2606:4700:3036::ac43:d98a
+Name:	googlle.com
+Address: 2606:4700:3030::6815:534b
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping a[K2[K-c 2 a.com
+[?2004lping: a.com: Name or service not known
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m nslookup googlle.com[27m nslookup googlle.com
+[?2004l;; Got recursion not available from 172.24.96.1
+Server:		172.24.96.1
+Address:	172.24.96.1#53
+
+Non-authoritative answer:
+Name:	googlle.com
+Address: 172.67.217.138
+Name:	googlle.com
+Address: 104.21.83.75
+;; Got recursion not available from 172.24.96.1
+Name:	googlle.com
+Address: 2606:4700:3036::ac43:d98a
+Name:	googlle.com
+Address: 2606:4700:3030::6815:534b
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ nslookup a.com
+[?2004lServer:		172.24.96.1
+Address:	172.24.96.1#53
+
+** server can't find a.com: NXDOMAIN
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping 8.8.[K[K[K[K[K[K[K[K[K# Back to debugging [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # Back to debugging 
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ pin[K[K[Ktest[K[K[K[K@[K# test internet connection
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping 8.8.8.8
+[?2004lPING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=109 time=80.7 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=109 time=61.9 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=109 time=67.9 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=109 time=35.0 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=109 time=59.2 ms
+^C
+--- 8.8.8.8 ping statistics ---
+6 packets transmitted, 5 received, 16.6667% packet loss, time 5021ms
+rtt min/avg/max/mdev = 34.960/60.915/80.669/14.941 ms
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # look[K[K[K[Ktest DNS Server
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ nslookup google.com
+[?2004l;; Got recursion not available from 172.24.96.1
+Server:		172.24.96.1
+Address:	172.24.96.1#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.251.216.110
+;; Got recursion not available from 172.24.96.1
+Name:	google.com
+Address: 2c0f:fb50:4003:803::200e
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cat[K[K[K# read etc/hosts fie[Kle
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cat hosts/[K[K[K[K[K[K/etc/hosts
+[?2004l# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:
+# [network]
+# generateHosts = false
+127.0.0.1	localhost
+127.0.1.1	DESKTOP-MNEU0P5.localdomain	DESKTOP-MNEU0P5
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allroutersm
+1.2.3.4
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo nano [K[K[K[K[K[K[K[K[K[Ki id [K[K[K[K[K# i did not send the[K[K[K[K[K[K[K[K[K app[K[K[Kcorrctly add fk[Kake ip entry for google.com
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ca[K[Ksudo nano /etc/hosts
+[?2004l[sudo] password for valerie: 
+[?2004h[?1049h[22;0;0t[1;31r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[29;56H(B[0;7m[ Reading... ](B[m[29;54H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 7.2                                             /etc/hosts                                                       [1;123H(B[m[30d(B[0;7m^G(B[m Help[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[31d(B[0;7m^X(B[m Exit[31;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[36m# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/[39m(B[0;7m>[3;1H(B[0m[36m# [network][4d# generateHosts = false[5d[39m(B[m127.0.0.1[38;5;208m       [39m(B[mlocalhost[6d127.0.1.1[38;5;208m       [39m(B[mDESKTOP-MNEU0P5.localdomain[38;5;208m     [39m(B[mDESKTOP-MNEU0P5[8d[36m# The following lines are desirable for IPv6 capable hosts[9d[39m(B[m::1     ip6-localhost ip6-loopback[10dfe00::0 ip6-localnet[11dff00::0 ip6-mcastprefix[12dff02::1 ip6-allnodes[13dff02::2 ip6-allroutersm[14d1.2.3.4[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h1[?25l[?12l[?25h.[?25l[?12l[?25h2[?25l[?12l[?25h.[?25l[?12l[?25h3[?25l[?12l[?25h.[?25l[1;71H(B[0;7m*[123G(B[m[?12l[?25h[14;6H4[K[?25l[29d[K[?12l[?25h[14;5H4[K[?25l[?12l[?25h4[K[?25l[?12l[?25h4[K[?25l[?12l[?25h4[K[?25l[?12l[?25h4[K[?25l[13;24H4[14d[K[13;24H[?12l[?25h[?25l[?12l[?25h4[?25l[?12l[?25h [?25l[30;16H[16X[30;32H(B[0;7mM-D(B[m DOS Format      [30;61H  (B[0;7mM-A(B[m Append[21X[30;94H(B[0;7mM-B(B[m Backup File[K[31;2H(B[0;7mC(B[m Cancel[16G[16X[31;32H(B[0;7mM-M(B[m Mac Format        [61G  (B[0;7mM-P(B[m Prepend[20X[31;94H(B[0;7m^T(B[m Browse[K[29d(B[0;7mFile Name to Write: /etc/hosts                                                                                              [29;31H(B[m[?12l[?25h[?25l[29;55H[1K (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m [123G(B[m[29;54H(B[0;7m[ Wrote 12 lines ](B[m[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo       (B[0;7mM-A(B[m Set Mark[31;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy[?12l[?25h[13;24H[?25l[29d[J[31d[?12l[?25h[31;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ echo "1.2.3.4'[K" | sudo tee -a [1@g[1P[C[1@ [1@g[1@o[1@o[1@g[1@l[1@e[1@.[1@c[1@o[1@m[C[1@ [1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo nano /etc[K[K[K[K[K[K[K[K[K[K[K[K[K[Ke[K[7mnslookup google.com[27m
+[7m;; Got recursion not available from 172.24.96.1[27m
+[7mServer:         172.24.96.1[27m
+[7mAddress:        172.24.96.1#53[27m
+
+[7mNon-authoritative answer:[27m
+[7mName:   google.com[27m
+[7mAddress: 142.251.216.110[27m
+[7m;; Got recursion not available from 172.24.96.1[27m
+[7mName:   google.com[27m
+[7mAddress: 2c0f:fb50:4003:803::200e[27m[A[A[A[A[A[A[A[A[A[Anslookup google.com
+;; Got recursion not available from 172.24.96.1
+Server:         172.24.96.1
+Address:        172.24.96.1#53
+
+Non-authoritative answer:
+Name:   google.com
+Address: 142.251.216.110
+;; Got recursion not available from 172.24.96.1
+Name:   google.com
+[1PAddress: 2c0f:fb50:4003:803::200[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpin[K[K[Kecho "1.2.3.4 google.com" | sudo tee -a [K/[K /etc/hosts
+[?2004l1.2.3.4 google.com
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping [7m 142.251.216.110[27m 142.251.216.110
+[?2004lPING 142.251.216.110 (142.251.216.110) 56(84) bytes of data.
+64 bytes from 142.251.216.110: icmp_seq=1 ttl=109 time=95.0 ms
+64 bytes from 142.251.216.110: icmp_seq=2 ttl=109 time=6251 ms
+64 bytes from 142.251.216.110: icmp_seq=3 ttl=109 time=70.5 ms
+64 bytes from 142.251.216.110: icmp_seq=4 ttl=109 time=69.9 ms
+64 bytes from 142.251.216.110: icmp_seq=5 ttl=109 time=49.9 ms
+64 bytes from 142.251.216.110: icmp_seq=6 ttl=109 time=68.4 ms
+^C
+--- 142.251.216.110 ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5008ms
+rtt min/avg/max/mdev = 49.866/1100.784/6250.997/2303.282 ms
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping 2 [K[K[K[K[K[K[K[7mtraceroute google.com[27mtraceroute google.com
+[?2004lCommand 'traceroute' not found, but can be installed with:
+sudo apt install inetutils-traceroute  # version 2:2.5-3ubuntu4.1, or
+sudo apt install traceroute            # version 1:2.1.5-1
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo apt install traceroute[27msudo apt install traceroute
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 96%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  traceroute
+0 upgraded, 1 newly installed, 0 to remove and 97 not upgraded.
+Need to get 60.5 kB of archives.
+After this operation, 162 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m0% [Connecting to archive.ubuntu.com][0m[33m                                     0% [Waiting for headers][0m                        Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 traceroute amd64 1:2.1.5-1 [60.5 kB]
+[33m80% [1 traceroute 60.5 kB/60.5 kB 100%][0m[33m                                       100% [Working][0m              Fetched 60.5 kB in 3s (18.9 kB/s)
+
+7[0;30r8[1ASelecting previously unselected package traceroute.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40790 files and directories currently installed.)
+Preparing to unpack .../traceroute_1%3a2.1.5-1_amd64.deb ...
+7[31;0f[42m[30mProgress: [  0%][49m[39m [......................................................................................................] 87[31;0f[42m[30mProgress: [ 20%][49m[39m [####################..................................................................................] 8Unpacking traceroute (1:2.1.5-1) ...
+7[31;0f[42m[30mProgress: [ 40%][49m[39m [########################################..............................................................] 8Setting up traceroute (1:2.1.5-1) ...
+7[31;0f[42m[30mProgress: [ 60%][49m[39m [#############################################################.........................................] 8update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute (traceroute) in auto mode
+update-alternatives: using /usr/bin/traceroute6.db to provide /usr/bin/traceroute6 (traceroute6) in auto mode
+update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft (lft) in auto mode
+update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto (traceproto) in auto mode
+update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute (tcptraceroute) in auto mode
+7[31;0f[42m[30mProgress: [ 80%][49m[39m [#################################################################################.....................] 8Processing triggers for man-db (2.12.0-4build2) ...
+
+7[0;31r8[1A[J[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping 8[K[K[K[K[K[Kcat etc[K[K[K/etc/hosts
+[?2004l# This file was automatically generated by WSL. To stop automatic generation of this file, add the following entry to /etc/wsl.conf:
+# [network]
+# generateHosts = false
+127.0.0.1	localhost
+127.0.1.1	DESKTOP-MNEU0P5.localdomain	DESKTOP-MNEU0P5
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allroutersm
+1.2.3.4 google.com
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ e[Kping 8.8.8.8
+[?2004lPING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=109 time=63.9 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=109 time=428 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=109 time=61.1 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=109 time=39.8 ms
+^C
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 39.840/148.109/427.591/161.626 ms
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ping google.com
+[?2004lPING google.com (1.2.3.4) 56(84) bytes of data.
+^C
+--- google.com ping statistics ---
+10 packets transmitted, 0 received, 100% packet loss, time 9218ms
+
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ mkdir[K[K[K[K[Kcd [K[K[Kls
+[?2004l[0m[01;34mDevOpsJourney[0m  [01;34mdevops-lab[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd [7mDevOpsJourney[27mDevOpsJourney
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney[00m$ ls
+[?2004lREADME.md  [0m[01;34mphase-1-foundation[0m  [01;34mphase-2-building[0m  [01;34mphase-3-production[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney[00m$ cd [7m phase-1-foundation[27m phase-1-foundation
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation[00m$ ls
+[?2004l[0m[01;34maws-ec2[0m  [01;34mgit[0m  [01;34mlinux[0m  [01;34mnetworking[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation[00m$ cd [7mnetworking[27mnetworking
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/networking[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/networking[00m$ ls
+[?2004l[0m[01;34mincidents[0m  [01;34mlogs[0m  [01;34mscripts[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/networking[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/networking[00m$ cd incidents
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/networking/incidents[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/networking/incidents[00m$ ls
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/networking/incidents[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/networking/incidents[00m$ ls
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/networking/incidents[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/networking/incidents[00m$ nano week8-day[K[K[K[K[K2_day8.md
+[?2004l[?2004h[?1049h[22;0;0t[1;31r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[29;57H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                            week2_day8.md                                                     [1;123H(B[m[30d(B[0;7m^G(B[m Help[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[31d(B[0;7m^X(B[m Exit[31;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[29d[K[1;73H(B[0;7m*[123G(B[m[2dOnly default system entries remain[3dNo manual DNS override present[5d(B[0;1m[33m## Root cause[6d[39m(B[mIncorrect manual entry in /etc/hosts forced hostname resolution of google.com to invalid IP address (1.2.3.4), bypassing DN(B[0;7m>[8;1H(B[0;1m[33m## What I learned[9d[35m- [39m(B[m/etc/hosts overrides DNS resolution[10d(B[0;1m[35m- [39m(B[mping failure does not always indicate internet failure[11d(B[0;1m[35m- [39m(B[malways verify DNS, IP connectivity, and hosts file during debugging[12d(B[0;1m[35m- [39m(B[mproper network debugging follows layered approach:[13d(B[0;1m[35m  1. [39m(B[mCheck IP connectivity[14d(B[0;1m[35m  2. [39m(B[mCheck DNS resolution[15d(B[0;1m[35m  3. [39m(B[mCheck local host overrides (/etc/hosts)[?12l[?25h[?25l[?12l[?25h[14;26H[?25l[?12l[?25h[Ay[?25l[?12l[?25h[12;45H[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[9;38H[?25l[?12l[?25h[8;18H[?25l[?12l[?25h[A[?25l[?12l[?25h[6;45H[?25l[?12l[?25h[5;14H[?25l[?12l[?25h[A[?25l[?12l[?25h[3;31H[?25l[?12l[?25h[Amain[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HResult:[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1Hcat /etc/hosts[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HCommand:[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H(B[0;1m[33m## Verification[39m(B[m[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HSaved and exited file[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H1.2.3.4 google.com[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HRemoved line:[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HAction:[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1Hsudo nano /etc/hosts[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HCommand:[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H(B[0;1m[33m## Fix applied[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HManual override exists in /etc/hosts causing incorrect resolution[2;45H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HResult:[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H1.2.3.4 google.com present in file[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HOutput:[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1Hcat /etc/hosts[?25l[?12l[?25h7[2;28r8M[1;31r[2;1HCommand:[?25l[?12l[?25h7[2;29r8M[1;31r[2;1H(B[0;1m[35m4. [39m(B[mHosts file verification[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H(B[0;1m[33m---[39m(B[m[?25l[?12l[?25h7[2;28r8M[1;31r[2;1H[?25l[?12l[?25h7[2;29r8M[1;31r[2;1HTarget host is reachable and network path is valid[45G[?25l[30;16H[16X[30;32H(B[0;7mM-D(B[m DOS Format      [30;61H  (B[0;7mM-A(B[m Append[21X[30;94H(B[0;7mM-B(B[m Backup File[K[31;2H(B[0;7mC(B[m Cancel[16G[16X[31;32H(B[0;7mM-M(B[m Mac Format        [61G  (B[0;7mM-P(B[m Prepend[20X[31;94H(B[0;7m^T(B[m Browse[K[29d(B[0;7mFile Name to Write: week2_day8.md                                                                                           [29;34H(B[m[?12l[?25h[?25l[29;55H[1K (B[0;7m[ Writing... ](B[m[K[1;73H(B[0;7m [123G(B[m[29;53H(B[0;7m[ Wrote 102 lines ](B[m[30;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[30;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo       (B[0;7mM-A(B[m Set Mark[31;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy[?12l[?25h[2;45H[?25l[29d[J[31d[?12l[?25h[31;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/networking/incidents[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/networking/incidents[00m$ [?2004l
+exit
+
+Script done on 2026-05-27 04:58:39+01:00 [COMMAND_EXIT_CODE="0"]
