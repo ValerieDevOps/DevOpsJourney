@@ -1,204 +1,331 @@
-# Incident Log — Week 01: Linux Core System
+#### **Incident Log — Week 01: Linux Core System**
 
-**Phase:** 1 — Foundation
-**Engineer:** Valerie
-**Week:** 01 (Day 01–07)
-**Topic:** Linux Terminal, Filesystem, Permissions, Processes
-**Date range:** 2025-05-18
+#### **Phase:** Foundation
+
+#### **Engineer:** Valerie
+
+#### **Week:** 01 (Day 01–07)
+
+#### **Topic:** Linux Terminal, Filesystem, Permissions, Processes
+
+#### **Date Range:** 2025-05-18
 
 ---
 
-## INCIDENT-001
+#### **INCIDENT-001**
 
-**Date:** 2025-05-18
-**Day:** 05
-**Severity:** Low
-**Category:** Permission
+#### **Date:** 2025-05-18
 
-### What I was doing
-Creating my-service.sh using nano and trying to run it
-as a background service.
+#### **Day:** 05
 
-### What went wrong
+#### **Severity:** Low
+
+#### **Category:** Permission
+
+#### **What I Was Doing**
+
+Creating `my-service.sh` using nano and trying to run it as a background service.
+
+#### **What Went Wrong**
+
 Got Permission denied when trying to execute the script.
 
-### Error message
+#### **Error Message**
+
+```text
 bash: ./my-service.sh: Permission denied
+```
 
-### What I did to fix it
-Ran chmod +x my-service.sh to add execute permission.
-Then ran ./my-service.sh again successfully.
+#### **What I Did to Fix It**
 
-### Root cause
-Files created with nano or touch get 644 permission by
-default. No execute bit. Linux requires x to be explicitly
-granted before running a file as a program.
+Ran:
 
-### What I learned
-- Every .sh script needs chmod +x before it can run
-- Always ls -l before executing to check permissions
-- Default permission for new files is 644, no execute
-- Most common DevOps error on real servers
+```bash
+chmod +x my-service.sh
+```
+
+Then ran:
+
+```bash
+./my-service.sh
+```
+
+again successfully.
+
+#### **Root Cause**
+
+Files created with nano or touch get `644` permissions by default. No execute bit is assigned. Linux requires the execute (`x`) permission before running a file as a program.
+
+#### **What I Learned**
+
+* Every `.sh` script needs `chmod +x` before it can run
+* Always use `ls -l` before executing to check permissions
+* Default permission for new files is `644` (no execute permission)
+* This is one of the most common DevOps errors on real servers
 
 ---
 
-## INCIDENT-002
+#### **INCIDENT-002**
 
-**Date:** 2025-05-18
-**Day:** 05
-**Severity:** Low
-**Category:** Syntax
+#### **Date:** 2025-05-18
 
-### What I was doing
-Writing a while loop in my-service.sh to print a message
-every 3 seconds indefinitely.
+#### **Day:** 05
 
-### What went wrong
-Script printed the while loop as plain text and exited
-immediately showing [1]+ Done instead of looping.
+#### **Severity:** Low
 
-### Error message
+#### **Category:** Syntax
+
+#### **What I Was Doing**
+
+Writing a while loop in `my-service.sh` to print a message every 3 seconds indefinitely.
+
+#### **What Went Wrong**
+
+The script printed the while loop as plain text and exited immediately, showing `[1]+ Done` instead of looping.
+
+#### **Error Message**
+
+```text
 [1]+ Done    ./my-service.sh
 while true do echo Service is running.... sleep 3 done
+```
 
-### What I did to fix it
-Deleted broken script: rm my-service.sh
-Rewrote in nano with each keyword on its own line:
-  while true
-  do
-    echo "[$(date '+%H:%M:%S')] Service is running..."
-    sleep 3
-  done
-Ran cat my-service.sh to verify before executing.
+#### **What I Did to Fix It**
 
-### Root cause
-while/do/done were saved on one line in nano. Bash
-requires each keyword on its own line. On one line bash
-reads it as plain text not as a loop.
+Deleted the broken script:
 
-### What I learned
-- Bash while loop needs each keyword on its own line
-- [1]+ Done on a forever service = exited immediately
-- Always cat the script after writing to verify structure
-- Script printing its own code = syntax not interpreted
+```bash
+rm my-service.sh
+```
 
----
+Rewrote it in nano with each keyword on its own line:
 
-## INCIDENT-003
+```bash
+while true
+do
+  echo "[$(date '+%H:%M:%S')] Service is running..."
+  sleep 3
+done
+```
 
-**Date:** 2025-05-18
-**Day:** 05
-**Severity:** Low
-**Category:** Navigation
+Verified the script:
 
-### What I was doing
-Restarting the service with output redirected to service.log
+```bash
+cat my-service.sh
+```
 
-### What went wrong
-Got Exit 127 immediately. Service started and died.
+before executing.
 
-### Error message
-[1]+  Exit 127    ./my-service.sh >> service.log 2>&1
+#### **Root Cause**
 
-### What I did to fix it
-Ran pwd — discovered I was in ~/devops-lab not
-~/devops-lab/process where the script lives.
-Ran: cd ~/devops-lab/process
-Then ran the command again and it worked.
+`while`, `do`, and `done` were saved on a single line. Bash requires each keyword to be correctly structured. Bash interpreted the line as plain text rather than a loop.
 
-### Root cause
-Navigated away from process/ folder during debugging
-without noticing. Script was not in current directory.
-Exit 127 = command or file not found.
+#### **What I Learned**
 
-### What I learned
-- Exit 127 = file or command not found
-- Always pwd before running a script
-- ./filename only works if you are IN that folder
-- The prompt shows your current folder after the colon
+* Bash while loops require proper structure
+* `[1]+ Done` on a forever-running service usually means it exited immediately
+* Always inspect scripts with `cat` before running them
+* If a script prints its own code, Bash is not interpreting it correctly
 
 ---
 
-## INCIDENT-004
+#### **INCIDENT-003**
 
-**Date:** 2025-05-18
-**Day:** 05
-**Severity:** Low
-**Category:** Process
+#### **Date:** 2025-05-18
 
-### What I was doing
-Running ps aux | grep my-service to verify the service
-was running after restarting it.
+#### **Day:** 05
 
-### What went wrong
-ps aux showed TWO instances of my-service.sh running.
-PIDs 20437 and 20743 from earlier forgotten sessions.
+#### **Severity:** Low
 
-### Error message
+#### **Category:** Navigation
+
+#### **What I Was Doing**
+
+Restarting the service with output redirected to `service.log`.
+
+#### **What Went Wrong**
+
+Received Exit 127 immediately. The service started and then terminated.
+
+#### **Error Message**
+
+```text
+[1]+ Exit 127    ./my-service.sh >> service.log 2>&1
+```
+
+#### **What I Did to Fix It**
+
+Checked my location:
+
+```bash
+pwd
+```
+
+Discovered I was in:
+
+```text
+~/devops-lab
+```
+
+instead of:
+
+```text
+~/devops-lab/process
+```
+
+Corrected it:
+
+```bash
+cd ~/devops-lab/process
+```
+
+Then reran the command successfully.
+
+#### **Root Cause**
+
+I navigated away from the `process` directory during debugging. The script was not located in the current working directory.
+
+#### **What I Learned**
+
+* Exit `127` usually means command or file not found
+* Always run `pwd` before executing scripts
+* `./filename` only works when you are in the correct directory
+* The shell prompt indicates your current location
+
+---
+
+#### **INCIDENT-004**
+
+#### **Date:** 2025-05-18
+
+#### **Day:** 05
+
+#### **Severity:** Low
+
+#### **Category:** Process
+
+#### **What I Was Doing**
+
+Running:
+
+```bash
+ps aux | grep my-service
+```
+
+to verify the service was running after restarting it.
+
+#### **What Went Wrong**
+
+Two instances of `my-service.sh` were running simultaneously.
+
+#### **Error Message**
+
+```text
 valerie 20437 0.2 0.0 /bin/bash ./my-service.sh
 valerie 20743 0.2 0.0 /bin/bash ./my-service.sh
+```
 
-### What I did to fix it
-pkill -f my-service.sh       # killed all at once
-ps aux | grep my-service     # confirmed all dead
+#### **What I Did to Fix It**
+
+Killed all matching processes:
+
+```bash
+pkill -f my-service.sh
+```
+
+Verified termination:
+
+```bash
+ps aux | grep my-service
+```
+
+Restarted cleanly:
+
+```bash
 cd ~/devops-lab/process
 ./my-service.sh >> service.log 2>&1 &
-ps aux | grep my-service     # one clean instance
+ps aux | grep my-service
+```
 
-### Root cause
-Each time I ran ./my-service.sh & without killing the
-previous one, a new process started. Old ones kept
-running silently. Background processes are not stopped
-by Ctrl+C or by starting a new instance.
+#### **Root Cause**
 
-### What I learned
-- Always kill old instance before starting a new one
-- pkill -f name kills ALL matching processes at once
-- Background processes survive Ctrl+C
-- ps aux | grep name detects orphan processes
-- Multiple instances waste resources and cause confusion
+Each execution of:
+
+```bash
+./my-service.sh &
+```
+
+created another background process. Previous instances continued running.
+
+#### **What I Learned**
+
+* Always stop old instances before starting new ones
+* `pkill -f` can terminate all matching processes
+* Background processes continue running independently
+* `ps aux | grep` helps identify orphaned processes
+* Multiple service instances can waste resources and create confusion
 
 ---
 
-## INCIDENT-005
+#### **INCIDENT-005**
 
-**Date:** 2025-05-18
-**Day:** 05
-**Severity:** Low
-**Category:** Process
+#### **Date:** 2025-05-18
 
-### What I was doing
-Running service in background with & while trying to
-type other commands at the same time.
+#### **Day:** 05
 
-### What went wrong
-Service output flooded terminal every 3 seconds.
-Ctrl+C multiple times did not stop it.
+#### **Severity:** Low
 
-### Error message
+#### **Category:** Process
+
+#### **What I Was Doing**
+
+Running a service in the background using `&` while continuing other terminal work.
+
+#### **What Went Wrong**
+
+Service output flooded the terminal every 3 seconds. Pressing `Ctrl+C` repeatedly did not stop it.
+
+#### **Error Message**
+
+```text
 [02:02:56] Service is running...
 ^C
 [02:03:02] Service is running...
 ^C
 [02:03:05] Service is running...
+```
 
-### What I did to fix it
-Opened new terminal window and ran:
+#### **What I Did to Fix It**
+
+Opened another terminal and terminated the process:
+
+```bash
 pkill -f my-service.sh
+```
 
-Then restarted with output redirected:
+Restarted with output redirected:
+
+```bash
 ./my-service.sh >> service.log 2>&1 &
+```
+
+Monitored logs using:
+
+```bash
 tail -f service.log
+```
 
-### Root cause
-& detaches process from terminal CONTROL but not from
-terminal OUTPUT. Output still prints to screen unless
-you explicitly redirect it with >> logfile 2>&1.
+#### **Root Cause**
 
-### What I learned
-- & runs in background but output still hits terminal
-- >> service.log 2>&1 redirects output silently to file
-- Ctrl+C cannot kill a background process
-- tail -f lets you watch log without flooding terminal
-- Always redirect output when running background services
+The `&` operator detaches process execution from terminal control, but not from terminal output. Output continues to display unless redirected.
+
+#### **What I Learned**
+
+* `&` runs a process in the background
+* Background output still appears unless redirected
+* `>> service.log 2>&1` redirects both standard output and errors
+* `Ctrl+C` does not stop background processes
+* `tail -f` is useful for monitoring logs in real time
+* Always redirect output for background services
+
 ---
