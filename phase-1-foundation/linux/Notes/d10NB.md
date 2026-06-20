@@ -81,9 +81,9 @@ START SSH SERVICE ON MY SYSTEM + TEST LOCAL LOGIN
 
 IMPORTANT RULES
 
-# - "server_username" = username on the SERVER (not client)
-# - SSH service runs ONLY on the server
-# - Client
+##### - "server_username" = username on the SERVER (not client)
+##### - SSH service runs ONLY on the server
+**#####- Client**
 sudo journalctl -xe means “Show me what is happening right now in the system”
 
 Failed login attempts is an attack that can be investigated using SSH service.
