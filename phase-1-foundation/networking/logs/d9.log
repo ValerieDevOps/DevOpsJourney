@@ -1,0 +1,26 @@
+Script started on 2026-05-27 05:57:28+01:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="58" LINES="30"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ mkdi[K[K[K[Kcd dv[K[Kevops-lab[K[K[K[K[K[K[K[K[Kdeb[Kvops-lab
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ c[Kmkdir day[K[K[Kports
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ echo "[K[K[K[K[K[K# creade a folder fo r srver [K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kr to  s[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kecho ",h1.[K[K[K[K</[Kh> [KPort 8080 i s alive [K</h1>" > html.f[K[K[K[K[K[Kindex.html
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ cat h[Kindex.html
+[?2004l<h>Port 8080 is alive</h1>
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ # the abo[K[K[K[K[K[K[KFo the above i cre ated a [Kn html file to be displayed when he web servi [Kce star ts s[Krunning
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ # python [K3 -m https[K.se ver 8080
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ #set [K[K[K[K[Kcd inde[K[K[K[K[K[K[Kmv i[K[K[K[Kmv ~/devopslab[K[K[K-lab/inde x.html ~/devops-lab/ports/index.html
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ ls
+[?2004l[0m[01;34mapp[0m     [01;34mpermissions-lab[0m  [01;34mprojects[0m        service.log
+[01;34mconfig[0m  [01;34mports[0m            [01;34mscripts[0m
+[01;34mlogs[0m    [01;34mprocess[0m          [01;34msecret_project[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ cd ports
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/ports[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/ports[00m$ # [7mPython's bui[27m[7ml[27m[7mt-in HTTP server on port 8080[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/ports[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/ports[00m$ [C[CPython's built-in HTTP server on port 8080
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/ports[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/ports[00m$ python3 -m htt p.sever 8080
+[?2004l/usr/bin/python3: No module named http.sever
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/ports[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/ports[00m$ [7mpython3 -m htt[27m[7mp[27m[7m.server 8080[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/ports[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/ports[00m$ python3 -m http.server 8080
+[?2004lServing HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+127.0.0.1 - - [27/May/2026 06:16:21] "GET / HTTP/1.1" 200 -
+
+^C
+Keyboard interrupt received, exiting.
+[?20

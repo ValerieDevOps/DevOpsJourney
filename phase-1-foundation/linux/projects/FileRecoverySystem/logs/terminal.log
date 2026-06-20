@@ -1,0 +1,36 @@
+Script started on 2026-06-13 01:49:25+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[00m$ cd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ cd system[K[K[K[K[K[Ksystems
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ # create system sys[K[K[Kfiles
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ mkdir config
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ ls
+[?2004l[0m[01;34mconfig[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ mdir data[K[K[K[K[K[K[K[Kkdir config data stat e
+[?2004lmkdir: cannot create directory ‘config’: File exists
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ ls
+[?2004l[0m[01;34mconfig[0m  [01;34mdata[0m  [01;34mstate[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ cd config
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ mkdir syte[K[Kse[Ktem_co nfig.te[Kxt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ cd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ cd data
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/data[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/data[00m$ mkdir user_data.t xt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/data[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/data[00m$ cd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ cd state
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/state[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/state[00m$ mkdir system.[K_sta te.txt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/state[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/state[00m$ cd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ ls
+[?2004l[0m[01;34mconfig[0m  [01;34mdata[0m  [01;34mstate[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ ls config
+[?2004l[0m[01;34msystem_config.txt[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ ls data
+[?2004l[0m[01;34muser_data.txt[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ ls state
+[?2004l[0m[01;34msystem_state.txt[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ l[Kcd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ ls
+[?2004l[0m[01;34mPROJECT_OVERVIEW.md[0m  [01;34mREADME.md[0m  [01;34mincidents[0m  [01;34mlogs[0m  [01;34mrecovery_evidence[0m  [01;34mscripts[0m  [01;34msystems[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ xit[K[K[Kexit
+[?2004lexit
+
+Script done on 2026-06-13 02:05:15+01:00 [COMMAND_EXIT_CODE="130"]

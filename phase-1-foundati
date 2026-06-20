@@ -1,0 +1,27 @@
+Script started on 2026-06-15 14:40:48+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="58" LINES="30"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/networking/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/networking/logs[00m$ cd ~/
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd [K[K[Kcd DevOpsLa[K[K[K[K[K[K[K[Kdev0[Kops-lab
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ ls
+[?2004l[0m[01;34mapp[0m     [01;34mpermissions-lab[0m  [01;34mprojects[0m        service.log
+[01;34mconfig[0m  [01;34mports[0m            [01;34mscripts[0m
+[01;34mlogs[0m    [01;34mprocess[0m          [01;34msecret_project[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ mkdir port
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab[00m$ cd port
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ echo "<h1>Port  8080 is alive </h1> > index.html[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@"[1P[C[1@"
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ cat index.html
+[?2004l<h1>Port 8080 is alive </h1>
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ [7mPython HTTP Ser[27m[7mv[27m[7mer[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ Python HTTP Serv[1Pe[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython3 -m http .server 8080
+[?2004lServing HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+127.0.0.1 - - [15/Jun/2026 15:15:53] "GET / HTTP/1.1" 200 -
+^C
+Keyboard interrupt received, exiting.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ curl [K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ curl [K[K[K[K[K[7mcurl http://local[27m[7mh[27m[7most:8080[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ curl http://localhost:8080
+[?2004lcurl: (7) Failed to connect to localhost port 8080 after 3 ms: Couldn't connect to server
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ #restart service
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ python -m http.sever 89[K080
+[?2004lCommand 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/devops-lab/port[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/devops-lab/port[00m$ [7mpython -m http.sever 8080[27mpython 

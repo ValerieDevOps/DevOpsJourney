@@ -1,0 +1,446 @@
+Script started on 2026-06-17 15:18:24+01:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ssh localhost
+[?2004lThe authenticity of host 'localhost (127.0.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:oLUxYYl5gLaJqT06mcInO8JMWROoqGLZcHzsO0POK9U.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'localhost' (ED25519) to the list of known hosts.
+valerie@localhost's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.6.114.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Jun 17 15:18:43 WAT 2026
+
+  System load:  0.01                Processes:             49
+  Usage of /:   0.2% of 1006.85GB   Users logged in:       1
+  Memory usage: 10%                 IPv4 address for eth0: 172.24.107.115
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo systemctl stop ssh ssh localhost[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl stop ssh ssh localhost
+[?2004l[sudo] password for valerie: 
+[0;1;31mFailed to stop localhost.service: Unit localhost.service not loaded.[0m
+[0;1;38;5;185mStopping 'ssh.service', but its triggering units are still active:[0m
+[0;1;38;5;185mssh.socket[0m
+[0;1;38;5;185mStopping 'ssh.service', but its triggering units are still active:[0m
+[0;1;38;5;185mssh.socket[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # attacl[Kk on a system can be [K[K[K[K[K[K[K[K[Km
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # simulate faail[K[K[Kiled login attempt s
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ss[K[K#login with a fake [K[K[K[K[Kfake email
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ssh fakeuser@localhost
+[?2004lfakeuser@localhost's password: 
+Permission denied, please try again.
+fakeuser@localhost's password: 
+Permission denied, please try again.
+fakeuser@localhost's password: 
+Connection closed by 127.0.0.1 port 22
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo journalctl -u ssh sudo gre[27m[7mp[27m[7m "Failed password" /var/log/auth.log[27m[Asudo journalctl -u ssh sudo grep "Failed password" /var/log/auth.log
+[?2004l[sudo] password for valerie: 
+[0;1;31mFailed to add match 'sudo': Invalid argument[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo journalctl -u ssh sudo gre[27m[7mp[27m[7m "Failed password" /var/log/auth.log[27m[Asudo journalctl -u ssh sudo grep "Failed password" /var/log/auth.log
+[?2004l[0;1;31mFailed to add match 'sudo': Invalid argument[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ q
+[?2004lCommand 'q' not found, but can be installed with:
+sudo snap install q                       # version 1.6.3-1, or
+sudo apt  install python3-q-text-as-data  # version 3.1.6-3
+See 'snap info q' for additional versions.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo journalctl -u ssh sudo grep "Failed password" /var/log/auth.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo journalctl -u ssh sudo grep "Failed password" /var/log/auth.log
+[?2004l[0;1;31mFailed to add match 'sudo': Invalid argument[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo journalctl -u ssh[K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo journalctl -u ssh
+[?2004l[sudo] password for valerie: 
+Sorry, try again.
+[sudo] password for valerie: 
+[?1h=Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on :: port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection closed by 127.0.0.1 port 54252 [preauth][m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted password for valerie from 127.0.0.1 port 41354 ssh2[m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd:session): session opened for user valerie(uid=1000) by valerie(ui[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received signal 15; terminating.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: Deactivated successfully.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on :: port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user fakeuser from 127.0.0.1 port 52418[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruse[m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+[7mlines 1-21/21 (END)[27m[K[K[?1l>[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo journalctl -u ssh sudo grep "Failed password" /var/log/auth.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo journalctl -u ssh sudo grep "Failed password" /var/log/auth.log
+[?2004l[0;1;31mFailed to add match 'sudo': Invalid argument[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo grep "Failed password" /var/log/auth.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo grep "Failed password" /var/log/auth.log
+[?2004l2026-06-17T15:29:59.789597+01:00 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2
+2026-06-17T15:30:07.809928+01:00 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2
+2026-06-17T15:38:30.334124+01:00 DESKTOP-MNEU0P5 sudo:  valerie : TTY=pts/9 ; PWD=/home/valerie ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh sudo grep 'Failed password' /var/log/auth.log
+2026-06-17T15:38:37.722107+01:00 DESKTOP-MNEU0P5 sudo:  valerie : TTY=pts/9 ; PWD=/home/valerie ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh sudo grep 'Failed password' /var/log/auth.log
+2026-06-17T15:39:21.191493+01:00 DESKTOP-MNEU0P5 sudo:  valerie : TTY=pts/9 ; PWD=/home/valerie ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh sudo grep 'Failed password' /var/log/auth.log
+2026-06-17T15:57:22.435760+01:00 DESKTOP-MNEU0P5 sudo:  valerie : TTY=pts/9 ; PWD=/home/valerie ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh sudo grep 'Failed password' /var/log/auth.log
+2026-06-17T15:57:34.853454+01:00 DESKTOP-MNEU0P5 sudo:  valerie : TTY=pts/9 ; PWD=/home/valerie ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo journalctl -u ssh | grep "Failed password"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo journalctl -u ssh | grep "Failed password"
+[?2004lJun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: [01;31m[KFailed password[m[K for invalid user fakeuser from 127.0.0.1 port 52418 ssh2
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: [01;31m[KFailed password[m[K for invalid user fakeuser from 127.0.0.1 port 52418 ssh2
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mudo journalctl -xe[27mudo journalctl -xe[1@s
+[?2004l[?1h=[KJun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:58:50 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:59:36 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:00:08 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:00:40 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:01:11 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:01:42 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:02:14 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:02:24 DESKTOP-MNEU0P5 sudo[8032]: [0;1;39m[0;1;31m[0;1;39m valerie : TT[m[7m>[27m
+Jun 17 16:02:24 DESKTOP-MNEU0P5 sudo[8032]: pam_unix(sudo[m[7m>[27m
+[7mlines 1132-1160/1160 (END)[27m[K[H[2J[HJun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Daemon: connecting to Windows Agent[m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Connecting"[m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: WARNING Daemon: could not connect to Windows Agent: could not get add[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Reconnecting to Windows host in 60 seconds[m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Not connected: waiting to retry"[m
+Jun 17 15:58:50 DESKTOP-MNEU0P5 systemd-resolved[139]: Clock change detected. Flushing caches.[m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Daemon: connecting to Windows Agent[m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Connecting"[m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: WARNING Daemon: could not connect to Windows Agent: could not get add[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Reconnecting to Windows host in 60 seconds[m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Not connected: waiting to retry"[m
+Jun 17 15:59:36 DESKTOP-MNEU0P5 systemd-resolved[139]: Clock change detected. Flushing caches.[m
+Jun 17 16:00:08 DESKTOP-MNEU0P5 systemd-resolved[139]: Clock change detected. Flushing caches.[m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Daemon: connecting to Windows Agent[m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Connecting"[m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: WARNING Daemon: could not connect to Windows Agent: could not get add[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Reconnecting to Windows host in 60 seconds[m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Not connected: waiting to retry"[m
+Jun 17 16:00:40 DESKTOP-MNEU0P5 systemd-resolved[139]: Clock change detected. Flushing caches.[m
+Jun 17 16:01:11 DESKTOP-MNEU0P5 systemd-resolved[139]: Clock change detected. Flushing caches.[m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Daemon: connecting to Windows Agent[m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Connecting"[m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: WARNING Daemon: could not connect to Windows Agent: could not get add[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: INFO Reconnecting to Windows host in 60 seconds[m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEBUG Updated systemd status to "Not connected: waiting to retry"[m
+Jun 17 16:01:42 DESKTOP-MNEU0P5 systemd-resolved[139]: Clock change detected. Flushing caches.[m
+Jun 17 16:02:14 DESKTOP-MNEU0P5 systemd-resolved[139]: Clock change detected. Flushing caches.[m
+Jun 17 16:02:24 DESKTOP-MNEU0P5 sudo[8032]: [0;1;39m[0;1;31m[0;1;39m valerie : TTY=pts/9 ; PWD=/home/valerie ; USER=root ; COMMAND=/usr/bin/journal[m[7m>[27m
+Jun 17 16:02:24 DESKTOP-MNEU0P5 sudo[8032]: pam_unix(sudo:session): session opened for user root(uid=0) by valerie(uid=1000)[m
+[1m~[0m
+[7mlines 1132-1160/1160 (END)[27m[K[H[2J[HJun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:58:34 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:58:50 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 15:59:33 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 15:59:36 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:00:08 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:00:31 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:00:40 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:01:11 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: WAR[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: INF[m[7m>[27m
+Jun 17 16:01:30 DESKTOP-MNEU0P5 wsl-pro-service[250]: DEB[m[7m>[27m
+Jun 17 16:01:42 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:02:14 DESKTOP-MNEU0P5 systemd-resolved[139]: Cl[m[7m>[27m
+Jun 17 16:02:24 DESKTOP-MNEU0P5 sudo[8032]: [0;1;39m[0;1;31m[0;1;39m valerie : TT[m[7m>[27m
+Jun 17 16:02:24 DESKTOP-MNEU0P5 sudo[8032]: pam_unix(sudo[m[7m>[27m
+[7mlines 1132-1160/1160 (END)[27m[K[K[?1l>[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo journalctl -u wsl-pro-serv[27m[7mi[27m[7mce -n 50[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ sudo journalctl -u wsl-pro-service -n 50
+[?2004l[?1h=-- No entries --[m
+[K[?1l>[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m sudo journalctl -u wsl-pro-ser[27m[7mv[27m[7mice [27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$  sudo journalctl -u wsl-pro-service 
+[?2004l[?1h=-- No entries --[m
+[K[?1l>[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo journalctl -u ssh -n 50[27msudo journalctl -u ssh -n 50
+[?2004l[?1h=Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listen[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listen[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.s[m[7m>[27m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection cl[m[7m>[27m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted pass[m[7m>[27m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received sign[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: [m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.s[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listen[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listen[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.s[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user [m[7m>[27m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd[m[7m>[27m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd[m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed passwo[m[7m>[27m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd[m[7m>[27m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed passwo[m[7m>[27m
+[7mlines 1-21/21 (END)[27m[K...skipping...
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on :: port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection closed by 127.0.0.1 port 54252 [preauth][m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted password for valerie from 127.0.0.1 port 41354 ssh2[m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd:session): session opened for user valerie(uid=1000) by valerie(ui[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received signal 15; terminating.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: Deactivated successfully.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on :: port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user fakeuser from 127.0.0.1 port 52418[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruse[m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[HJun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on :: port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection closed by 127.0.0.1 port 54252 [preauth][m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted password for valerie from 127.0.0.1 port 41354 ssh2[m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd:session): session opened for user valerie(uid=1000) b[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received signal 15; terminating.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: Deactivated successfully.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on :: port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user fakeuser from 127.0.0.1 port 52418[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 [m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418[m[7m>[27m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418[m[7m>[27m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[HJun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on :: port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection closed by 127.0.0.1 port 54252 [preauth][m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted password for valerie from 127.0.0.1 port 41354 ssh2[m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd:session): session opened for user valerie(uid=1000) by valerie(ui[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received signal 15; terminating.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: Deactivated successfully.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on :: port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user fakeuser from 127.0.0.1 port 52418[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruse[m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[HJun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.se[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listenin[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listenin[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.ser[m[7m>[27m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection clos[m[7m>[27m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted passwo[m[7m>[27m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd:s[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received signal[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.se[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: De[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.ser[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.se[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listenin[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listenin[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.ser[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user fa[m[7m>[27m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:a[m[7m>[27m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:a[m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed password[m[7m>[27m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:a[m[7m>[27m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed password[m[7m>[27m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[HJun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listening on :: port 22.[m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection closed by 127.0.0.1 port 54252 [preauth][m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted password for valerie from 127.0.0.1 port 41354 ssh2[m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd:session): session opened for user valerie(uid=1000) by valerie(ui[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received signal 15; terminating.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: Deactivated successfully.[m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on 0.0.0.0 port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listening on :: port 22.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user fakeuser from 127.0.0.1 port 52418[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruse[m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:auth): check pass; user unknown[0m[m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed password for invalid user fakeuser from 127.0.0.1 port 52418 ssh2[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[H[2J[H[H[2J[HJun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.se[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listenin[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 sshd[7771]: Server listenin[m[7m>[27m
+Jun 17 15:06:41 DESKTOP-MNEU0P5 systemd[1]: Started ssh.ser[m[7m>[27m
+Jun 17 15:17:32 DESKTOP-MNEU0P5 sshd[7813]: Connection clos[m[7m>[27m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: Accepted passwo[m[7m>[27m
+Jun 17 15:18:43 DESKTOP-MNEU0P5 sshd[7858]: pam_unix(sshd:s[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 sshd[7771]: Received signal[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopping ssh.se[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: ssh.service: De[m[7m>[27m
+Jun 17 15:22:33 DESKTOP-MNEU0P5 systemd[1]: Stopped ssh.ser[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.se[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listenin[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7963]: Server listenin[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 systemd[1]: Started ssh.ser[m[7m>[27m
+Jun 17 15:29:46 DESKTOP-MNEU0P5 sshd[7964]: Invalid user fa[m[7m>[27m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:a[m[7m>[27m
+Jun 17 15:29:57 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:a[m[7m>[27m
+Jun 17 15:29:59 DESKTOP-MNEU0P5 sshd[7964]: Failed password[m[7m>[27m
+Jun 17 15:30:05 DESKTOP-MNEU0P5 sshd[7964]: [0;1;39m[0;1;31m[0;1;39mpam_unix(sshd:a[m[7m>[27m
+Jun 17 15:30:07 DESKTOP-MNEU0P5 sshd[7964]: Failed password[m[7m>[27m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-21/21 (END)[27m[K[K[?1l>[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo systemctl restart ssh [27msudo systemctl restart ssh 
+[?2004l[sudo] password for valerie: 
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7msudo systemctl status ssh[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl status ssh
+[A
+[?2004l[?1h=[0;1;32m●[0m ssh.service - OpenBSD Secure Shell server[m
+     Loaded: loaded (]8;;file://DESKTOP-MNEU0P5/usr/lib/systemd/system/ssh.service/usr/lib/systemd/system/ssh.service]8;;; [0;1;38;5;185md[m[7m>[27m
+     Active: [0;1;32mactive (running)[0m since Thu 2026-06-18 01:43:07[m[7m>[27m
+TriggeredBy: [0;1;32m●[0m ssh.socket[m
+       Docs: ]8;;man:sshd(8)man:sshd(8)]8;;[m
+             ]8;;man:sshd_config(5)man:sshd_config(5)]8;;[m
+    Process: 8369 ExecStartPre=/usr/sbin/sshd -t (code=exit[m[7m>[27m
+   Main PID: 8371 (sshd)[m
+      Tasks: 1 (limit: 4616)[m
+     Memory: 1.4M (peak: 1.8M)[m
+        CPU: 63ms[m
+     CGroup: /system.slice/ssh.service[m
+             └─[0;38;5;245m8371 "sshd: /usr/sbin/sshd -D [listener] 0 o[m[7m>[27m
+[m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.se[m[7m>[27m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 sshd[8371]: Server listenin[m[7m>[27m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 sshd[8371]: Server listenin[m[7m>[27m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 systemd[1]: Started ssh.ser[m[7m>[27m
+[7mlines 1-18/18 (END)[27m[K...skipping...
+[0;1;32m●[0m ssh.service - OpenBSD Secure Shell server[m
+     Loaded: loaded (]8;;file://DESKTOP-MNEU0P5/usr/lib/systemd/system/ssh.service/usr/lib/systemd/system/ssh.service]8;;; [0;1;38;5;185mdisabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Thu 2026-06-18 01:43:07 WAT; 24s ago[m
+TriggeredBy: [0;1;32m●[0m ssh.socket[m
+       Docs: ]8;;man:sshd(8)man:sshd(8)]8;;[m
+             ]8;;man:sshd_config(5)man:sshd_config(5)]8;;[m
+    Process: 8369 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)[m
+   Main PID: 8371 (sshd)[m
+      Tasks: 1 (limit: 4616)[m
+     Memory: 1.4M (peak: 1.8M)[m
+        CPU: 63ms[m
+     CGroup: /system.slice/ssh.service[m
+             └─[0;38;5;245m8371 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"[0m[m
+[m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...[m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 sshd[8371]: Server listening on 0.0.0.0 port 22.[m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 sshd[8371]: Server listening on :: port 22.[m
+Jun 18 01:43:07 DESKTOP-MNEU0P5 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 1-18/18 (END)[27m[K[K[?1l>[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to localhost closed.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-18 02:44:07+01:00 [COMMAND_EXIT_CODE="0"]

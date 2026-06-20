@@ -1,0 +1,427 @@
+Script started on 2026-06-13 06:25:54+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal[00m$ cd `[K~/
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd [7m~/DevOpsJourney/phase-1-founda[27m[7mt[27m[7mion/linux/projects/FileRecoverySystem[27m[A~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ ls
+[?2004l[0m[01;34mPROJECT_OVERVIEW.md[0m  [01;34mincidents[0m  [01;34mrecovery_evidence[0m  [01;34msystems[0m
+[01;34mREADME.md[0m            [01;34mlogs[0m       [01;34mscripts[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ # create entry file[K[K[K[K[K[K[K[K[K[K[K app entry file
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$  touch main.py
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ ls
+[?2004l[0m[01;34mPROJECT_OVERVIEW.md[0m  [01;34mincidents[0m  main.py            [01;34mscripts[0m
+[01;34mREADME.md[0m            [01;34mlogs[0m       [01;34mrecovery_evidence[0m  [01;34msystems[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [K[A[K]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [7mfind . -type d -name scripts[27mfind . -type d -name scripts[C[K[K[K[K[K[K[Ksystem.lo g
+[?2004l./logs/system.log
+find: ‘./systems/config/system_config.txt’: Permission denied
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [7mfind . -type f -name system.lo[27m[7mg[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ find . -type f -name system.log
+[?2004lfind: ‘./systems/config/system_config.txt’: Permission denied
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [7mchmod 700 system_config.txt[27mchmod 700 system_config.txt
+[?2004lchmod: cannot access 'system_config.txt': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ ls[K[Kcd S[Ksystems
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ ls
+[?2004l[0m[01;34mconfig[0m  [01;34mdata[0m  [01;34mstate[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems[00m$ cd config
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ [7mchmod 700 syste[27m[7mm[27m[7m_config.txt[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ chmod 700 system_config.txt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ [7mfind . -type d [27m[7m-[27m[7mname system.log[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ find . -type d -name system.log
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ cd `/[K~[K[K~/
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m find . -type f -name system.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C find . -type f -name system.log
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd [7m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [7m~/DevOpsJourney/phase-1-founda[27m[7mt[27m[7mion/linux/projects/FileRecoverySystem[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ ~/DevOpsJourney/phase-1-foundat[1Pion/linux/projects/FileRecoverySyste[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfind [K[K[K[K[K[7mfind . -type d -name system.lo[27m[7mg[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ find . -type d -name system.log
+[?2004l./logs/system.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ cd ;[Klog[K[K[K[K[K[Kcd `[K~/
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mfind ~/DevOpsJourney -type f -name system.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind ~/DevOpsJourney -type f -name system.log[1P[C[1P[C[1@ [1@d
+[?2004l/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mfind ~ -type f -name system.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind ~ -type f -name system.log
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mvalerie@DESKTOP-MNEU0P5:~$ find ~[27m[7m [27m[7m-type f -name system.log [27m
+[7mvalerie@DESKTOP-MNEU0P5:~$[27m[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ valerie@DESKTOP-MNEU0P5:~$ find ~ -type f -name system.log
+[1Pvalerie@DESKTOP-MNEU0P5:~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mfind ~ -type f -name system.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind ~ -type f -name system.log[C[C[C[C[C[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg g[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg[1Pg[C[Kd [7m -name system.log[27m -name system.log
+[?2004l/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd ^[[200~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log~[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[1P/system.log~[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/[1Psystem.log~[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/s[1Pystem.log~[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/sys[2Ptem.log~[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/syst[1Pem.log~[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/syste[1Pm.log~[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C ~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log~[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C
+
+
+[?2004lbash: cd: /home/valerie/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log~: No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd ~/[7m/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system[27m[7m.[27m[7mlog[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chome/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.l[1Pog[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.lo[1Pg[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C
+
+[?2004lbash: cd: /home/valerie/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log: No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd ~/[7mDevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.[27m
+[7mlog[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[CDevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.
+log
+[?2004lbash: cd: /home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.: No such file or directory
+Command 'log' not found, but there are 15 similar ones.
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd [7m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[00m$ ls
+[?2004l[0m[01;34msystem.log[0m  [01;34mterminal[0m  terminal.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[00m$ [7mls -l[27mls -l
+[?2004ltotal 16
+drwxr-xr-x 2 valerie valerie 4096 Jun 13 01:44 [0m[01;34msystem.log[0m
+drwxr-xr-x 2 valerie valerie 4096 Jun 13 06:25 [01;34mterminal[0m
+-rw-r--r-- 1 valerie valerie 7109 Jun 13 02:05 terminal.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[00m$ pwd
+[?2004l/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[00m$ l
+[?2004l[0m[01;34msystem.log[0m/  [01;34mterminal[0m/  terminal.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[00m$ cd system.log
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log[00m$ cd `[K~/
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls [7m/home/valerie/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/[27m[7ml[27m[7mogs/system.log[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C/home/valerie/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log
+[?2004lls: cannot access '/home/valerie/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls ~^[[200~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log~[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/sy[1Pstem.log~[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/sys[1Ptem.log~[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/syst[1Pem.log~[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system[2P.log~[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C0~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.[1Plog~[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C~/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.l[1Pog~[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C
+
+[?2004lls: cannot access '/home/valerie/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log~': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls ~/[7mDevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CDevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls [7m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs
+[?2004l[0m[01;34msystem.log[0m  [01;34mterminal[0m  terminal.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ls -l [7m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs
+[?2004ltotal 16
+drwxr-xr-x 2 valerie valerie 4096 Jun 13 01:44 [0m[01;34msystem.log[0m
+drwxr-xr-x 2 valerie valerie 4096 Jun 13 06:25 [01;34mterminal[0m
+-rw-r--r-- 1 valerie valerie 7109 Jun 13 02:05 terminal.log
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mchmod 000 system/config/system_co[27m[7mn[27m[7mfig.txt[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ chmod 000 system/config/system_config.txt
+[?2004lchmod: cannot access 'system/config/system_config.txt': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ find ~ type dd[K name [7msystem_config.[27m[7mt[27m[7mxt[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csystem_config.txt
+[?2004l/home/valerie
+/home/valerie/.landscape
+/home/valerie/.landscape/sysinfo.log
+/home/valerie/.motd_shown
+/home/valerie/devops-lab
+/home/valerie/devops-lab/projects
+/home/valerie/devops-lab/permissions-lab
+/home/valerie/devops-lab/permissions-lab/secret.key
+/home/valerie/devops-lab/permissions-lab/readme.txt
+/home/valerie/devops-lab/permissions-lab/deploy.sh
+/home/valerie/devops-lab/permissions-lab/settings.conf
+/home/valerie/devops-lab/app
+/home/valerie/devops-lab/app/src
+/home/valerie/devops-lab/app/src/main.py
+/home/valerie/devops-lab/app/app.py
+/home/valerie/devops-lab/scripts
+/home/valerie/devops-lab/secret_project
+/home/valerie/devops-lab/secret_project/secret.txt
+/home/valerie/devops-lab/process
+/home/valerie/devops-lab/process/my-service.sh
+/home/valerie/devops-lab/process/service.log
+/home/valerie/devops-lab/config
+/home/valerie/devops-lab/config/.env
+/home/valerie/devops-lab/config/settings.conf
+/home/valerie/devops-lab/logs
+/home/valerie/devops-lab/logs/terminal_log
+/home/valerie/devops-lab/logs/terminal_log/day4_terminal.log
+/home/valerie/devops-lab/logs/access.log
+/home/valerie/devops-lab/logs/error.log
+/home/valerie/devops-lab/ports
+/home/valerie/devops-lab/ports/index.html
+/home/valerie/devops-lab/service.log
+/home/valerie/.sudo_as_admin_successful
+/home/valerie/.lesshst
+/home/valerie/.profile
+/home/valerie/.local
+/home/valerie/.local/share
+/home/valerie/.local/share/nano
+/home/valerie/.config
+/home/valerie/.config/procps
+/home/valerie/.cache
+/home/valerie/.cache/motd.legal-displayed
+/home/valerie/.bash_history
+/home/valerie/.bashrc
+/home/valerie/DevOpsJourney
+/home/valerie/DevOpsJourney/README.md
+/home/valerie/DevOpsJourney/phase-2-building
+/home/valerie/DevOpsJourney/phase-2-building/aws-monitoring
+/home/valerie/DevOpsJourney/phase-2-building/aws-monitoring/projects
+/home/valerie/DevOpsJourney/phase-2-building/aws-monitoring/projects/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/aws-monitoring/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced/scripts
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced/scripts/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced/logs
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced/logs/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced/incidents
+/home/valerie/DevOpsJourney/phase-2-building/linux-advanced/incidents/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/ci-cd
+/home/valerie/DevOpsJourney/phase-2-building/ci-cd/projects
+/home/valerie/DevOpsJourney/phase-2-building/ci-cd/projects/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/ci-cd/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/docker
+/home/valerie/DevOpsJourney/phase-2-building/docker/projects
+/home/valerie/DevOpsJourney/phase-2-building/docker/projects/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/docker/.gitkeep
+/home/valerie/DevOpsJourney/phase-2-building/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation
+/home/valerie/DevOpsJourney/phase-1-foundation/networking
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/scripts
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/scripts/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/logs
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/logs/d9.log
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/logs/d9_2.log
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/logs/d8.log
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/logs/day8_2.log
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/logs/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/incidents
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/incidents/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/networking/incidents/week2_day8.md
+/home/valerie/DevOpsJourney/phase-1-foundation/git
+/home/valerie/DevOpsJourney/phase-1-foundation/git/projects
+/home/valerie/DevOpsJourney/phase-1-foundation/git/projects/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/git/scripts
+/home/valerie/DevOpsJourney/phase-1-foundation/git/scripts/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/git/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/git/incidents
+/home/valerie/DevOpsJourney/phase-1-foundation/git/incidents/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/linux
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/recovery_evidence
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/README.md
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/scripts
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/main.py
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/system.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal/recovery.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal/investigation.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal/failure.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/data
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/data/user_data.txt
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/state
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/state/system_state.txt
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/incidents
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/PROJECT_OVERVIEW.md
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/scripts
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/scripts/day01.sh
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/scripts/day2.sh
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/scripts/day1.sh
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/scripts/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs/t
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs/terminal-logging
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs/terminal-logging/day4_terminal.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs/terminal-logging/day5_log.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs/terminal-logging/day6.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs/terminal-logging/day01.log
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/logs/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/documentation
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/documentation/day1.md
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/documentation/day2.md
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/documentation/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/incidents
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/incidents/week1_06.md
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/incidents/week1-da
+/home/valerie/DevOpsJourney/phase-1-foundation/linux/incidents/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/projects
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/projects/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/scripts
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/scripts/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/logs
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/logs/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/incidents
+/home/valerie/DevOpsJourney/phase-1-foundation/aws-ec2/incidents/.gitkeep
+/home/valerie/DevOpsJourney/phase-1-foundation/.gitkeep
+/home/valerie/DevOpsJourney/.gitkeep
+/home/valerie/DevOpsJourney/phase-3-production
+/home/valerie/DevOpsJourney/phase-3-production/terraform
+/home/valerie/DevOpsJourney/phase-3-production/terraform/projects
+/home/valerie/DevOpsJourney/phase-3-production/terraform/projects/.gitkeep
+/home/valerie/DevOpsJourney/phase-3-production/terraform/.gitkeep
+/home/valerie/DevOpsJourney/phase-3-production/ci-cd-production
+/home/valerie/DevOpsJourney/phase-3-production/ci-cd-production/projects
+/home/valerie/DevOpsJourney/phase-3-production/ci-cd-production/projects/.gitkeep
+/home/valerie/DevOpsJourney/phase-3-production/ci-cd-production/.gitkeep
+/home/valerie/DevOpsJourney/phase-3-production/.gitkeep
+/home/valerie/DevOpsJourney/phase-3-production/incidents
+/home/valerie/DevOpsJourney/phase-3-production/incidents/.gitkeep
+/home/valerie/DevOpsJourney/.git
+/home/valerie/DevOpsJourney/.git/branches
+/home/valerie/DevOpsJourney/.git/refs
+/home/valerie/DevOpsJourney/.git/refs/tags
+/home/valerie/DevOpsJourney/.git/refs/remotes
+/home/valerie/DevOpsJourney/.git/refs/remotes/origin
+/home/valerie/DevOpsJourney/.git/refs/remotes/origin/main
+/home/valerie/DevOpsJourney/.git/refs/remotes/origin/HEAD
+/home/valerie/DevOpsJourney/.git/refs/heads
+/home/valerie/DevOpsJourney/.git/refs/heads/main
+/home/valerie/DevOpsJourney/.git/index
+/home/valerie/DevOpsJourney/.git/hooks
+/home/valerie/DevOpsJourney/.git/hooks/push-to-checkout.sample
+/home/valerie/DevOpsJourney/.git/hooks/pre-commit.sample
+/home/valerie/DevOpsJourney/.git/hooks/prepare-commit-msg.sample
+/home/valerie/DevOpsJourney/.git/hooks/update.sample
+/home/valerie/DevOpsJourney/.git/hooks/commit-msg.sample
+/home/valerie/DevOpsJourney/.git/hooks/pre-merge-commit.sample
+/home/valerie/DevOpsJourney/.git/hooks/post-update.sample
+/home/valerie/DevOpsJourney/.git/hooks/pre-applypatch.sample
+/home/valerie/DevOpsJourney/.git/hooks/applypatch-msg.sample
+/home/valerie/DevOpsJourney/.git/hooks/pre-push.sample
+/home/valerie/DevOpsJourney/.git/hooks/sendemail-validate.sample
+/home/valerie/DevOpsJourney/.git/hooks/pre-rebase.sample
+/home/valerie/DevOpsJourney/.git/hooks/pre-receive.sample
+/home/valerie/DevOpsJourney/.git/hooks/fsmonitor-watchman.sample
+/home/valerie/DevOpsJourney/.git/HEAD
+/home/valerie/DevOpsJourney/.git/info
+/home/valerie/DevOpsJourney/.git/info/exclude
+/home/valerie/DevOpsJourney/.git/config
+/home/valerie/DevOpsJourney/.git/logs
+/home/valerie/DevOpsJourney/.git/logs/refs
+/home/valerie/DevOpsJourney/.git/logs/refs/remotes
+/home/valerie/DevOpsJourney/.git/logs/refs/remotes/origin
+/home/valerie/DevOpsJourney/.git/logs/refs/remotes/origin/main
+/home/valerie/DevOpsJourney/.git/logs/refs/remotes/origin/HEAD
+/home/valerie/DevOpsJourney/.git/logs/refs/heads
+/home/valerie/DevOpsJourney/.git/logs/refs/heads/main
+/home/valerie/DevOpsJourney/.git/logs/HEAD
+/home/valerie/DevOpsJourney/.git/packed-refs
+/home/valerie/DevOpsJourney/.git/description
+/home/valerie/DevOpsJourney/.git/objects
+/home/valerie/DevOpsJourney/.git/objects/08
+/home/valerie/DevOpsJourney/.git/objects/08/a323081259a4bac229d87a5e2d7283a4815d1d
+/home/valerie/DevOpsJourney/.git/objects/d8
+/home/valerie/DevOpsJourney/.git/objects/d8/abef532b995c755da5fa7d28cd4a30a84c1f25
+/home/valerie/DevOpsJourney/.git/objects/14
+/home/valerie/DevOpsJourney/.git/objects/14/277c01d5b3891db462432855855c0ec5028191
+/home/valerie/DevOpsJourney/.git/objects/53
+/home/valerie/DevOpsJourney/.git/objects/53/ed4af39810f3c5fd09247abaf2fecb46e65cb7
+/home/valerie/DevOpsJourney/.git/objects/e6
+/home/valerie/DevOpsJourney/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+/home/valerie/DevOpsJourney/.git/objects/0b
+/home/valerie/DevOpsJourney/.git/objects/0b/685d132762220dee2cae645b1fb31e71770320
+/home/valerie/DevOpsJourney/.git/objects/85
+/home/valerie/DevOpsJourney/.git/objects/85/2300e2fae8e5a892cfc05e6da89ad21478e13b
+/home/valerie/DevOpsJourney/.git/objects/e8
+/home/valerie/DevOpsJourney/.git/objects/e8/a8593b3a96ab7ea2af92226a29ce6615dc0021
+/home/valerie/DevOpsJourney/.git/objects/f2
+/home/valerie/DevOpsJourney/.git/objects/f2/6cc184d004e9cc8106b33d6c49f58eaa6786a3
+/home/valerie/DevOpsJourney/.git/objects/c8
+/home/valerie/DevOpsJourney/.git/objects/c8/c182b370a28c7fbb9bc6191422d8d07e184c63
+/home/valerie/DevOpsJourney/.git/objects/8b
+/home/valerie/DevOpsJourney/.git/objects/8b/ee6d60d465f4eb0c07ac27b06980effd834ee2
+/home/valerie/DevOpsJourney/.git/objects/96
+/home/valerie/DevOpsJourney/.git/objects/96/7a703c0633afed37ce441aa8c5fe03dd3eb21b
+/home/valerie/DevOpsJourney/.git/objects/d5
+/home/valerie/DevOpsJourney/.git/objects/d5/64d0bc3dd917926892c55e3706cc116d5b165e
+/home/valerie/DevOpsJourney/.git/objects/90
+/home/valerie/DevOpsJourney/.git/objects/90/36f3cf7f112006b5e02c5ba8e01f7e90030514
+/home/valerie/DevOpsJourney/.git/objects/11
+/home/valerie/DevOpsJourney/.git/objects/11/8e56f4a22eb424b5737f1a90fdbf4939bb465f
+/home/valerie/DevOpsJourney/.git/objects/36
+/home/valerie/DevOpsJourney/.git/objects/36/c104b2ef7a009d619074a3b9bfe21346bdb781
+/home/valerie/DevOpsJourney/.git/objects/c9
+/home/valerie/DevOpsJourney/.git/objects/c9/df4618ca0255a877262cc1acc521e993367e4f
+/home/valerie/DevOpsJourney/.git/objects/cd
+/home/valerie/DevOpsJourney/.git/objects/cd/60ac078f0f57bb5b75d25f6fa6eeba63b9bdbe
+/home/valerie/DevOpsJourney/.git/objects/88
+/home/valerie/DevOpsJourney/.git/objects/88/071ade8bc539029f548aa866cbc93848c43326
+/home/valerie/DevOpsJourney/.git/objects/77
+/home/valerie/DevOpsJourney/.git/objects/77/9db84672a9ca131300de5e098a6b7fde2a243b
+/home/valerie/DevOpsJourney/.git/objects/97
+/home/valerie/DevOpsJourney/.git/objects/97/4aa6e4c08f3168f03d071cf59234ba1fd36a94
+/home/valerie/DevOpsJourney/.git/objects/a2
+/home/valerie/DevOpsJourney/.git/objects/a2/a3b89ac12df467c3a88e5427b1c32442f4dbb8
+/home/valerie/DevOpsJourney/.git/objects/48
+/home/valerie/DevOpsJourney/.git/objects/48/ae3b16eb6569e643c7ba5cf0acb3f57c6c8918
+/home/valerie/DevOpsJourney/.git/objects/de
+/home/valerie/DevOpsJourney/.git/objects/de/f55ec3a353ade946682923aeb515fee155f7da
+/home/valerie/DevOpsJourney/.git/objects/info
+/home/valerie/DevOpsJourney/.git/objects/16
+/home/valerie/DevOpsJourney/.git/objects/16/c06a86a64504f338084a3c3bfd04bb362664a9
+/home/valerie/DevOpsJourney/.git/objects/ac
+/home/valerie/DevOpsJourney/.git/objects/ac/0308871ee3c18c1f8cbde71f35b8172fdfcf37
+/home/valerie/DevOpsJourney/.git/objects/ad
+/home/valerie/DevOpsJourney/.git/objects/ad/9cfbbb8769b1ad1b1e22ac0af8b1d5ef2c50fb
+/home/valerie/DevOpsJourney/.git/objects/34
+/home/valerie/DevOpsJourney/.git/objects/34/25e0b424a812c93a17d8f0e87ea1114d7e26ce
+/home/valerie/DevOpsJourney/.git/objects/ec
+/home/valerie/DevOpsJourney/.git/objects/ec/7706a13b1d5572538556c5a633303e9a482f01
+/home/valerie/DevOpsJourney/.git/objects/pack
+/home/valerie/DevOpsJourney/.git/objects/pack/pack-84631b00f87bc21bae21318ead70e1adae6085a2.idx
+/home/valerie/DevOpsJourney/.git/objects/pack/pack-84631b00f87bc21bae21318ead70e1adae6085a2.pack
+/home/valerie/DevOpsJourney/.git/objects/pack/pack-84631b00f87bc21bae21318ead70e1adae6085a2.rev
+/home/valerie/DevOpsJourney/.git/objects/0d
+/home/valerie/DevOpsJourney/.git/objects/0d/c65277c99134fb25b567a77572c8ea8567db74
+/home/valerie/DevOpsJourney/.git/objects/33
+/home/valerie/DevOpsJourney/.git/objects/33/40457d4974fd28d97ba6ddd008985286c90ba7
+/home/valerie/DevOpsJourney/.git/objects/45
+/home/valerie/DevOpsJourney/.git/objects/45/45cff75ad57013e19dd34e00cf9fee11b9d749
+/home/valerie/DevOpsJourney/.git/objects/8f
+/home/valerie/DevOpsJourney/.git/objects/8f/06921d019cd49ee221d07f7d85eb94e259c072
+/home/valerie/DevOpsJourney/.git/objects/e4
+/home/valerie/DevOpsJourney/.git/objects/e4/4a4a63fc09fa1ab60cf9745482f4b0f4d2101b
+/home/valerie/DevOpsJourney/.git/objects/e4/25084c96c14c052d17986ad6e5a21cc8bb5158
+/home/valerie/DevOpsJourney/.git/objects/a5
+/home/valerie/DevOpsJourney/.git/objects/a5/78a3d161b1e211d6811e9ec6b678926174ede0
+/home/valerie/DevOpsJourney/.git/objects/1d
+/home/valerie/DevOpsJourney/.git/objects/1d/485c4780b8c908c5f9de291f49b8c3f2f08eb3
+/home/valerie/DevOpsJourney/.git/objects/1d/567801a8249caa6f41e5fc12e16fc33aacc15c
+/home/valerie/DevOpsJourney/.git/objects/1d/60662a574923b44f860e1b9fd9c9b5365e9ae9
+/home/valerie/DevOpsJourney/.git/objects/93
+/home/valerie/DevOpsJourney/.git/objects/93/e4d630a13ae8fefd029b4e34b07219356da4e5
+/home/valerie/DevOpsJourney/.git/objects/93/e184524355f9fadec1a48749a403d1174a025c
+/home/valerie/DevOpsJourney/.git/objects/bd
+/home/valerie/DevOpsJourney/.git/objects/bd/3740e2b67e4ca46c7724323edbd320750e6860
+/home/valerie/DevOpsJourney/.git/objects/8c
+/home/valerie/DevOpsJourney/.git/objects/8c/ff0bb37121eba8ac3aae53ad4d14bac70c89d5
+/home/valerie/DevOpsJourney/.git/objects/59
+/home/valerie/DevOpsJourney/.git/objects/59/d4c1b8ce5830e1327fdfb51363227408dc0866
+/home/valerie/DevOpsJourney/.git/objects/21
+/home/valerie/DevOpsJourney/.git/objects/21/1959487e40d0bca7ed678b988310ce342118ad
+/home/valerie/DevOpsJourney/.git/objects/94
+/home/valerie/DevOpsJourney/.git/objects/94/e4f16debd4bde9731a26b460d7f6db1f2c642c
+/home/valerie/DevOpsJourney/.git/objects/00
+/home/valerie/DevOpsJourney/.git/objects/00/0ced440186403fffffc35d6b2dcff50b5aef21
+/home/valerie/DevOpsJourney/.git/objects/2b
+/home/valerie/DevOpsJourney/.git/objects/2b/a99d44bc856f4af0e47e0dbaa1c474d3256f3a
+/home/valerie/DevOpsJourney/.git/objects/01
+/home/valerie/DevOpsJourney/.git/objects/01/9447a48608ad70693dfe02600c43c83e55a775
+/home/valerie/DevOpsJourney/.git/COMMIT_EDITMSG
+/home/valerie/.bash_logout
+/home/valerie/.gitconfig
+find: ‘type’: No such file or directory
+find: ‘d’: No such file or directory
+find: ‘name’: No such file or directory
+find: ‘system_config.txt’: No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7m find ~ type d name system_config[27m[7m.[27m[7mtxt[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$  find ~ type d name system_config.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- d name system_config.txt[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C d name system_config.[1Ptxt[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C-d name system_config.txt[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cd name system_config.[1Ptxt[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-name system_config.txt[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-type d -name system_config.txt[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C
+
+[?2004l/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ cd ~/[7m/DevOpsJourney/phase-1-found[27m[7ma[27m[7mtion/linux/projects/FileRecoverySystem/systems/config/syste[27m[7mm[27m[7m_config.txt[27m[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C[C/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CDevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_[1Pconfig.txt[A[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C[C[C
+
+
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[00m$ [K[A[K[A[K]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[00m$ cd ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[C[C[C[Kcm[Khmod 000 system_config.txt
+[?2004lchmod: cannot access 'system_config.txt': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[00m$ ls -l^[[200~system_config.txt~[1P~system_config.txt~[C[C[C[C[C[C[C[C[C[C[C[C[C[1P~system_config.txt~[C[C[C[C[C[C[C[C[C[C[C[C[1P~system_config.txt~[C[C[C[C[C[C[C[C[C[C[C[1P~system_config.txt~[C[C[C[C[C[C[C[C[C[C[2P~system_config.txt~[C[C[C[C[C[C[C[C[1P~system_config.txt~[C[C[C[C[C[C[Cl~system_config.txt~[C[C[C[C[C[C[C[C ~system_config.txt~[C[C[C[C[C[C[C[C[C[1P~system_config.txt~[C[C[C[C[C[C[C[C[C[1Psystem_config.txt~[C[C[C[C[C[C[C[C system_config.txt~[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P~[C[Kt
+[?2004lls: cannot access 'system_config.txt': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[00m$ ls -l
+[?2004ltotal 0
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config/system_config.txt[00m$ cd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ ls -l
+[?2004ltotal 4
+drwx------ 2 valerie valerie 4096 Jun 13 01:58 [0m[01;34msystem_config.txt[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ chmod 000 [7msyste[27m[7mm[27m[7m_config.txt[27m[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ [C[C[C[C[C[C[C[C[C[Csystem_config.txt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ ls -l
+[?2004ltotal 4
+d--------- 2 valerie valerie 4096 Jun 13 01:58 [0m[01;34msystem_config.txt[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ chmod 600 s ystem_config.txt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ rm r [K[K-r syste m_config.txt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ ls
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ touch syste m.txt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ ls
+[?2004lsystem.txt
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ ls -l
+[?2004ltotal 0
+-rw-r--r-- 1 valerie valerie 0 Jun 13 08:53 system.txt
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ [7mrm -r syste[27m[7mm[27m[7m_config.txt[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm -r system_config.txt[1Pg.txt[1Pg.txt[1Pg.txt[1Pg.txt[C[C[C[1Pg.txt[C[C[1Pg.txt[C[1Pg.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg.[1Ptxt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceg.txtmg.txt[C[C[1P.txt[C
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ touch syste m_config.txt
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ ls -l
+[?2004ltotal 0
+-rw-r--r-- 1 valerie valerie 0 Jun 13 09:06 system_config.txt
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/systems/config[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-13 09:16:53+01:00 [COMMAND_EXIT_CODE="0"]

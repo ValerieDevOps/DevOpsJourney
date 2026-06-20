@@ -1,0 +1,26 @@
+Script started on 2026-05-27 06:12:02+01:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ss -tul[Klpn
+[?2004lNetid    State     Recv-Q    Send-Q       Local Address:Port       Peer Address:Port   Process                              
+udp      UNCONN    0         0               127.0.0.54:53              0.0.0.0:*                                           
+udp      UNCONN    0         0            127.0.0.53%lo:53              0.0.0.0:*                                           
+udp      UNCONN    0         0                127.0.0.1:323             0.0.0.0:*                                           
+udp      UNCONN    0         0                    [::1]:323                [::]:*                                           
+tcp      LISTEN    0         5                  0.0.0.0:8080            0.0.0.0:*       users:(("python3",pid=6652,fd=3))   
+tcp      LISTEN    0         4096         127.0.0.53%lo:53              0.0.0.0:*                                           
+tcp      LISTEN    0         4096            127.0.0.54:53              0.0.0.0:*                                           
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mss -tulpn | grep 8080[27m[1Pss -tulpn | grep 808[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfilter to sow only a specific p ot [K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K only show a specific  port
+[?2004lCommand 'filter' not found, but can be installed with:
+sudo apt install filter
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # [7m filter to only show a specif[27m[7mi[27m[7mc port[27m[A]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [C[C filter to only show a specific port
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ ss - tul[K[K[K[Ktup[Klpmm[K[Kn | g[Kgrep 8080
+[?2004ltcp   LISTEN 0      5            0.0.0.0:[01;31m[K8080[m[K      0.0.0.0:*    users:(("python3",pid=6652,fd=3))
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # connn[Kect to my w[Kown sever 
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ curl hhttp://[K[K[K[K[K[K[Kttp://localhost:8080
+[?2004l<h>Port 8080 is alive</h1>
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [K]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ # BREAK
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ curl [K http://localhost.[K:9090 # access a service using a wrong port
+[?2004lcurl: (7) Failed to connect to localhost port 9090 after 6 ms: Couldn't connect to server
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mcurl http://localhost:9090 # access a service using a wrong port[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl http://localhost:9090 # access a service using a wrong port
+[?2004lcurl: (7) Failed to connect to localhost port 9090 after 2 ms: Couldn't connect to server
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~[00m$ [7mcurl http://localhost:9090[27

@@ -1,0 +1,128 @@
+# Date: 2026-06-19
+# Day: 13
+# Severity: Low
+# Category: Incident Response
+
+## What I was doing
+I was troubleshooting a systemd service named heartbeat.service after modifying its service configuration file located at:
+
+/etc/systemd/system/heartbeat.service
+
+I reloaded the systemd configuration and attempted to start the service using:
+
+sudo systemctl daemon-reload
+sudo systemctl start heartbeat.service
+
+I then checked the service status using:
+
+sudo systemctl status heartbeat.service
+
+## Error / Investigation
+
+The service failed immediately after startup.
+
+Command:
+
+sudo systemctl status heartbeat.service
+
+Output:
+
+× heartbeat.service - Human Logger Service
+     Loaded: loaded (/etc/systemd/system/heartbeat.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code)
+    Process: 4392 ExecStart=/home/valerie/devops-lab/systemctl-service/heartbeaxt.sh (code=exited, status=203/EXEC)
+   Main PID: 4392 (code=exited, status=203/EXEC)
+
+Jun 19 17:47:22 DESKTOP-MNEU0P5 systemd[1]: Started heartbeat.service - Human Logger Service.
+Jun 19 17:47:22 DESKTOP-MNEU0P5 systemd[1]: heartbeat.service: Main process exited, code=exited, status=203/EXEC
+Jun 19 17:47:22 DESKTOP-MNEU0P5 systemd[1]: heartbeat.service: Failed with result 'exit-code'.
+
+Investigation:
+
+I verified the contents of the service directory and found that the actual executable script present is:
+
+heartbeat.sh
+
+using:
+
+ls -l ~/devops-lab/systemctl-service
+
+Output:
+
+-rw-r--r-- 1 valerie valerie 42458 Jun 19 17:24 heartbeat.log
+-rwxr-xr-x 1 valerie valerie   128 Jun 19 15:39 heartbeat.sh
+
+The service status shows that systemd attempted to execute:
+
+/home/valerie/devops-lab/systemctl-service/heartbeaxt.sh
+
+which does not match the actual script name:
+
+/home/valerie/devops-lab/systemctl-service/heartbeat.sh
+
+This indicates a typo in the ExecStart path inside the heartbeat.service configuration file.
+
+Additional observation:
+
+When attempting to restart the service without elevated privileges:
+
+systemctl restart heartbeat.service
+
+Output:
+
+Failed to restart heartbeat.service: Interactive authentication required.
+
+This confirmed that administrative privileges are required to manage the system-level service.
+
+## Fix applied
+The systemd service file (/etc/systemd/system/heartbeat.service) was corrected and updated to ensure proper execution of the heartbeat script.
+
+The following key fixes were applied:
+
+- Corrected ExecStart path to match the actual script location:
+  /home/valerie/devops-lab/systemctl-service/heartbeat.sh
+
+- Ensured proper systemd syntax formatting (no inline spaces around "="):
+  ExecStart=/home/valerie/devops-lab/systemctl-service/heartbeat.sh
+  Restart=always
+  User=valerie
+
+- Reloaded systemd daemon to apply configuration changes:
+  sudo systemctl daemon-reload
+
+- Restarted the service using systemctl:
+  sudo systemctl start heartbeat.service
+
+After applying the fix, the service started successfully and entered active (running) state.
+
+Verification commands used:
+
+sudo systemctl status heartbeat.service
+sudo systemctl is-active heartbeat.service
+sudo systemctl is-enabled heartbeat.service
+tail -f ~/devops-lab/systemctl-service/heartbeat.log
+
+Expected behavior was confirmed as the heartbeat script continuously logged output to heartbeat.log.
+
+## Root cause
+The root cause was a combination of systemd service configuration issues:
+
+1. Incorrect service file syntax formatting:
+   - Spaces around assignment operators (ExecStart = instead of ExecStart=)
+   - This can cause systemd parsing inconsistencies.
+
+2. Misconfigured or invalid service execution reference during earlier edits (typo in script path in previous iterations).
+
+3. Lack of immediate validation after editing the service file before restarting systemd.
+
+These issues led to initial service failure and incorrect execution behavior until corrected.
+
+## What I learned
+- systemd is strict about configuration syntax; even small spacing errors can affect parsing.
+- ExecStart must point exactly to an existing executable file with correct permissions.
+- Always run daemon-reload after modifying service files.
+- systemctl status, is-active, and is-enabled provide different layers of service state verification.
+- Logs and runtime output are essential to confirm real service behavior, not just status indicators.
+
+
+

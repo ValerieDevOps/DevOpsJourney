@@ -1,0 +1,36 @@
+Script started on 2026-06-13 02:12:27+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="124" LINES="31"]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs/terminal[00m$ rm [K[K[Kcd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/logs[00m$ cd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ rm f[KFileRecover[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+[?2004l[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects[00m$ rm FileRecoverySystem/systems/data/user[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd -/
+[?2004lbash: cd: -/: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects[00m$ cd -
+[?2004l/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ c[Kcd [K[K[Kcat : system/data[K[K[K[K[Ks/data/user_data.t xt: No such file or die[Krectoy[Kry
+[?2004lcat: ':': No such file or directory
+cat: 'systems/data/user_data.txt:': No such file or directory
+cat: No: No such file or directory
+cat: such: No such file or directory
+cat: file: No such file or directory
+cat: or: No such file or directory
+cat: directory: No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ ./system/scripts/start_service .sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csm/scripts/start_service.sh[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [C[C[C[C[C[C[C[Cm/scripts/start_service.[1Psh[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [C[C[C[C[C[C[C[C[Cs/scripts/start_service.sh[A]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ [C[C[C[C[C[C[C[C[C
+
+[?2004lbash: ./systems/scripts/start_service.sh: No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ systemcl[Ktl start app_service
+[?2004l[0;1;31mFailed to start app_service.service: Interactive authentication required.[0m
+[0;1;31mSee system logs and 'systemctl status app_service.service' for details.[0m
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ cat systems/config/system_conf ig.txt
+[?2004lcat: systems/config/system_config.txt: Is a directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ python3 mi[Kain.py
+[?2004lpython3: can't open file '/home/valerie/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem/main.py': [Errno 2] No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ tail -f system/logs/s[K[K[K[K[K[K[K[Kms/logs/system.lo g
+[?2004ltail: cannot open 'systems/logs/system.log' for reading: No such file or directory
+tail: no files remaining
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ chmod 000 system/config/system _config.x[Ktxt
+[?2004lchmod: cannot access 'system/config/system_config.txt': No such file or directory
+[?2004h]0;valerie@DESKTOP-MNEU0P5: ~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[01;32mvalerie@DESKTOP-MNEU0P5[00m:[01;34m~/DevOpsJourney/phase-1-foundation/linux/projects/FileRecoverySystem[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-13 02:22:25+01:00 [COMMAND_EXIT_CODE="1"]
