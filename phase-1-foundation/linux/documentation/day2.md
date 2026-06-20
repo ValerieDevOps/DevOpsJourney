@@ -123,14 +123,14 @@ Log files in logs layer
 Insight:
 File type filtering is essential for system visibility and debugging.
 
-⚙️ 9. Permission Management Introduction
+9. Permission Management Introduction
 sudo chown root:root settings.conf
 
 Insight:
 Ownership control defines system security boundaries.
 Root ownership represents elevated system authority and restricted modification access.
 
-⚙️ 10. Final Structure Validation
+10. Final Structure Validation
 ls -la
 find . | sort
 
@@ -144,7 +144,7 @@ scripts/
 Insight:
 System cleanup completed successfully. Redundant naming issues resolved.
 
-🧩 FINAL SUMMARY
+FINAL SUMMARY
 What was accomplished:
 
 Created full DevOps lab environment
@@ -155,7 +155,7 @@ Performed system cleanup and correction
 Used find for full infrastructure inspection
 Introduced permission control (chown)
 
-🚀 DEVOPS CORE INSIGHT
+DEVOPS CORE INSIGHT
 Day 02 is not about file operations.
 It is about understanding that:
 
