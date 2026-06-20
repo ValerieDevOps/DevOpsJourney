@@ -1,7 +1,7 @@
-# DevOps Incident Log (Day 01–07)
-# Date: 2026-05-15
-# Severity: Low
-# Category: Linux User Management / Permissions / Commands
+## DevOps Incident Log (Day 01–07)
+## Date: 2026-05-15
+## Severity: Low
+## Category: Linux User Management / Permissions / Commands
 
 ---
 
