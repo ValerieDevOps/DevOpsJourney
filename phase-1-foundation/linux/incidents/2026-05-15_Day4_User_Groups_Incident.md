@@ -1,161 +1,257 @@
-## DevOps Incident Log (Day 01–07)
-## Date: 2026-05-15
-## Severity: Low
-## Category: Linux User Management / Permissions / Commands
+#### **DevOps Incident Log (Day 01–07)**
+
+#### **Date: 2026-05-15**
+
+#### **Severity: Low**
+
+#### **Category: Linux User Management / Permissions / Commands**
 
 ---
 
-## Incident 01: User Creation Failure
-## What I was doing
-Attempted to create a new user:
-sudo adduser devopsuser
+#### **Incident 01: User Creation Failure**
 
-## Error
+#### **What I Was Doing**
+
+Attempted to create a new user:
+
+```bash
+sudo adduser devopsuser
+```
+
+#### **Error**
+
+```text
 Passwords do not match
 passwd: Authentication token manipulation error
+```
 
-## Fix applied
+#### **Fix Applied**
+
 Re-entered matching password and completed user creation.
 
-## Root cause
+#### **Root Cause**
+
 Password mismatch during user creation.
 
-## What I learned
-- User creation requires exact password confirmation.
+#### **What I Learned**
+
+* User creation requires exact password confirmation.
 
 ---
 
-## Incident 02: File Permission Restriction
-## What I was doing
+#### **Incident 02: File Permission Restriction**
+
+#### **What I Was Doing**
+
 Set file permissions:
+
+```bash
 chmod 640 secret.txt
+```
 
-## Error / Observation
+#### **Error / Observation**
+
 Access denied for another user:
+
+```text
 cat: Permission denied
+```
 
-## Fix applied
+#### **Fix Applied**
+
 Changed group ownership:
-sudo chgrp developer secret.txt
 
-## Root cause
+```bash
+sudo chgrp developer secret.txt
+```
+
+#### **Root Cause**
+
 File permissions (640) restricted access to non-owner users.
 
-## What I learned
-- Linux permissions control access via owner, group, and others.
+#### **What I Learned**
+
+* Linux permissions control access via owner, group, and others.
 
 ---
 
-## Incident 03: Command Typo Error
-## What I was doing
+#### **Incident 03: Command Typo Error**
+
+#### **What I Was Doing**
+
 Attempted:
+
+```bash
 chmd 640 secret.txt
+```
 
-## Error
+#### **Error**
+
+```text
 Command not found: chmd
+```
 
-## Fix applied
+#### **Fix Applied**
+
 Corrected to:
+
+```bash
 chmod 640 secret.txt
+```
 
-## Root cause
-Typographical error in command name.
+#### **Root Cause**
 
-## What I learned
-- Linux commands are sensitive to spelling and syntax.
+Typographical error in the command name.
+
+#### **What I Learned**
+
+* Linux commands are sensitive to spelling and syntax.
 
 ---
 
-## Incident 04: Directory Path Error
-## What I was doing
+#### **Incident 04: Directory Path Error**
+
+#### **What I Was Doing**
+
 Attempted:
+
+```bash
 touch ~/secret_project/secret.txt
 cd ~/secret_project
+```
 
-## Error
+#### **Error**
+
+```text
 No such file or directory
+```
 
-## Fix applied
+#### **Fix Applied**
+
 Corrected path:
-cd ~/devops-lab/secret_project
 
-## Root cause
+```bash
+cd ~/devops-lab/secret_project
+```
+
+#### **Root Cause**
+
 Incorrect assumption about directory location.
 
-## What I learned
-- Always verify directory structure before navigation.
+#### **What I Learned**
+
+* Always verify directory structure before navigation.
 
 ---
 
-## Incident 05: Group Management Conflict
-## What I was doing
-Created group and added user:
+#### **Incident 05: Group Management Conflict**
+
+#### **What I Was Doing**
+
+Created a group and added a user:
+
+```bash
 sudo groupadd developer
 sudo usermod -aG developer devopsuser
+```
 
-## Error / Observation
+#### **Error / Observation**
+
+```text
 groupadd: group already exists
+```
 
-## Fix applied
-No fix required; reused existing group.
+#### **Fix Applied**
 
-## Root cause
-Group already existed in system.
+No fix required; reused the existing group.
 
-## What I learned
-- Groups persist across sessions and can be reused.
+#### **Root Cause**
+
+The group already existed in the system.
+
+#### **What I Learned**
+
+* Groups persist across sessions and can be reused.
 
 ---
 
-## Incident 06: Permission Denied on Modification
-## What I was doing
+#### **Incident 06: Permission Denied on Modification**
+
+#### **What I Was Doing**
+
 Attempted:
-chmod 644 secret.txt (as devopsuser)
 
-## Error
+```bash
+chmod 644 secret.txt
+```
+
+(as devopsuser)
+
+#### **Error**
+
+```text
 Operation not permitted
+```
 
-## Fix applied
-Used correct privilege escalation (sudo / owner account).
+#### **Fix Applied**
 
-## Root cause
-Only file owner or root can modify permissions.
+Used the correct privilege escalation method (sudo or owner account).
 
-## What I learned
-- Linux enforces strict ownership-based permission control.
-- Group ownership affects access, but not modification rights.
+#### **Root Cause**
+
+Only the file owner or root can modify permissions.
+
+#### **What I Learned**
+
+* Linux enforces strict ownership-based permission control.
+* Group ownership affects access, but not modification rights.
 
 ---
 
-## Incident 07: User Switching / Authentication Failure
-## What I was doing
+#### **Incident 07: User Switching / Authentication Failure**
+
+#### **What I Was Doing**
+
 Attempted switching users:
+
+```bash
 su -- devopsuser
 sudo su -- devopsuser
+```
 
-## Error
-Authentication failure / incorrect usage of commands
+#### **Error**
 
-## Fix applied
-Used correct command:
+Authentication failure or incorrect usage of commands.
+
+#### **Fix Applied**
+
+Used the correct command:
+
+```bash
 su - devopsuser
+```
 
-## Root cause
+#### **Root Cause**
+
 Misunderstanding of authentication models:
-- su requires target user's password
-- sudo uses current user's password for elevation
 
-## What I learned
-- su = switch user (needs target password)
-- sudo = run with elevated privileges (uses current password)
-- Correct command choice depends on permission context
+* su requires the target user's password
+* sudo uses the current user's password for elevation
 
-## Impact
-- Temporary authentication failures
-- No system damage
+#### **What I Learned**
 
-## Prevention
-- Always verify authentication method before switching users
-- Prefer sudo for administrative tasks when appropriate
+* su = switch user (requires target user password)
+* sudo = run with elevated privileges (uses current user password)
+* Correct command choice depends on the permission context
+
+#### **Impact**
+
+* Temporary authentication failures
+* No system damage
+
+#### **Prevention**
+
+* Always verify the authentication method before switching users
+* Prefer sudo for administrative tasks when appropriate
 
 ---
