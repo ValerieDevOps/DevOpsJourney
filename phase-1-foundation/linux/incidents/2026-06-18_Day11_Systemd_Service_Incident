@@ -173,7 +173,6 @@ The root cause was a combination of systemd service configuration issues:
 These issues led to service startup failure and incorrect execution behavior until corrected.
 
 ---
-
 #### **What I Learned**
 
 * systemd is strict about configuration syntax; even small formatting errors can affect service behavior.
