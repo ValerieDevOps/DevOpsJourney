@@ -1,11 +1,4 @@
-#### **Date:** 2026-06-19
-
-#### **Day:** 13
-
-#### **Severity:** Low
-
-#### **Category:** Incident Response
-#### **Date: 2026-06-19**
+#### Date: 2026-06-19**
 
 #### **Day: 13**
 
@@ -13,27 +6,6 @@
 
 #### **Category: Incident Response**
 
-#### **What I Was Doing**
-
-#### **Error / Investigation**
-
-#### **Command**
-
-#### **Output**
-
-#### **Investigation**
-
-#### **Additional Observation**
-
-#### **Fix Applied**
-
-#### **The Following Fixes Were Applied**
-
-#### **Verification Commands Used**
-
-#### **Root Cause**
-
-#### **What I Learned**
 ---
 
 #### **What I Was Doing**
@@ -142,13 +114,13 @@ The systemd service file (`/etc/systemd/system/heartbeat.service`) was corrected
 
 #### **The Following Fixes Were Applied**
 
-* Corrected `ExecStart` path to match the actual script location:
+- Corrected `ExecStart` path to match the actual script location:
 
 ```text
 /home/valerie/devops-lab/systemctl-service/heartbeat.sh
 ```
 
-* Ensured proper systemd syntax formatting (no spaces around `=`):
+- Ensured proper systemd syntax formatting (no spaces around `=`):
 
 ```ini
 ExecStart=/home/valerie/devops-lab/systemctl-service/heartbeat.sh
@@ -156,13 +128,13 @@ Restart=always
 User=valerie
 ```
 
-* Reloaded the systemd daemon:
+- Reloaded the systemd daemon:
 
 ```bash
 sudo systemctl daemon-reload
 ```
 
-* Restarted the service:
+- Restarted the service:
 
 ```bash
 sudo systemctl start heartbeat.service
@@ -188,26 +160,25 @@ Expected behavior was confirmed as the heartbeat script continuously logged outp
 The root cause was a combination of systemd service configuration issues:
 
 1. Incorrect service file syntax formatting:
-
-   * Spaces around assignment operators (`ExecStart =` instead of `ExecStart=`)
-   * This can cause systemd parsing inconsistencies.
+   - Spaces around assignment operators (`ExecStart =` instead of `ExecStart=`)
+   - This can cause systemd parsing inconsistencies.
 
 2. Misconfigured service execution reference:
-
-   * Typographical error in the script path (`heartbeaxt.sh` instead of `heartbeat.sh`).
+   - Typographical error in the script path (`heartbeaxt.sh` instead of `heartbeat.sh`).
 
 3. Lack of immediate validation after editing the service file before restarting systemd.
 
 These issues led to service startup failure and incorrect execution behavior until corrected.
 
 ---
+
 #### **What I Learned**
 
-* systemd is strict about configuration syntax; even small formatting errors can affect service behavior.
-* `ExecStart` must point to an existing executable file with the correct permissions.
-* Always run `systemctl daemon-reload` after modifying service files.
-* `systemctl status`, `systemctl is-active`, and `systemctl is-enabled` provide different layers of service verification.
-* Service logs and runtime output are essential for validating actual service behavior.
-* Exit status `203/EXEC` commonly indicates that systemd could not execute the specified file.
+- systemd is strict about configuration syntax; even small formatting errors can affect service behavior.
+- `ExecStart` must point to an existing executable file with the correct permissions.
+- Always run `systemctl daemon-reload` after modifying service files.
+- `systemctl status`, `systemctl is-active`, and `systemctl is-enabled` provide different layers of service verification.
+- Service logs and runtime output are essential for validating actual service behavior.
+- Exit status `203/EXEC` commonly indicates that systemd could not execute the specified file.
 
 ---
