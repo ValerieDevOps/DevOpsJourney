@@ -1,124 +1,205 @@
-# Date: 2026-05-19
-# Day: 06
-# Severity: Low
-# Category: Process
+#### **Date: 2026-05-19**
 
-## What I was doing
+#### **Day: 06**
+
+#### **Severity: Low**
+
+#### **Category: Process**
+
+---
+
+#### **What I Was Doing**
+
 I was running the command `sudo apt remove nginx` to uninstall the Nginx application. After that, I also ran `sudo apt purge nginx` to completely remove it from the system.
 
-## What went wrong
+---
+
+#### **What Went Wrong**
+
 My intention was to fully remove Nginx, but after the removal process, configuration files and related package remnants still existed in the system, especially under `/etc/nginx`, and the package state still showed leftover components.
 
-## Error / Investigation
+---
 
-### Package history check
-Command:
+#### **Error / Investigation**
+
+#### **Package History Check**
+
+#### **Command**
+
+```bash
 cat /var/log/apt/history.log
+```
 
-Output:
+#### **Output**
+
+```text
 Start-Date: 2026-05-19  16:36:46
 Commandline: apt remove nginx
 Requested-By: valerie (1000)
 Remove: nginx:amd64 (1.24.0-2ubuntu7.8)
 End-Date: 2026-05-19  16:36:47
+```
 
-Result:
+#### **Result**
+
 Nginx application package was successfully removed from the system.
 
 ---
 
-### Service log check
-Command:
-journalctl -u nginx
+#### **Service Log Check**
 
-Output:
+#### **Command**
+
+```bash
+journalctl -u nginx
+```
+
+#### **Output**
+
+```text
 May 19 16:27:08 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
 May 19 16:27:08 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
 May 19 16:36:46 systemd[1]: Stopping nginx.service - A high performance web server and a reverse proxy server...
 May 19 16:36:46 systemd[1]: nginx.service: Deactivated successfully.
 May 19 16:36:46 systemd[1]: Stopped nginx.service - A high performance web server and a reverse proxy server.
+```
 
-Result:
+#### **Result**
+
 Nginx service was successfully stopped and deactivated.
 
 ---
 
-### Configuration files check
-Command:
+#### **Configuration Files Check**
+
+#### **Command**
+
+```bash
 ls /etc/nginx/
+```
 
-Output:
-conf.d  fastcgi.conf  fastcgi_params  koi-utf  koi-win  mime.types  modules-available  modules-enabled  
+#### **Output**
+
+```text
+conf.d  fastcgi.conf  fastcgi_params  koi-utf  koi-win  mime.types  modules-available  modules-enabled
 nginx.conf  proxy_params  scgi_params  sites-available  sites-enabled  snippets  uwsgi_params  win-utf
+```
 
-Result:
+#### **Result**
+
 Nginx configuration files were still present even after package removal.
 
 ---
 
-### Package state check
-Command:
+#### **Package State Check**
+
+#### **Command**
+
+```bash
 dpkg -l | grep nginx
+```
 
-Output:
+#### **Output**
+
+```text
 ii  nginx-common  1.24.0-2ubuntu7.8  all  small, powerful, scalable web/proxy server - common files
+```
 
-Result:
+#### **Result**
+
 The `nginx-common` package was still installed, meaning shared components of Nginx were still present on the system.
 
 ---
 
-## Fix applied
+#### **Fix Applied**
 
-Command:
+#### **Command**
+
+```bash
 sudo apt purge nginx nginx-common nginx-core -y
 sudo apt autoremove -y
+```
 
-Output:
+#### **Output**
+
+```text
 Package 'nginx' is not installed, so not removed
 Package 'nginx-core' is not installed, so not removed
 The following packages will be REMOVED:
   nginx-common
 Purging configuration files for nginx-common (1.24.0-2ubuntu7.8) ...
+```
 
-Result:
+#### **Result**
+
 All remaining Nginx-related packages and configuration files were fully removed from the system.
 
 ---
 
-## Verification
+#### **Verification**
 
-### Package verification
-Command:
+#### **Package Verification**
+
+#### **Command**
+
+```bash
 dpkg -l | grep nginx
+```
 
-Output:
+#### **Output**
+
+```text
 (empty)
+```
 
-Result:
-No Nginx packages remain installed on the system.
+#### **Result**
+
+No Nginx packages remained installed on the system.
 
 ---
 
-### Configuration verification
-Command:
+#### **Configuration Verification**
+
+#### **Command**
+
+```bash
 ls /etc/nginx/
+```
 
-Output:
+#### **Output**
+
+```text
 ls: cannot access '/etc/nginx': No such file or directory
+```
 
-Result:
+#### **Result**
+
 All configuration files and directories were fully removed.
 
 ---
 
-## Root cause
-The issue occurred because `apt remove nginx` only removes the main application package but does not remove configuration files or dependent packages like `nginx-common`. Since Nginx is split into multiple packages, partial removal left behind configuration files and shared components until a full `apt purge` was executed.
+#### **Root Cause**
 
-## What I learned
-- `apt remove` removes the application but keeps configuration files
-- `apt purge` is required for complete removal including config files
-- `apt autoremove` cleans unused dependencies after removal
-- Linux applications are often split into multiple packages (core, common, config)
-- Proper system cleanup requires checking both `dpkg` state and filesystem paths like `/etc`
-- Effective troubleshooting requires verifying package state, service state, and filesystem state together
+The issue occurred because `apt remove nginx` only removes the main application package but does not remove configuration files or dependent packages such as `nginx-common`.
+
+Since Nginx is split into multiple packages, partial removal left behind configuration files and shared components until a full purge operation was executed.
+
+---
+
+#### **What I Learned**
+
+- `apt remove` removes the application but retains configuration files.
+- `apt purge` removes both the application and its configuration files.
+- `apt autoremove` cleans up unused dependencies after package removal.
+- Linux applications are often divided into multiple packages (core, common, configuration, modules).
+- Proper system cleanup requires verifying both package state and filesystem state.
+- Effective troubleshooting involves checking package status, service status, and filesystem artifacts together.
+- Verification is an essential part of system administration and should always follow package removal operations.
+
+---
+
+#### **Outcome**
+
+Nginx was successfully and completely removed from the system. All related packages, configuration files, and unused dependencies were cleaned up. Package verification and filesystem checks confirmed that no Nginx components remained installed.
+
+---
